@@ -41,3 +41,7 @@ Thumbs.db
 
 # importer test cache
 /tools/chess-import/node_modules
+
+# local tooling and generated output
+.better-design/
+output/
