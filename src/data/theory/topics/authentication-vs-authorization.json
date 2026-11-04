@@ -1,0 +1,63 @@
+{
+	"slug": "authentication-vs-authorization",
+	"en": {
+		"idea": [
+			"Authentication establishes who or what is making a request; authorization determines what that principal may do. Both are necessary, and being logged in never implies unrestricted access."
+		],
+		"how": [
+			"Check token/session validity, then evaluate permissions against action, resource and context. Common models include RBAC, ABAC and relationship-based access; enforce decisions server-side on every relevant operation."
+		],
+		"example": [
+			"A hotel employee may view bookings for assigned properties but not other hotels. Even a valid staff JWT must not grant access to another tenant's reservation by changing an ID."
+		],
+		"tradeoffs": [
+			"Client-side route guards improve UX but are not security controls. Missing object-level checks create IDOR/BOLA risks; permissions may change after token issuance."
+		],
+		"brief": "Ask an agent to design tenant-aware authorization for bookings, including service accounts and revoked permissions. Require tests for horizontal and vertical privilege escalation.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"Where is the authoritative point that decides whether this user may access this record?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "HTTP Semantics — RFC 9110",
+				"url": "https://www.rfc-editor.org/rfc/rfc9110"
+			},
+			{
+				"title": "OpenAPI Specification",
+				"url": "https://spec.openapis.org/oas/latest.html"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"Автентифікація встановлює особу або сервіс, що робить запит; авторизація визначає дозволені дії. Обидві потрібні, а сам факт входу не означає повний доступ."
+		],
+		"how": [
+			"Перевіряйте токен або сесію, потім оцінюйте дозвіл з огляду на дію, ресурс і контекст. Поширені моделі — RBAC, ABAC і доступ за зв’язками; перевірки мають бути серверними для кожної потрібної операції."
+		],
+		"example": [
+			"Працівник готелю може бачити бронювання лише закріплених об’єктів. Навіть чинний JWT співробітника не дозволяє отримати чужу бронь шляхом заміни ID."
+		],
+		"tradeoffs": [
+			"Клієнтські route guards покращують UX, але не є захистом. Відсутність перевірки конкретного об’єкта створює IDOR/BOLA; права можуть змінитися після видачі токена."
+		],
+		"brief": "Попросіть агента спроєктувати tenant-aware авторизацію бронювань, включно із сервісними акаунтами та відкликаними правами. Вимагайте тести горизонтального й вертикального підвищення привілеїв.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Де знаходиться авторитетна точка рішення, чи може користувач переглядати конкретний запис?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

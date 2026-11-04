@@ -1,0 +1,63 @@
+{
+	"slug": "rpc-and-grpc",
+	"en": {
+		"idea": [
+			"Remote Procedure Call presents network operations as service methods; gRPC commonly uses Protocol Buffers, HTTP/2 and generated contracts. It suits typed service-to-service APIs while retaining all realities of network failure."
+		],
+		"how": [
+			"Define service methods and schema evolution rules, propagate deadlines and cancellation, authenticate each call and understand streaming modes. Treat remote calls as unreliable, potentially retried operations, not local function invocations."
+		],
+		"example": [
+			"An analytics service can stream events to a processor through a typed gRPC endpoint, while the public frontend continues to use REST or GraphQL through a gateway."
+		],
+		"tradeoffs": [
+			"Browser support, proxies, debugging and load balancing require special consideration. Generated stubs do not replace compatibility tests or solve idempotency and timeout decisions."
+		],
+		"brief": "Have an agent specify a gRPC inventory API, with deadline propagation, backward-compatible field changes and tests for unavailable peers.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"Which parts of your RPC contract remain compatible when a new field is added?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "HTTP Semantics — RFC 9110",
+				"url": "https://www.rfc-editor.org/rfc/rfc9110"
+			},
+			{
+				"title": "OpenAPI Specification",
+				"url": "https://spec.openapis.org/oas/latest.html"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"RPC представляє мережеві операції як методи сервісу; gRPC часто використовує Protocol Buffers, HTTP/2 і згенеровані контракти. Це добре для типізованих міжсервісних API, але мережеві збої залишаються."
+		],
+		"how": [
+			"Визначайте методи сервісу й правила еволюції схем, передавайте deadline та cancellation, автентифікуйте виклики й розумійте streaming. Вважайте віддалені операції ненадійними, а не локальними функціями."
+		],
+		"example": [
+			"Аналітичний сервіс може передавати події потоком через типізований gRPC endpoint, а зовнішній фронтенд — користуватися REST або GraphQL через gateway."
+		],
+		"tradeoffs": [
+			"Підтримка браузера, proxy, дебаг і балансування потребують уваги. Згенеровані клієнти не замінюють тести сумісності та не вирішують питання ідемпотентності й timeout."
+		],
+		"brief": "Попросіть агента описати gRPC API складу з передаванням deadline, сумісними змінами полів і тестами недоступного сервісу.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Які частини RPC-контракту залишаться сумісними після додавання поля?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

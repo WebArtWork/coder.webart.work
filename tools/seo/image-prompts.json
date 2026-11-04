@@ -1,0 +1,1443 @@
+[
+	{
+		"file": "src/assets/seo/class-create.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 1,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/class-detail.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 2,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/class.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 3,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/daily.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 4,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/dashboard.jpg",
+		"route": "/",
+		"category": "Developer learning",
+		"lines": [
+			"Architect better",
+			"software."
+		],
+		"edition": 5,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/game.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 6,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/games.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 7,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/lesson.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 8,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/library-board.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 9,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/library-hub.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 10,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/library.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 11,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/licenses.jpg",
+		"route": "/licenses",
+		"category": "Developer learning",
+		"lines": [
+			"Licenses and",
+			"credits"
+		],
+		"edition": 12,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/look-ahead.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 13,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/my-games.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 14,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-api-contracts.jpg",
+		"route": "/practice/api-contracts",
+		"category": "Architecture practice",
+		"lines": [
+			"Build clear API",
+			"contracts"
+		],
+		"edition": 15,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-architecture-decisions.jpg",
+		"route": "/practice/architecture-decisions",
+		"category": "Architecture practice",
+		"lines": [
+			"Record decisions",
+			"and tradeoffs"
+		],
+		"edition": 16,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-chess-basics.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 17,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-data-and-transactions.jpg",
+		"route": "/practice/data-and-transactions",
+		"category": "Architecture practice",
+		"lines": [
+			"Protect data",
+			"consistency"
+		],
+		"edition": 18,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-dependency-direction.jpg",
+		"route": "/practice/dependency-direction",
+		"category": "Architecture practice",
+		"lines": [
+			"Control dependency",
+			"direction"
+		],
+		"edition": 19,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-deployment-boundaries.jpg",
+		"route": "/practice/deployment-boundaries",
+		"category": "Architecture practice",
+		"lines": [
+			"Choose deployment",
+			"boundaries"
+		],
+		"edition": 20,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-endgames.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 21,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-failure-and-retries.jpg",
+		"route": "/practice/failure-and-retries",
+		"category": "Architecture practice",
+		"lines": [
+			"Design for failure"
+		],
+		"edition": 22,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-good-moves.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 23,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-is-it-safe.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 24,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-mate-in-one.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 25,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-mate-in-three.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 26,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-model-business-rules.jpg",
+		"route": "/practice/model-business-rules",
+		"category": "Architecture practice",
+		"lines": [
+			"Model business",
+			"rules"
+		],
+		"edition": 27,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-module-boundaries.jpg",
+		"route": "/practice/module-boundaries",
+		"category": "Architecture practice",
+		"lines": [
+			"Design module",
+			"boundaries"
+		],
+		"edition": 28,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-observe-your-system.jpg",
+		"route": "/practice/observe-your-system",
+		"category": "Architecture practice",
+		"lines": [
+			"Make behavior",
+			"observable"
+		],
+		"edition": 29,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-opening-moves.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 30,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-project-structure.jpg",
+		"route": "/practice/project-structure",
+		"category": "Architecture practice",
+		"lines": [
+			"Structure around",
+			"features"
+		],
+		"edition": 31,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-review.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 32,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-see-it.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 33,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-sound-sacrifice.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 34,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-spot-the-feature.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 35,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-start-with-requirements.jpg",
+		"route": "/practice/start-with-requirements",
+		"category": "Architecture practice",
+		"lines": [
+			"Start with",
+			"requirements"
+		],
+		"edition": 36,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-tactics.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 37,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-test-architecture.jpg",
+		"route": "/practice/test-architecture",
+		"category": "Architecture practice",
+		"lines": [
+			"Test across",
+			"boundaries"
+		],
+		"edition": 38,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-threats.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 39,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice-who-is-better.jpg",
+		"route": null,
+		"category": "Architecture practice",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 40,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/practice.jpg",
+		"route": "/practice",
+		"category": "Architecture practice",
+		"lines": [
+			"Software",
+			"architecture",
+			"practice"
+		],
+		"edition": 41,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/privacy.jpg",
+		"route": "/privacy",
+		"category": "Developer learning",
+		"lines": [
+			"Privacy"
+		],
+		"edition": 42,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/profile.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 43,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/quiz.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 44,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/random.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 45,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/sign-in.jpg",
+		"route": null,
+		"category": "Developer learning",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 46,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-analyzing-your-games.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 48,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-api-contracts.jpg",
+		"route": "/theory/api-contracts",
+		"category": "Architecture lessons",
+		"lines": [
+			"Build clear API",
+			"contracts"
+		],
+		"edition": 49,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-architecture-decisions.jpg",
+		"route": "/theory/architecture-decisions",
+		"category": "Architecture lessons",
+		"lines": [
+			"Record decisions",
+			"and tradeoffs"
+		],
+		"edition": 50,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-blockade-and-outposts.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 51,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-board-visualization.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 52,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-calculate-critical-lines.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 53,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-calculation-discipline.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 54,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-candidate-moves.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 55,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-caro-kann-defense.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 56,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-ccto.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 57,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-chess-basics.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 58,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-chess-psychology.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 59,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-clear-endgame-thinking.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 60,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-data-and-transactions.jpg",
+		"route": "/theory/data-and-transactions",
+		"category": "Architecture lessons",
+		"lines": [
+			"Protect data",
+			"consistency"
+		],
+		"edition": 61,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-decision-making.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 62,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-dependency-direction.jpg",
+		"route": "/theory/dependency-direction",
+		"category": "Architecture lessons",
+		"lines": [
+			"Control dependency",
+			"direction"
+		],
+		"edition": 63,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-deployment-boundaries.jpg",
+		"route": "/theory/deployment-boundaries",
+		"category": "Architecture lessons",
+		"lines": [
+			"Choose deployment",
+			"boundaries"
+		],
+		"edition": 64,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-english-opening.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 65,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-explain-every-move.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 66,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-failure-and-retries.jpg",
+		"route": "/theory/failure-and-retries",
+		"category": "Architecture lessons",
+		"lines": [
+			"Design for failure"
+		],
+		"edition": 67,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-french-defense.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 68,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-how-openings-work.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 69,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-initiative-and-sacrifice.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 70,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-italian-game.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 71,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-kings-gambit.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 72,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-kings-indian-defense.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 73,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-london-system.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 74,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-model-business-rules.jpg",
+		"route": "/theory/model-business-rules",
+		"category": "Architecture lessons",
+		"lines": [
+			"Model business",
+			"rules"
+		],
+		"edition": 75,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-module-boundaries.jpg",
+		"route": "/theory/module-boundaries",
+		"category": "Architecture lessons",
+		"lines": [
+			"Design module",
+			"boundaries"
+		],
+		"edition": 76,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-nimzo-indian-defense.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 77,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-observe-your-system.jpg",
+		"route": "/theory/observe-your-system",
+		"category": "Architecture lessons",
+		"lines": [
+			"Make behavior",
+			"observable"
+		],
+		"edition": 78,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-opening-principles.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 79,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-pawn-structures.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 80,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-piece-maneuvering.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 81,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-pirc-defense.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 82,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-position-imbalances.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 83,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-positions-without-hints.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 84,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-practical-endgames.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 85,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-practical-improvement.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 86,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-project-structure.jpg",
+		"route": "/theory/project-structure",
+		"category": "Architecture lessons",
+		"lines": [
+			"Structure around",
+			"features"
+		],
+		"edition": 87,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-prophylaxis.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 88,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-queens-gambit.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 89,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-ruy-lopez.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 90,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-sacrifice-compensation.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 91,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-scandinavian-defense.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 92,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-scotch-game.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 93,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-sicilian-defense.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 94,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-slav-defense.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 95,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-start-with-requirements.jpg",
+		"route": "/theory/start-with-requirements",
+		"category": "Architecture lessons",
+		"lines": [
+			"Start with",
+			"requirements"
+		],
+		"edition": 96,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-step-by-step-training.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 97,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-stop-repeating-mistakes.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 98,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-strategic-plans.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 99,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-structured-improvement.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 100,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-test-architecture.jpg",
+		"route": "/theory/test-architecture",
+		"category": "Architecture lessons",
+		"lines": [
+			"Test across",
+			"boundaries"
+		],
+		"edition": 101,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-tournament-rules.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 102,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory-vienna-game.jpg",
+		"route": null,
+		"category": "Architecture lessons",
+		"lines": [
+			"Build with",
+			"understanding."
+		],
+		"edition": 103,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	},
+	{
+		"file": "src/assets/seo/theory.jpg",
+		"route": "/theory",
+		"category": "Architecture lessons",
+		"lines": [
+			"Software",
+			"architecture",
+			"lessons"
+		],
+		"edition": 104,
+		"mode": "built-in image_gen master artwork + deterministic typography",
+		"source": "tools/seo/brand/architecture-source.png",
+		"prompt": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+		"composition": "1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog."
+	}
+]

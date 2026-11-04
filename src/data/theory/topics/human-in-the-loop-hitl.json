@@ -1,0 +1,63 @@
+{
+	"slug": "human-in-the-loop-hitl",
+	"en": {
+		"idea": [
+			"Human-in-the-loop design requires a person to review or approve important AI decisions and actions. Effective oversight targets risk and irreversibility instead of adding an approval dialog to every trivial operation."
+		],
+		"how": [
+			"Classify operations by impact: formatting can be automated, public API changes need review, and payments, production deletions or secret access require explicit authorization. Show diffs, assumptions, affected resources and rollback options at the checkpoint."
+		],
+		"example": [
+			"A coding agent can update unit tests freely in a branch but should require approval before running a migration that changes production booking records."
+		],
+		"tradeoffs": [
+			"An approval prompt is useless if the reviewer lacks context or receives an opaque action summary. Avoid rubber-stamp habits; design concise, evidence-rich review interfaces."
+		],
+		"brief": "Ask an agent to classify planned operations by low, medium and high risk, with appropriate approval gates, audit records and rollback plans.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"What information must a human see to approve a destructive change responsibly?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "OWASP Secure Coding with AI",
+				"url": "https://cheatsheetseries.owasp.org/cheatsheets/Secure_Coding_with_AI_Cheat_Sheet.html"
+			},
+			{
+				"title": "NIST AI Risk Management Framework",
+				"url": "https://www.nist.gov/itl/ai-risk-management-framework"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"HITL означає, що людина перевіряє або затверджує важливі рішення й дії ШІ. Ефективний контроль фокусується на ризику та незворотності, а не на погодженні кожної дрібниці."
+		],
+		"how": [
+			"Класифікуйте дії за впливом: форматування автоматизується, зміни публічного API потребують review, а платежі, видалення у production чи доступ до секретів — явного дозволу. На checkpoint показуйте diff, припущення, ресурси й rollback."
+		],
+		"example": [
+			"Агент може вільно оновлювати unit-тести в гілці, але має отримати дозвіл перед міграцією production-записів бронювання."
+		],
+		"tradeoffs": [
+			"Запит дозволу марний, якщо рев’юер не розуміє контексту й бачить нечіткий опис. Уникайте формального «approve»; показуйте короткі, доказові підсумки."
+		],
+		"brief": "Попросіть агента класифікувати заплановані дії за низьким, середнім і високим ризиком та додати погодження, аудит і план відкату.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Яку інформацію людина повинна побачити, щоб відповідально погодити незворотну зміну?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

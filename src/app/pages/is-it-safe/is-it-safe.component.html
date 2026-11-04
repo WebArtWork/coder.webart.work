@@ -1,0 +1,66 @@
+<app-practice-layout
+	title="Is it safe?"
+	[loading]="flow.loading()"
+	[failed]="flow.failed()"
+	[empty]="flow.empty() || !flow.item()"
+	[reviewing]="flow.reviewing()"
+	[strip]="flow.strip()"
+	(reload)="flow.start()"
+>
+	@if (flow.item(); as item) {
+		<div panel class="flex flex-col gap-3" [attr.data-item]="item.id">
+			@if (flow.outcome(); as outcome) {
+				<app-practice-result [outcome]="outcome" [game]="item.game" [ply]="item.ply" [reviewing]="flow.reviewing()" (next)="flow.next()" (retry)="flow.retry()">
+					@if (item.safe) {
+						<p class="text-sm">{{ '{move} is safe: it is the best move here.' | t: { move: item.san } }}</p>
+					} @else {
+						<p class="text-sm">{{ '{move} is not safe.' | t: { move: item.san } }} {{ 'The refutation:' | t }} <span class="font-medium">{{ refutation() }}</span></p>
+						@if (saidSafe() === false) {
+							<p class="text-sm">{{ (refuted() ? 'You found the refutation.' : 'Your reply was not the refutation.') | t }}</p>
+						}
+						@if (item.played) {
+							<p class="text-sm text-mute">{{ 'This move was played in the game.' | t }}</p>
+						}
+					}
+					<p class="text-xs text-mute">{{ 'Rating {rating}' | t: { rating: item.rating } }} · {{ item.opening }}</p>
+				</app-practice-result>
+			} @else {
+				<section class="ds-card gap-3 p-4">
+					@switch (step()) {
+						@case ('ask') {
+							<div>
+								<p class="text-lg font-semibold">{{ 'Is {move} safe to play?' | t: { move: item.san } }}</p>
+								<p class="text-sm text-mute">
+									{{ (item.side === 'white' ? 'White to move.' : 'Black to move.') | t }}
+									{{ 'Look at every check, capture and threat your opponent has after it.' | t }}
+								</p>
+							</div>
+							<div class="grid grid-cols-2 gap-2">
+								<button class="ds-btn ds-btn-outline" type="button" (click)="answer(true)">{{ 'Yes, play it' | t }}</button>
+								<button class="ds-btn ds-btn-outline" type="button" (click)="answer(false)">{{ 'No, it fails' | t }}</button>
+							</div>
+						}
+						@case ('refute') {
+							<p class="text-lg font-semibold">{{ 'Right, it fails.' | t }}</p>
+							<p class="text-sm text-mute" role="status">{{ 'Show why: play your opponent’s best reply on the board.' | t }}</p>
+						}
+						@default {
+							<p class="text-sm text-mute" role="status">{{ 'Checking your move…' | t }}</p>
+						}
+					}
+				</section>
+			}
+		</div>
+	}
+	@if (flow.item(); as item) {
+		<app-board
+			board
+			[fen]="fen()"
+			[orientation]="item.side"
+			[interactive]="step() === 'refute'"
+			[arrows]="arrows()"
+			[lastMove]="last()"
+			(moved)="onMove($event)"
+		/>
+	}
+</app-practice-layout>

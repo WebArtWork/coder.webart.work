@@ -1,0 +1,64 @@
+<app-practice-layout
+	title="See it in your head"
+	[loading]="flow.loading()"
+	[failed]="flow.failed()"
+	[empty]="flow.empty() || !flow.item()"
+	[reviewing]="flow.reviewing()"
+	[strip]="flow.strip()"
+	(reload)="flow.start()"
+>
+	@if (flow.item(); as item) {
+		<div panel class="flex flex-col gap-3" [attr.data-item]="item.id">
+			<section class="ds-card gap-1 p-4">
+				<p class="text-sm text-mute">{{ 'Play these moves in your head, without touching the board:' | t }}</p>
+				<p class="text-lg font-semibold">{{ line() }}</p>
+			</section>
+
+			@if (flow.outcome(); as outcome) {
+				<app-practice-result [outcome]="outcome" [game]="item.game" [ply]="item.ply" [reviewing]="flow.reviewing()" (next)="flow.next()" (retry)="flow.retry()">
+					<p class="text-sm">{{ prompt() }}</p>
+					<p class="text-sm">{{ 'Answer:' | t }} <span class="font-medium">{{ answerText() }}</span></p>
+					<p class="text-sm text-mute">{{ 'The board now shows the position after the moves.' | t }}</p>
+				</app-practice-result>
+			} @else {
+				@let question = item.question;
+				<section class="ds-card gap-3 p-4">
+					<p class="font-semibold">{{ prompt() }}</p>
+					@switch (question.kind) {
+						@case ('piece') {
+							<div class="grid grid-cols-2 gap-2">
+								@for (option of question.options; track option) {
+									<button class="ds-btn ds-btn-outline" type="button" (click)="choose(option)">{{ pieceName(option) | t }}</button>
+								}
+							</div>
+						}
+						@case ('attacked') {
+							<div class="grid grid-cols-2 gap-2">
+								<button class="ds-btn ds-btn-outline" type="button" (click)="choose('yes')">{{ 'Yes' | t }}</button>
+								<button class="ds-btn ds-btn-outline" type="button" (click)="choose('no')">{{ 'No' | t }}</button>
+							</div>
+						}
+						@case ('moves') {
+							<div class="flex flex-wrap gap-2">
+								<button class="ds-btn ds-btn-primary" type="button" [disabled]="!picks().length" (click)="check()">{{ 'Check' | t }}</button>
+								<button class="ds-btn ds-btn-ghost" type="button" [disabled]="!picks().length" (click)="picks.set([])">{{ 'Clear' | t }}</button>
+							</div>
+						}
+					}
+				</section>
+			}
+		</div>
+	}
+	@if (flow.item(); as item) {
+		<app-board
+			board
+			[fen]="flow.outcome() ? end()!.fen : item.fen"
+			[orientation]="item.side"
+			[interactive]="false"
+			[lastMove]="flow.outcome() ? end()!.last : null"
+			[tapMode]="item.question.kind === 'moves' && !flow.outcome()"
+			[marks]="marks()"
+			(tapped)="tap($event)"
+		/>
+	}
+</app-practice-layout>

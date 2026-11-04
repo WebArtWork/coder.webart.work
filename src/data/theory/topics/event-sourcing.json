@@ -1,0 +1,63 @@
+{
+	"slug": "event-sourcing",
+	"en": {
+		"idea": [
+			"Event Sourcing stores a sequence of domain events as the authoritative record and derives current state by replaying them. It is different from merely publishing integration events."
+		],
+		"how": [
+			"Commands validate against current state, then append immutable events using concurrency control. Aggregates rebuild state from streams or snapshots; projections create read views. Event versioning, privacy, corrections and replay safety need explicit designs."
+		],
+		"example": [
+			"A financial ledger can preserve every authorized credit and debit and rebuild balances for audit. A snapshot accelerates reads but the immutable event history remains the primary record."
+		],
+		"tradeoffs": [
+			"Long-lived event schemas are hard to change; deleting personal data can conflict with immutable histories. Never replay external side effects such as real payment charges, and avoid event sourcing for ordinary CRUD without audit needs."
+		],
+		"brief": "Model an account ledger as event streams, define concurrency and snapshot rules, and ask an agent to show rebuilding state and replaying projections without recharging payments.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"How do you correct an incorrect historical event without silently rewriting the audit trail?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "Microsoft — architecture styles",
+				"url": "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/"
+			},
+			{
+				"title": "Domain-Driven Design Reference",
+				"url": "https://www.domainlanguage.com/ddd/reference/"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"Event Sourcing зберігає послідовність доменних подій як авторитетний запис і відтворює поточний стан їх програванням. Це не те саме, що просто публікувати інтеграційні події."
+		],
+		"how": [
+			"Команди перевіряють стан і додають незмінні події з контролем конкурентного запису. Агрегати відновлюють стан зі стрімів або знімків; проєкції будують читання. Версії, приватність, виправлення й безпечний replay потребують окремого дизайну."
+		],
+		"example": [
+			"Фінансовий реєстр може зберігати кожне авторизоване зарахування й списання та відновлювати баланс для аудиту. Snapshot прискорює читання, але історія подій залишається основним записом."
+		],
+		"tradeoffs": [
+			"Схеми подій довго живуть і важко змінюються; видалення персональних даних конфліктує з незмінною історією. Не повторюйте зовнішні ефекти, зокрема списання, під час replay і не застосовуйте підхід до звичайного CRUD без потреби."
+		],
+		"brief": "Змоделюйте рахунок як потік подій, визначте правила конкурентності та snapshot, попросіть агента показати відновлення стану й проєкцій без повторного платежу.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Як виправити помилкову історичну подію, не переписуючи непомітно журнал аудиту?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

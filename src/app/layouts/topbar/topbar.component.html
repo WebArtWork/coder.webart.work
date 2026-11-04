@@ -1,0 +1,65 @@
+<header class="z-40 shrink-0 border-b border-line bg-bg md:sticky md:top-0 md:bg-bg/90 md:backdrop-blur">
+	<div class="mx-auto flex h-14 w-full max-w-[72rem] items-center justify-between gap-2 px-2 sm:gap-4 sm:px-6">
+		<div class="flex min-w-0 items-center sm:gap-2.5">
+			<a class="inline-flex size-9 shrink-0 items-center justify-center rounded-lg no-underline sm:size-10" routerLink="/" [attr.aria-label]="'Dashboard' | t">
+				<img class="size-8 rounded-lg" ngSrc="logo.png" width="32" height="32" alt="" priority />
+			</a>
+			<span class="truncate text-base font-semibold tracking-tight max-[360px]:hidden">{{ route().pageName | t }}</span>
+		</div>
+
+		<!-- On phones the same links live in the footer bar. -->
+		<nav class="hidden items-center gap-1 md:flex" [attr.aria-label]="'Main' | t">
+			@for (link of links; track link.path) {
+				<a
+					class="inline-flex h-9 items-center gap-2 rounded-lg px-3 text-sm font-medium text-mute! aria-[current=page]:bg-soft aria-[current=page]:text-fg!"
+					[routerLink]="link.path"
+					[attr.aria-current]="nav.isActive(link) ? 'page' : null"
+				>
+					<app-icon [name]="link.icon" />
+					{{ link.label | t }}
+				</a>
+			}
+		</nav>
+
+		<div class="flex shrink-0 items-center gap-1 sm:gap-2">
+			<button
+				class="ds-btn ds-btn-ghost size-10 !p-0"
+				type="button"
+				[attr.aria-label]="(sharing.copied() ? 'Link copied' : 'Share this page') | t"
+				[attr.title]="(sharing.copied() ? 'Link copied' : 'Share this page') | t"
+				(click)="sharing.share()"
+			>
+				<app-icon [name]="sharing.copied() ? 'check' : 'share'" />
+			</button>
+			<span class="sr-only" role="status">{{ sharing.copied() ? ('Link copied' | t) : '' }}</span>
+
+			@let rank = progress.rank();
+			@let rating = progress.progress().rating + (progress.provisional() ? '?' : '');
+			<a
+				class="inline-flex h-10 shrink-0 flex-col items-center justify-center rounded-xl bg-soft px-2 text-[0.6875rem] font-medium leading-tight tabular-nums text-fg! no-underline sm:h-9 sm:flex-row sm:gap-1.5 sm:rounded-full sm:px-3 sm:text-sm"
+				routerLink="/profile"
+				[attr.aria-label]="'Rating {rating}, {rank}, {count} pawn|Rating {rating}, {rank}, {count} pawns' | t: { rating: rating, rank: (rank.rank.name | t), count: progress.progress().pawns }"
+				[attr.title]="'Rating {rating} · {rank}' | t: { rating: rating, rank: (rank.rank.name | t) }"
+			>
+				<span>{{ rating }}</span>
+				<span class="hidden h-4 w-px bg-line sm:block" aria-hidden="true"></span>
+				<span class="flex items-center gap-0.5 sm:gap-1">
+					<span class="leading-none sm:text-base" aria-hidden="true">{{ rank.rank.symbol }}</span>
+					{{ progress.progress().pawns }}
+				</span>
+			</a>
+
+			<a
+				class="ds-btn ds-btn-outline size-10 overflow-hidden rounded-full !p-0 sm:size-11"
+				routerLink="/profile"
+				[attr.aria-label]="(user() ? 'Your profile' : 'Sign in') | t"
+			>
+				@if (user()?.photoURL; as photo) {
+					<img class="size-full object-cover" [src]="photo" alt="" referrerpolicy="no-referrer" width="44" height="44" />
+				} @else {
+					<app-icon name="profile" />
+				}
+			</a>
+		</div>
+	</div>
+</header>

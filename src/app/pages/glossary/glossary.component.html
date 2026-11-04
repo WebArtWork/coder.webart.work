@@ -1,0 +1,56 @@
+<section class="py-10" aria-labelledby="glossary-title">
+	<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand">{{ 'Look it up' | t }}</p>
+	<h1 id="glossary-title" class="mt-3 text-3xl font-semibold">{{ 'Developer glossary' | t }}</h1>
+	<p class="mt-4 max-w-2xl leading-relaxed text-fg/80">
+		{{ '{terms} software development terms in {categories} categories, explained in everyday language. The English term comes first because code, documentation and AI prompts use it.' | t: { terms: total, categories: sections.length } }}
+	</p>
+
+	<ng-template #filters>
+		<div>
+			<input
+				[attr.aria-label]="'Search terms' | t"
+				class="w-full max-w-md rounded-lg border border-line bg-card px-4 py-3 placeholder:text-mute"
+				type="search"
+				autocomplete="off"
+				[placeholder]="'Search terms' | t"
+				[value]="query()"
+				(input)="query.set($any($event.target).value)"
+			/>
+			<p class="mt-2 text-sm text-mute" role="status">{{ '{count} terms' | t: { count: shown() } }}</p>
+		</div>
+
+		<div class="flex flex-wrap gap-2" role="group" [attr.aria-label]="'Filter' | t">
+			<button class="ds-chip" type="button" [attr.aria-pressed]="starterOnly()" (click)="starterOnly.set(!starterOnly())">
+				{{ 'Start here ({n})' | t: { n: starters } }}
+			</button>
+			@for (item of sections; track item.id) {
+				<button class="ds-chip" type="button" [attr.aria-pressed]="section() === item.id" (click)="pickSection(item.id)">{{ title(item) }}</button>
+			}
+		</div>
+	</ng-template>
+
+	<div class="mt-8 max-md:hidden md:flex md:flex-col md:gap-6">
+		<ng-container *ngTemplateOutlet="filters" />
+	</div>
+
+	@for (group of groups(); track group.id) {
+		<section class="mt-12" [attr.aria-labelledby]="'category-' + group.id">
+			<h2 [id]="'category-' + group.id" class="text-2xl font-semibold">{{ group.id }}. {{ title(group) }}</h2>
+			<dl class="mt-6 grid gap-4 md:grid-cols-2">
+				@for (term of group.terms; track term.term.en) {
+					<div class="rounded-xl border border-line bg-card p-5">
+						<dt class="font-semibold">
+							{{ name(term) }}
+							@if (language() === 'ua') {
+								<span class="ml-1 text-sm font-normal text-mute" lang="en">{{ term.term.en }}</span>
+							}
+						</dt>
+						<dd class="mt-2 leading-relaxed text-fg/80">{{ definition(term) }}</dd>
+					</div>
+				}
+			</dl>
+		</section>
+	} @empty {
+		<p class="mt-12 text-fg/80">{{ 'No terms match your search.' | t }}</p>
+	}
+</section>

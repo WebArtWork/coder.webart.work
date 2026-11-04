@@ -1,0 +1,67 @@
+{
+	"slug": "principle-of-least-privilege",
+	"en": {
+		"idea": [
+			"Least privilege gives identities and processes only the permissions necessary for their assigned tasks, ideally for the shortest required period. It limits the blast radius of compromise and mistakes."
+		],
+		"how": [
+			"Scope access by resource, action, tenant and environment. Use separate service accounts, short-lived credentials, just-in-time elevation and periodic permission reviews; log sensitive administrative access."
+		],
+		"example": [
+			"A reporting worker needs read-only access to selected analytics views, not permission to delete guest records or read payment tokens. CI deployment credentials should not be shared with runtime services."
+		],
+		"tradeoffs": [
+			"Overly granular policies can become unmanageable; ownership and automation matter. Never accept broad production-admin permissions merely to bypass an inconvenient integration test."
+		],
+		"brief": "Have an agent draft permissions for API, worker, CI and operator roles, then test denied access for every unnecessary resource and action.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"What evidence justifies every permission held by a production service account?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "OWASP Top 10:2025",
+				"url": "https://top10.owasp.org/2025/"
+			},
+			{
+				"title": "OWASP Cheat Sheet Series",
+				"url": "https://cheatsheetseries.owasp.org/"
+			},
+			{
+				"title": "NIST Secure Software Development Framework",
+				"url": "https://csrc.nist.gov/Projects/ssdf"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"Принцип найменших привілеїв надає особам і процесам тільки необхідні права та, бажано, на мінімально потрібний час. Це зменшує наслідки злому й помилки."
+		],
+		"how": [
+			"Обмежуйте доступ за ресурсом, дією, tenant і середовищем. Використовуйте окремі service accounts, короткоживучі ключі, тимчасове підвищення привілеїв і регулярні перевірки; аудіюйте адміністративний доступ."
+		],
+		"example": [
+			"Воркер звітності має читати лише дозволені аналітичні view, а не видаляти гостей чи читати платіжні токени. Облікові дані CI для деплою не повинні використовуватися runtime-сервісами."
+		],
+		"tradeoffs": [
+			"Надмірно дрібні політики важко супроводжувати; потрібні власники й автоматизація. Не надавайте production-admin права лише заради проходження незручного інтеграційного тесту."
+		],
+		"brief": "Попросіть агента описати права API, воркера, CI та оператора й протестувати відмову для кожного непотрібного ресурсу й дії.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Чим обґрунтовано кожен дозвіл production service account?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

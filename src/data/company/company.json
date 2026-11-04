@@ -1,0 +1,1547 @@
+{
+	"_id": "",
+	"name": "Coder",
+	"title": "Coder | Learn to architect better software",
+	"description": "Learn how to architect the projects you build. Coder helps developers understand project structure, module boundaries and software design through theory and practice.",
+	"image": "https://coder.webart.work/seo/dashboard.jpg",
+	"siteUrl": "https://coder.webart.work",
+	"defaultSeo": {
+		"image": "/seo/dashboard.jpg",
+		"title": "Coder | Learn to architect better software",
+		"description": "Learn how to architect the projects you build. Coder helps developers understand project structure, module boundaries and software design through theory and practice.",
+		"author": "Coder"
+	},
+	"pageSeo": {
+		"/": {
+			"title": "Coder | Learn to architect better software",
+			"description": "Learn how to architect the projects you build. Coder helps developers understand project structure, module boundaries and software design through theory and practice.",
+			"image": "/seo/dashboard.jpg"
+		},
+		"/theory": {
+			"title": "Senior developer knowledge base: 120 lessons",
+			"description": "120 engineering lessons in 12 modules, in English and Ukrainian: programming principles, architecture, design patterns, algorithms, distributed systems, databases, APIs, security, testing, DevOps, engineering decisions and AI-driven engineering.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/solid-principles": {
+			"title": "SOLID Principles",
+			"description": "SOLID groups five object-oriented design heuristics: single responsibility, open/closed, Liskov substitution, interface segregation, and dependency inversion.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/dry-don-t-repeat-yourself": {
+			"title": "DRY — Don't Repeat Yourself",
+			"description": "DRY means every piece of knowledge should have one authoritative representation.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/kiss-keep-it-simple": {
+			"title": "KISS — Keep It Simple",
+			"description": "KISS favors the simplest design that satisfies known requirements and foreseeable risks.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/yagni-you-aren-t-gonna-need-it": {
+			"title": "YAGNI — You Aren't Gonna Need It",
+			"description": "YAGNI discourages building features or abstractions for hypothetical future requirements.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/separation-of-concerns-soc": {
+			"title": "Separation of Concerns (SoC)",
+			"description": "Separation of Concerns decomposes a system into parts with distinct responsibilities, such as UI, application workflows, domain rules, and persistence.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/law-of-demeter-lod": {
+			"title": "Law of Demeter (LoD)",
+			"description": "The Law of Demeter limits an object's knowledge of distant collaborators. 'Talk to your immediate friends' is a heuristic for reducing fragile chains of navigation through internals.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/principle-of-least-astonishment-pola": {
+			"title": "Principle of Least Astonishment (POLA)",
+			"description": "POLA says an interface should behave in ways its users reasonably expect.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/composition-over-inheritance": {
+			"title": "Composition over Inheritance",
+			"description": "Composition builds behavior by combining focused collaborators, rather than relying on deep inheritance trees.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/high-cohesion-low-coupling": {
+			"title": "High Cohesion, Low Coupling",
+			"description": "Cohesion measures how closely a module's responsibilities belong together; coupling reflects how much it knows about other modules.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/design-by-contract": {
+			"title": "Design by Contract",
+			"description": "Design by Contract specifies preconditions, postconditions, and invariants for components.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/clean-architecture": {
+			"title": "Clean Architecture",
+			"description": "Clean Architecture organizes code around business policies that do not depend on frameworks, databases, or UI details.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/hexagonal-architecture-ports-and-adapters": {
+			"title": "Hexagonal Architecture (Ports and Adapters)",
+			"description": "Hexagonal Architecture isolates the application core behind explicit ports.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/onion-architecture": {
+			"title": "Onion Architecture",
+			"description": "Onion Architecture places the domain model at the center and surrounding application, infrastructure, and delivery concerns in concentric layers.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/layered-architecture": {
+			"title": "Layered Architecture",
+			"description": "Layered Architecture divides an application into presentation, business/application logic, and data access responsibilities.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/microservices-architecture": {
+			"title": "Microservices Architecture",
+			"description": "Microservices split a system into independently deployable services around bounded business capabilities.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/modular-monolith": {
+			"title": "Modular Monolith",
+			"description": "A modular monolith deploys as one application but enforces domain module boundaries internally.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/event-driven-architecture": {
+			"title": "Event-Driven Architecture",
+			"description": "Event-Driven Architecture communicates facts about state changes through events.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/cqrs-command-query-responsibility-segregation": {
+			"title": "CQRS — Command Query Responsibility Segregation",
+			"description": "CQRS separates write-side commands that enforce business rules from read-side queries optimized for retrieving information.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/event-sourcing": {
+			"title": "Event Sourcing",
+			"description": "Event Sourcing stores a sequence of domain events as the authoritative record and derives current state by replaying them.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/domain-driven-design-ddd": {
+			"title": "Domain-Driven Design (DDD)",
+			"description": "Domain-Driven Design aligns software structure with business meaning through shared language, bounded contexts, entities, value objects, aggregates, and domain models.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/gang-of-four-gof-design-patterns": {
+			"title": "Gang of Four (GoF) Design Patterns",
+			"description": "The 23 GoF patterns describe recurring object collaboration and creation solutions.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/grasp-responsibility-assignment": {
+			"title": "GRASP — Responsibility Assignment",
+			"description": "GRASP is a set of principles for deciding which object or component should own behavior.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/dependency-injection": {
+			"title": "Dependency Injection",
+			"description": "Dependency Injection supplies collaborators from outside a component instead of constructing them internally.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/repository-pattern": {
+			"title": "Repository Pattern",
+			"description": "A Repository presents a collection-like interface for domain objects and hides persistence operations.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/unit-of-work": {
+			"title": "Unit of Work",
+			"description": "Unit of Work tracks and coordinates changes that must be persisted together, usually under one transaction.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/factory-method-and-abstract-factory": {
+			"title": "Factory Method & Abstract Factory",
+			"description": "Factory Method delegates creation of a product to subclasses or specialized creators; Abstract Factory creates related families of products through a common contract.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/strategy-and-observer-patterns": {
+			"title": "Strategy & Observer Patterns",
+			"description": "Strategy encapsulates interchangeable algorithms behind a common interface.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/adapter-and-facade-patterns": {
+			"title": "Adapter & Facade Patterns",
+			"description": "Adapter translates one interface into another expected by a client.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/state-and-command-patterns": {
+			"title": "State & Command Patterns",
+			"description": "State delegates behavior according to an object's current lifecycle state; Command packages an action as an object or message.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/mvc-mvp-and-mvvm": {
+			"title": "MVC, MVP & MVVM",
+			"description": "MVC, MVP and MVVM are presentation architecture patterns that separate visual behavior from domain logic in different ways.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/big-o-notation": {
+			"title": "Big O Notation",
+			"description": "Big O describes an asymptotic upper bound on how resource use grows with input size, often used for time or memory complexity.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/time-and-space-complexity": {
+			"title": "Time & Space Complexity",
+			"description": "Time complexity estimates work as input scales; space complexity estimates additional memory or total storage required.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/arrays-lists-stacks-and-queues": {
+			"title": "Arrays, Lists, Stacks & Queues",
+			"description": "These linear data structures trade indexing, insertion, removal and ordering guarantees.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/hash-tables-and-trees": {
+			"title": "Hash Tables & Trees",
+			"description": "Hash tables optimize key-based lookup under suitable hashing assumptions; trees represent hierarchy or maintain ordered search.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/graphs-and-graph-algorithms": {
+			"title": "Graphs & Graph Algorithms",
+			"description": "Graphs model entities and relations as vertices and edges.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/sorting-and-searching": {
+			"title": "Sorting & Searching",
+			"description": "Sorting establishes order so data can be presented or searched efficiently.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/recursion-and-dynamic-programming": {
+			"title": "Recursion & Dynamic Programming",
+			"description": "Recursion solves a problem by invoking the same operation on smaller instances.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/greedy-algorithms": {
+			"title": "Greedy Algorithms",
+			"description": "A greedy algorithm repeatedly makes a locally favorable choice without reconsidering earlier decisions.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/caching-algorithms": {
+			"title": "Caching Algorithms",
+			"description": "Caching trades storage and invalidation complexity for reduced recomputation or I/O.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/concurrency-algorithms": {
+			"title": "Concurrency Algorithms",
+			"description": "Concurrency techniques coordinate operations that can overlap in time.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/cap-theorem": {
+			"title": "CAP Theorem",
+			"description": "CAP states that, when a network partition occurs, a distributed data system cannot guarantee both linearizable consistency and availability for every request.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/pacelc-theorem": {
+			"title": "PACELC Theorem",
+			"description": "PACELC extends CAP: if partitioned, choose between availability and consistency; else, even in normal operation, choose between latency and consistency.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/acid-transactions": {
+			"title": "ACID Transactions",
+			"description": "ACID describes atomicity, consistency, isolation and durability of database transactions.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/base-model": {
+			"title": "BASE Model",
+			"description": "BASE describes a family of distributed-system trade-offs often summarized as Basically Available, Soft state and Eventual consistency.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/eventual-consistency": {
+			"title": "Eventual Consistency",
+			"description": "Eventual consistency means replicas converge to a compatible state if updates stop and communication proceeds, under the system's stated assumptions.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/idempotency": {
+			"title": "Idempotency",
+			"description": "An operation is idempotent when applying it more than once has the same intended effect as applying it once.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/consensus-algorithms": {
+			"title": "Consensus Algorithms",
+			"description": "Consensus allows distributed participants to agree on a sequence of decisions despite certain failures.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/distributed-transactions-and-sagas": {
+			"title": "Distributed Transactions & Sagas",
+			"description": "Distributed business workflows often span independent services that cannot share one ACID transaction.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/circuit-breaker-pattern": {
+			"title": "Circuit Breaker Pattern",
+			"description": "A circuit breaker prevents repeated calls to an unhealthy dependency from exhausting resources and cascading failures.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/retry-timeout-and-backoff-patterns": {
+			"title": "Retry, Timeout & Backoff Patterns",
+			"description": "Timeouts bound waiting, retries recover transient failures, and backoff spaces repeated attempts to avoid overload.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/database-normalization-1nf-5nf": {
+			"title": "Database Normalization (1NF–5NF)",
+			"description": "Normalization organizes relational tables to reduce unintended redundancy and modification anomalies.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/denormalization": {
+			"title": "Denormalization",
+			"description": "Denormalization deliberately duplicates or precomputes data to improve read performance, simplify queries or support specific access patterns.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/indexing-strategies": {
+			"title": "Indexing Strategies",
+			"description": "Indexes accelerate targeted reads by maintaining auxiliary structures, often at the cost of extra storage and slower writes.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/query-optimization": {
+			"title": "Query Optimization",
+			"description": "Query optimization reduces database resource use and latency while preserving semantics.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/transaction-isolation-levels": {
+			"title": "Transaction Isolation Levels",
+			"description": "Transaction isolation defines which effects of concurrent transactions can become visible and which anomalies are permitted.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/optimistic-vs-pessimistic-locking": {
+			"title": "Optimistic vs Pessimistic Locking",
+			"description": "Optimistic concurrency checks whether data changed before committing; pessimistic locking reserves exclusive access earlier.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/sharding-and-partitioning": {
+			"title": "Sharding & Partitioning",
+			"description": "Partitioning splits a dataset into manageable segments; sharding distributes segments across nodes.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/replication-strategies": {
+			"title": "Replication Strategies",
+			"description": "Replication maintains multiple copies of data for availability, read scale or geographic proximity.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/sql-vs-nosql-trade-offs": {
+			"title": "SQL vs NoSQL Trade-offs",
+			"description": "SQL and NoSQL describe broad families of data models and interfaces, not simple 'consistent versus scalable' opposites.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/schema-evolution-and-migrations": {
+			"title": "Schema Evolution & Migrations",
+			"description": "Schema evolution changes stored structure while preserving existing data and service compatibility.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/rest-principles": {
+			"title": "REST Principles",
+			"description": "REST is an architectural style for networked systems emphasizing resources, uniform interfaces, stateless interactions, layered components and representations.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/graphql-architecture": {
+			"title": "GraphQL Architecture",
+			"description": "GraphQL lets clients request typed fields through a schema and supports queries, mutations and subscriptions.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/rpc-and-grpc": {
+			"title": "RPC & gRPC",
+			"description": "Remote Procedure Call presents network operations as service methods; gRPC commonly uses Protocol Buffers, HTTP/2 and generated contracts.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/api-versioning": {
+			"title": "API Versioning",
+			"description": "API versioning manages incompatible contract changes without unexpectedly breaking clients.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/authentication-vs-authorization": {
+			"title": "Authentication vs Authorization",
+			"description": "Authentication establishes who or what is making a request; authorization determines what that principal may do.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/oauth-2-0-and-openid-connect": {
+			"title": "OAuth 2.0 & OpenID Connect",
+			"description": "OAuth 2.0 is a framework for delegated authorization; OpenID Connect builds an authentication identity layer on top.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/rate-limiting-and-throttling": {
+			"title": "Rate Limiting & Throttling",
+			"description": "Rate limiting constrains request frequency or cost; throttling delays or rejects traffic to protect capacity and fairness.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/pagination-and-filtering": {
+			"title": "Pagination & Filtering",
+			"description": "Pagination bounds response size and enables scalable navigation; filtering selects records according to an explicit query contract.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/webhooks-and-message-queues": {
+			"title": "Webhooks & Message Queues",
+			"description": "Webhooks deliver events via outbound HTTP calls; message queues broker asynchronous delivery between producers and consumers.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/backward-compatibility": {
+			"title": "Backward Compatibility",
+			"description": "Backward compatibility lets newer systems continue serving existing clients and stored data.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/cia-triad": {
+			"title": "CIA Triad",
+			"description": "The CIA triad identifies three fundamental security properties: Confidentiality, Integrity and Availability.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/principle-of-least-privilege": {
+			"title": "Principle of Least Privilege",
+			"description": "Least privilege gives identities and processes only the permissions necessary for their assigned tasks, ideally for the shortest required period.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/zero-trust-architecture": {
+			"title": "Zero Trust Architecture",
+			"description": "Zero Trust treats network location as insufficient proof of trust and requires explicit identity, device/workload context and policy for access decisions.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/defense-in-depth": {
+			"title": "Defense in Depth",
+			"description": "Defense in Depth uses multiple independent security controls so a single error or compromise does not expose the entire system.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/owasp-top-10": {
+			"title": "OWASP Top 10",
+			"description": "The OWASP Top 10 is an awareness list of major web-application risk categories, not a full security checklist.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/threat-modeling-stride": {
+			"title": "Threat Modeling (STRIDE)",
+			"description": "STRIDE is a threat-identification framework: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service and Elevation of privilege.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/secure-software-development-lifecycle": {
+			"title": "Secure Software Development Lifecycle",
+			"description": "A Secure SDLC integrates security decisions and verification throughout planning, design, implementation, delivery and operations.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/cryptography-fundamentals": {
+			"title": "Cryptography Fundamentals",
+			"description": "Cryptography protects information and proves authenticity using well-studied primitives: symmetric encryption, public-key cryptography, cryptographic hashes, MACs and digital signatures.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/secrets-management": {
+			"title": "Secrets Management",
+			"description": "Secrets management controls creation, distribution, use, rotation and revocation of credentials such as API keys, database passwords and signing keys.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/software-supply-chain-security": {
+			"title": "Software Supply Chain Security",
+			"description": "Supply chain security protects dependencies, build systems, artifacts and publishing workflows from malicious or compromised components.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/testing-pyramid": {
+			"title": "Testing Pyramid",
+			"description": "The testing pyramid recommends many fast, focused tests and fewer expensive full-system tests.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/test-driven-development-tdd": {
+			"title": "Test-Driven Development (TDD)",
+			"description": "TDD follows a short red-green-refactor loop: write a failing test, implement the minimal behavior, then improve design without changing behavior.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/behavior-driven-development-bdd": {
+			"title": "Behavior-Driven Development (BDD)",
+			"description": "BDD connects business examples to executable specifications through collaboration among developers, testers and domain stakeholders.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/unit-integration-and-end-to-end-testing": {
+			"title": "Unit, Integration & End-to-End Testing",
+			"description": "These testing levels differ in boundary and realism: unit tests isolate a small behavior; integration tests exercise interacting components; E2E tests validate a full user or system journey.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/property-based-testing": {
+			"title": "Property-Based Testing",
+			"description": "Property-based testing checks general invariants over many generated inputs rather than only hand-picked examples.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/contract-testing": {
+			"title": "Contract Testing",
+			"description": "Contract testing verifies assumptions between service providers and consumers, such as request shapes, response semantics and event schemas.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/mutation-testing": {
+			"title": "Mutation Testing",
+			"description": "Mutation testing changes code in small controlled ways and checks whether the test suite detects those changes.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/static-analysis": {
+			"title": "Static Analysis",
+			"description": "Static analysis inspects source or compiled representations without executing full application behavior.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/code-smells-and-refactoring": {
+			"title": "Code Smells & Refactoring",
+			"description": "Code smells are symptoms of possible design problems, not automatic proof that code is wrong.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/technical-debt-management": {
+			"title": "Technical Debt Management",
+			"description": "Technical debt describes future engineering cost caused by design and implementation shortcuts or changing needs.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/ci-cd-principles": {
+			"title": "CI/CD Principles",
+			"description": "Continuous Integration merges and validates changes frequently; Continuous Delivery keeps releases deployable; Continuous Deployment automatically releases changes passing defined gates.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/infrastructure-as-code-iac": {
+			"title": "Infrastructure as Code (IaC)",
+			"description": "IaC defines infrastructure resources in version-controlled declarations or programs.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/immutable-infrastructure": {
+			"title": "Immutable Infrastructure",
+			"description": "Immutable infrastructure replaces running instances with newly built images rather than patching them in place.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/blue-green-and-canary-deployment": {
+			"title": "Blue-Green & Canary Deployment",
+			"description": "Blue-green deployment switches traffic between two complete environments; canary deployment gradually exposes a subset of traffic to a new version.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/observability-logs-metrics-and-traces": {
+			"title": "Observability: Logs, Metrics & Traces",
+			"description": "Observability allows engineers to infer a system's internal state from emitted evidence.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/sli-slo-and-sla": {
+			"title": "SLI, SLO & SLA",
+			"description": "An SLI is a quantitative service reliability indicator; an SLO is a target for that indicator; an SLA is a contractual commitment, often with consequences.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/fault-tolerance": {
+			"title": "Fault Tolerance",
+			"description": "Fault tolerance lets a system continue delivering acceptable behavior when components fail.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/scalability-vs-elasticity": {
+			"title": "Scalability vs Elasticity",
+			"description": "Scalability is the ability to handle more load by adding resources or optimizing design.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/load-balancing": {
+			"title": "Load Balancing",
+			"description": "Load balancing distributes requests or work across instances to improve utilization, capacity and availability.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/disaster-recovery-rpo-and-rto": {
+			"title": "Disaster Recovery: RPO & RTO",
+			"description": "Recovery Point Objective (RPO) is the maximum acceptable data-loss window; Recovery Time Objective (RTO) is the target time to restore service after a disruption.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/system-design-trade-offs": {
+			"title": "System Design Trade-offs",
+			"description": "System design is the deliberate choice among imperfect alternatives under explicit requirements.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/cost-benefit-analysis": {
+			"title": "Cost–Benefit Analysis",
+			"description": "Cost–benefit analysis estimates whether expected business value justifies implementation, maintenance and risk.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/build-vs-buy": {
+			"title": "Build vs Buy",
+			"description": "Build-versus-buy asks whether a capability should be developed in-house, purchased as software or outsourced.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/conway-s-law": {
+			"title": "Conway's Law",
+			"description": "Conway's Law observes that system designs tend to reflect the communication structures of the organizations creating them.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/brooks-s-law": {
+			"title": "Brooks's Law",
+			"description": "Brooks's Law warns that adding people to a late software project may make it later because onboarding and communication cost time.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/amdahl-s-law": {
+			"title": "Amdahl's Law",
+			"description": "Amdahl's Law bounds the speedup of a workload when only part can be parallelized.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/little-s-law": {
+			"title": "Little's Law",
+			"description": "Little's Law relates long-run average number of items in a stable system, arrival/completion rate and average time in system: L equals lambda multiplied by W.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/pareto-principle": {
+			"title": "Pareto Principle",
+			"description": "The Pareto principle is a heuristic that a minority of causes often account for a majority of outcomes.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/theory-of-constraints": {
+			"title": "Theory of Constraints",
+			"description": "The Theory of Constraints holds that overall throughput is limited by a small number of bottlenecks.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/architecture-decision-records-adr": {
+			"title": "Architecture Decision Records (ADR)",
+			"description": "An ADR records an architectural choice, the context that motivated it, alternatives, consequences and status.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/specification-driven-development": {
+			"title": "Specification-Driven Development",
+			"description": "Specification-driven development starts with an explicit, testable description of required behavior before implementation.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/context-engineering": {
+			"title": "Context Engineering",
+			"description": "Context engineering curates the information, tools and constraints available to an AI model for a task.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/prompt-engineering": {
+			"title": "Prompt Engineering",
+			"description": "Prompt engineering structures instructions and examples to make model output more relevant, constrained and verifiable.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/agentic-workflows": {
+			"title": "Agentic Workflows",
+			"description": "Agentic workflows let AI systems plan, call tools, modify artifacts and iterate toward a goal.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/human-in-the-loop-hitl": {
+			"title": "Human-in-the-Loop (HITL)",
+			"description": "Human-in-the-loop design requires a person to review or approve important AI decisions and actions.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/ai-code-review": {
+			"title": "AI Code Review",
+			"description": "AI-generated code needs the same or stronger review as human-written code.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/ai-assisted-testing": {
+			"title": "AI-Assisted Testing",
+			"description": "AI can accelerate test-case discovery, fixture creation and failure analysis, but generated tests still need an independent behavioral oracle.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/model-evaluation-and-benchmarking": {
+			"title": "Model Evaluation & Benchmarking",
+			"description": "Model evaluation measures whether an AI system performs particular tasks reliably under relevant constraints.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/ai-security-and-prompt-injection": {
+			"title": "AI Security & Prompt Injection",
+			"description": "Prompt injection occurs when untrusted content tries to redirect an AI system's instructions or tool use.",
+			"image": "/seo/theory.jpg"
+		},
+		"/theory/ai-generated-code-governance": {
+			"title": "AI-Generated Code Governance",
+			"description": "AI-generated code governance establishes policies for provenance, accountability, quality, security and licensing across AI-assisted delivery.",
+			"image": "/seo/theory.jpg"
+		},
+		"/practice": {
+			"title": "Practice: 120 exercise sets for developers",
+			"description": "1,800 exercises and 60 system design challenges in English and Ukrainian: for every lesson 10 checked questions and 5 written tasks, and for 12 architecture templates build, fix, extend, optimize and review challenges.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-01-build": {
+			"title": "Community event reservations: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. A town events site needs public listings, signed-in reservations, organizer cancellations and email confirmations.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-01-fix": {
+			"title": "Repair unsafe browser shortcuts: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. An AI agent connected the frontend directly to the database and email provider; the API lost its identity check.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-01-extend": {
+			"title": "Safe document uploads: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. Organizers must upload PDF schedules and event posters.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-01-optimize": {
+			"title": "Ticket sale traffic spike: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. A release attracts 8,000 visits/minute.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-01-review": {
+			"title": "Choose the first deployment model: system design challenge",
+			"description": "Review challenge, advanced, 30 min. A three-person team must launch in eight weeks with uncertain demand and 2,000 projected daily users.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-02-build": {
+			"title": "Training academy modules: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. A small academy needs courses, enrollment, billing and instructor schedules.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-02-fix": {
+			"title": "Restore business module ownership: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. Orders no longer consults Catalog.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-02-extend": {
+			"title": "Promotions and partial refunds: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. The commerce monolith gains discounts and partial refunds.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-02-optimize": {
+			"title": "Reporting slows checkout: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. During month-end reporting, checkout p95 grows from 200 ms to 1.8 s due to heavy joins and long-lived transactions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-02-review": {
+			"title": "Extract Billing or keep it?: system design challenge",
+			"description": "Review challenge, advanced, 30 min. One eight-person team ships monthly.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-03-build": {
+			"title": "Food delivery service boundaries: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. Customers order restaurant meals, authorize payment and await courier pickup.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-03-fix": {
+			"title": "Repair payment ownership: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. Orders gained direct access to the payment database and PSP, while Payments stopped consuming the broker.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-03-extend": {
+			"title": "Loyalty points on completed orders: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. A new Loyalty service awards points after completed paid orders and reverses them on refunds.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-03-optimize": {
+			"title": "Inventory reservation latency: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. Order confirmation reaches p99 4.5 s; some consumers lag 30 s.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-03-review": {
+			"title": "Independent services or distributed monolith?: system design challenge",
+			"description": "Review challenge, advanced, 30 min. Catalog, Orders and Inventory deploy separately but share schemas and demand coordinated releases by one team.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-04-build": {
+			"title": "Multi-tenant team tracker: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. Organizations create workspaces, invite members and pay per seat.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-04-fix": {
+			"title": "Cross-tenant data leak: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. The API bypasses tenant and role checks and admin UI accesses the shared database directly.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-04-extend": {
+			"title": "Metered usage-based billing: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. Customers pay for active seats plus exported reports and API requests.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-04-optimize": {
+			"title": "Noisy tenant overwhelms workers: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. One tenant runs exports that starve others of DB connections.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-04-review": {
+			"title": "Shared database versus tenant isolation: system design challenge",
+			"description": "Review challenge, advanced, 30 min. A hundred small customers share infrastructure; two regulated enterprises request separate backups and data residency.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-05-build": {
+			"title": "Small electronics shop: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. A shop sells limited-stock devices, accepts online payments and ships parcels.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-05-fix": {
+			"title": "Payment bypasses stock: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. Cart directly invokes the PSP, the browser reads orders storage and the stock reservation step disappeared.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-05-extend": {
+			"title": "Returns and partial refunds: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. Shoppers may return order lines within 14 days; warehouse inspection can approve part of a return and reject damaged items.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-05-optimize": {
+			"title": "Flash sale inventory contention: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. 200 units are on sale, but 20,000 shoppers try checkout within one minute.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-05-review": {
+			"title": "Synchronous or asynchronous checkout?: system design challenge",
+			"description": "Review challenge, advanced, 30 min. API response target is 800 ms; PSP calls sometimes take 3 s and warehouse holds another 2 s.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-06-build": {
+			"title": "Service-company CRM: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. A repair company tracks clients, visits, quotations, employees and invoices.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-06-fix": {
+			"title": "Permissions and audit removed: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. A refactor removed API permission checks and Sales audit, adding a UI-to-transaction-database shortcut.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-06-extend": {
+			"title": "Purchase approval workflow: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. Staff submit expense requests.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-06-optimize": {
+			"title": "Two-million-record reporting: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. A dashboard takes 18 s due to joins on transactional tables with two million activities.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-06-review": {
+			"title": "One ERP or independent departments?: system design challenge",
+			"description": "Review challenge, advanced, 30 min. HR, Sales and Finance want separate release cycles, yet their data is interdependent and one platform team operates everything.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-07-build": {
+			"title": "Local services booking marketplace: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. Clients reserve tutors, cleaners and technicians.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-07-fix": {
+			"title": "Stop seller self-payout: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. A seller UI can invoke settlement directly, and buyers can publish reviews without a valid purchase.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-07-extend": {
+			"title": "Disputes and partial refunds: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. A client disputes a finished service.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-07-optimize": {
+			"title": "Search index lag: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. New listings appear in search after ten minutes; deleted ones linger because the indexing queue stalls.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-07-review": {
+			"title": "Build settlement or buy a provider?: system design challenge",
+			"description": "Review challenge, advanced, 30 min. The startup wants split payouts and platform fees.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-08-build": {
+			"title": "Collaborative whiteboard: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. Up to 50 editors share a board, see cursors and reconnect after a network outage.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-08-fix": {
+			"title": "Unauthorized message storage: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. A socket layer now writes to storage without message service checks; a browser can also write directly.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-08-extend": {
+			"title": "Offline edits with conflicts: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. Editors can stay offline for 20 minutes and return with conflicting operations.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-08-optimize": {
+			"title": "Ten thousand live viewers: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. A room has 10,000 watchers and 20 editors.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-08-review": {
+			"title": "WebSocket, SSE or polling?: system design challenge",
+			"description": "Review challenge, advanced, 30 min. A monitoring dashboard updates every 5–10 seconds, with very few user commands.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-09-build": {
+			"title": "Offline field inspections: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. Inspectors fill forms and upload photographs at remote sites with unreliable connectivity.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-09-fix": {
+			"title": "Mobile security bypass: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. An agent removed secure credential storage and API auth, then connected mobile and push systems directly to the server database.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-09-extend": {
+			"title": "Resumable photos and conflicts: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. Two workers may edit the same inspection.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-09-optimize": {
+			"title": "Battery-hungry background sync: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. The app polls every 10 seconds even with no changes.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-09-review": {
+			"title": "Local-first or online-first booking?: system design challenge",
+			"description": "Review challenge, advanced, 30 min. A mobile scheduling app must work through brief outages, but scarce appointment slots cannot be booked twice.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-10-build": {
+			"title": "Durable order event pipeline: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. An accepted order must persist and trigger billing, inventory and reports.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-10-fix": {
+			"title": "Lost outbox and poison events: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. A refactor publishes directly before commit and removes the consumer dead-letter route.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-10-extend": {
+			"title": "Version OrderCreated events: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. OrderCreated v1 contains customerId and total.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-10-optimize": {
+			"title": "Million-event backlog: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. A broker has 1,000,000 queued events.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-10-review": {
+			"title": "Event sourcing or state plus events?: system design challenge",
+			"description": "Review challenge, advanced, 30 min. Billing requires a strong audit trail and corrections.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-11-build": {
+			"title": "Internal company knowledge assistant: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. Staff ask private policy questions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-11-fix": {
+			"title": "Prompt-injection tool bypass: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. Policy checks were bypassed; retrieved text is connected to tool execution and the orchestrator can call external services directly.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-11-extend": {
+			"title": "AI architecture code reviewer: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. AI reviews pull requests against the 120 theories.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-11-optimize": {
+			"title": "RAG cost and latency reduction: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. Knowledge replies average 14 s at $0.12 each.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-11-review": {
+			"title": "AI agent autonomy policy: system design challenge",
+			"description": "Review challenge, advanced, 30 min. An assistant can draft emails, create support tickets and propose refunds under $50.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-12-build": {
+			"title": "Cold-chain temperature telemetry: system design challenge",
+			"description": "Build challenge, intermediate, 45 min. Sensors on trucks report temperatures every minute; operators receive alerts and can change safe set-points.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-12-fix": {
+			"title": "Unsafe direct device commands: system design challenge",
+			"description": "Fix challenge, intermediate, 30 min. The MQTT broker stopped verifying registry identity, and a dashboard can actuate devices directly.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-12-extend": {
+			"title": "Staged over-the-air firmware updates: system design challenge",
+			"description": "Extend challenge, intermediate, 40 min. A fleet of 3,000 devices needs signed updates; failures must halt rollout, and offline devices can update days later.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-12-optimize": {
+			"title": "Reconnect telemetry storm: system design challenge",
+			"description": "Optimize challenge, advanced, 45 min. 100,000 devices reconnect, producing 100,000 readings/minute.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/challenge/sys-12-review": {
+			"title": "Cloud authority versus edge autonomy: system design challenge",
+			"description": "Review challenge, advanced, 30 min. Building access controllers must preserve safe emergency exits during WAN outages.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/solid-principles": {
+			"title": "SOLID Principles: exercises",
+			"description": "15 exercises on SOLID Principles: 10 questions that are checked for you and 5 written tasks. SOLID groups five object-oriented design heuristics: single responsibility, open/closed, Liskov substitution, interface segregation, and dependency inversion.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/dry-don-t-repeat-yourself": {
+			"title": "DRY — Don't Repeat Yourself: exercises",
+			"description": "15 exercises on DRY — Don't Repeat Yourself: 10 questions that are checked for you and 5 written tasks. DRY means every piece of knowledge should have one authoritative representation.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/kiss-keep-it-simple": {
+			"title": "KISS — Keep It Simple: exercises",
+			"description": "15 exercises on KISS — Keep It Simple: 10 questions that are checked for you and 5 written tasks. KISS favors the simplest design that satisfies known requirements and foreseeable risks.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/yagni-you-aren-t-gonna-need-it": {
+			"title": "YAGNI — You Aren't Gonna Need It: exercises",
+			"description": "15 exercises on YAGNI — You Aren't Gonna Need It: 10 questions that are checked for you and 5 written tasks. YAGNI discourages building features or abstractions for hypothetical future requirements.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/separation-of-concerns-soc": {
+			"title": "Separation of Concerns (SoC): exercises",
+			"description": "15 exercises on Separation of Concerns (SoC): 10 questions that are checked for you and 5 written tasks. Separation of Concerns decomposes a system into parts with distinct responsibilities, such as UI, application workflows, domain rules, and persistence.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/law-of-demeter-lod": {
+			"title": "Law of Demeter (LoD): exercises",
+			"description": "15 exercises on Law of Demeter (LoD): 10 questions that are checked for you and 5 written tasks. The Law of Demeter limits an object's knowledge of distant collaborators. 'Talk to your immediate friends' is a heuristic for reducing fragile chains of navigation through internals.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/principle-of-least-astonishment-pola": {
+			"title": "Principle of Least Astonishment (POLA): exercises",
+			"description": "15 exercises on Principle of Least Astonishment (POLA): 10 questions that are checked for you and 5 written tasks. POLA says an interface should behave in ways its users reasonably expect.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/composition-over-inheritance": {
+			"title": "Composition over Inheritance: exercises",
+			"description": "15 exercises on Composition over Inheritance: 10 questions that are checked for you and 5 written tasks. Composition builds behavior by combining focused collaborators, rather than relying on deep inheritance trees.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/high-cohesion-low-coupling": {
+			"title": "High Cohesion, Low Coupling: exercises",
+			"description": "15 exercises on High Cohesion, Low Coupling: 10 questions that are checked for you and 5 written tasks. Cohesion measures how closely a module's responsibilities belong together; coupling reflects how much it knows about other modules.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/design-by-contract": {
+			"title": "Design by Contract: exercises",
+			"description": "15 exercises on Design by Contract: 10 questions that are checked for you and 5 written tasks. Design by Contract specifies preconditions, postconditions, and invariants for components.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/clean-architecture": {
+			"title": "Clean Architecture: exercises",
+			"description": "15 exercises on Clean Architecture: 10 questions that are checked for you and 5 written tasks. Clean Architecture organizes code around business policies that do not depend on frameworks, databases, or UI details.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/hexagonal-architecture-ports-and-adapters": {
+			"title": "Hexagonal Architecture (Ports and Adapters): exercises",
+			"description": "15 exercises on Hexagonal Architecture (Ports and Adapters): 10 questions that are checked for you and 5 written tasks. Hexagonal Architecture isolates the application core behind explicit ports.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/onion-architecture": {
+			"title": "Onion Architecture: exercises",
+			"description": "15 exercises on Onion Architecture: 10 questions that are checked for you and 5 written tasks. Onion Architecture places the domain model at the center and surrounding application, infrastructure, and delivery concerns in concentric layers.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/layered-architecture": {
+			"title": "Layered Architecture: exercises",
+			"description": "15 exercises on Layered Architecture: 10 questions that are checked for you and 5 written tasks. Layered Architecture divides an application into presentation, business/application logic, and data access responsibilities.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/microservices-architecture": {
+			"title": "Microservices Architecture: exercises",
+			"description": "15 exercises on Microservices Architecture: 10 questions that are checked for you and 5 written tasks. Microservices split a system into independently deployable services around bounded business capabilities.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/modular-monolith": {
+			"title": "Modular Monolith: exercises",
+			"description": "15 exercises on Modular Monolith: 10 questions that are checked for you and 5 written tasks. A modular monolith deploys as one application but enforces domain module boundaries internally.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/event-driven-architecture": {
+			"title": "Event-Driven Architecture: exercises",
+			"description": "15 exercises on Event-Driven Architecture: 10 questions that are checked for you and 5 written tasks. Event-Driven Architecture communicates facts about state changes through events.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/cqrs-command-query-responsibility-segregation": {
+			"title": "CQRS — Command Query Responsibility Segregation: exercises",
+			"description": "15 exercises on CQRS — Command Query Responsibility Segregation: 10 questions that are checked for you and 5 written tasks. CQRS separates write-side commands that enforce business rules from read-side queries optimized for retrieving information.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/event-sourcing": {
+			"title": "Event Sourcing: exercises",
+			"description": "15 exercises on Event Sourcing: 10 questions that are checked for you and 5 written tasks. Event Sourcing stores a sequence of domain events as the authoritative record and derives current state by replaying them.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/domain-driven-design-ddd": {
+			"title": "Domain-Driven Design (DDD): exercises",
+			"description": "15 exercises on Domain-Driven Design (DDD): 10 questions that are checked for you and 5 written tasks. Domain-Driven Design aligns software structure with business meaning through shared language, bounded contexts, entities, value objects, aggregates, and domain models.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/gang-of-four-gof-design-patterns": {
+			"title": "Gang of Four (GoF) Design Patterns: exercises",
+			"description": "15 exercises on Gang of Four (GoF) Design Patterns: 10 questions that are checked for you and 5 written tasks. The 23 GoF patterns describe recurring object collaboration and creation solutions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/grasp-responsibility-assignment": {
+			"title": "GRASP — Responsibility Assignment: exercises",
+			"description": "15 exercises on GRASP — Responsibility Assignment: 10 questions that are checked for you and 5 written tasks. GRASP is a set of principles for deciding which object or component should own behavior.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/dependency-injection": {
+			"title": "Dependency Injection: exercises",
+			"description": "15 exercises on Dependency Injection: 10 questions that are checked for you and 5 written tasks. Dependency Injection supplies collaborators from outside a component instead of constructing them internally.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/repository-pattern": {
+			"title": "Repository Pattern: exercises",
+			"description": "15 exercises on Repository Pattern: 10 questions that are checked for you and 5 written tasks. A Repository presents a collection-like interface for domain objects and hides persistence operations.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/unit-of-work": {
+			"title": "Unit of Work: exercises",
+			"description": "15 exercises on Unit of Work: 10 questions that are checked for you and 5 written tasks. Unit of Work tracks and coordinates changes that must be persisted together, usually under one transaction.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/factory-method-and-abstract-factory": {
+			"title": "Factory Method & Abstract Factory: exercises",
+			"description": "15 exercises on Factory Method & Abstract Factory: 10 questions that are checked for you and 5 written tasks. Factory Method delegates creation of a product to subclasses or specialized creators; Abstract Factory creates related families of products through a common contract.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/strategy-and-observer-patterns": {
+			"title": "Strategy & Observer Patterns: exercises",
+			"description": "15 exercises on Strategy & Observer Patterns: 10 questions that are checked for you and 5 written tasks. Strategy encapsulates interchangeable algorithms behind a common interface.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/adapter-and-facade-patterns": {
+			"title": "Adapter & Facade Patterns: exercises",
+			"description": "15 exercises on Adapter & Facade Patterns: 10 questions that are checked for you and 5 written tasks. Adapter translates one interface into another expected by a client.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/state-and-command-patterns": {
+			"title": "State & Command Patterns: exercises",
+			"description": "15 exercises on State & Command Patterns: 10 questions that are checked for you and 5 written tasks. State delegates behavior according to an object's current lifecycle state; Command packages an action as an object or message.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/mvc-mvp-and-mvvm": {
+			"title": "MVC, MVP & MVVM: exercises",
+			"description": "15 exercises on MVC, MVP & MVVM: 10 questions that are checked for you and 5 written tasks. MVC, MVP and MVVM are presentation architecture patterns that separate visual behavior from domain logic in different ways.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/big-o-notation": {
+			"title": "Big O Notation: exercises",
+			"description": "15 exercises on Big O Notation: 10 questions that are checked for you and 5 written tasks. Big O describes an asymptotic upper bound on how resource use grows with input size, often used for time or memory complexity.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/time-and-space-complexity": {
+			"title": "Time & Space Complexity: exercises",
+			"description": "15 exercises on Time & Space Complexity: 10 questions that are checked for you and 5 written tasks. Time complexity estimates work as input scales; space complexity estimates additional memory or total storage required.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/arrays-lists-stacks-and-queues": {
+			"title": "Arrays, Lists, Stacks & Queues: exercises",
+			"description": "15 exercises on Arrays, Lists, Stacks & Queues: 10 questions that are checked for you and 5 written tasks. These linear data structures trade indexing, insertion, removal and ordering guarantees.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/hash-tables-and-trees": {
+			"title": "Hash Tables & Trees: exercises",
+			"description": "15 exercises on Hash Tables & Trees: 10 questions that are checked for you and 5 written tasks. Hash tables optimize key-based lookup under suitable hashing assumptions; trees represent hierarchy or maintain ordered search.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/graphs-and-graph-algorithms": {
+			"title": "Graphs & Graph Algorithms: exercises",
+			"description": "15 exercises on Graphs & Graph Algorithms: 10 questions that are checked for you and 5 written tasks. Graphs model entities and relations as vertices and edges.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/sorting-and-searching": {
+			"title": "Sorting & Searching: exercises",
+			"description": "15 exercises on Sorting & Searching: 10 questions that are checked for you and 5 written tasks. Sorting establishes order so data can be presented or searched efficiently.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/recursion-and-dynamic-programming": {
+			"title": "Recursion & Dynamic Programming: exercises",
+			"description": "15 exercises on Recursion & Dynamic Programming: 10 questions that are checked for you and 5 written tasks. Recursion solves a problem by invoking the same operation on smaller instances.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/greedy-algorithms": {
+			"title": "Greedy Algorithms: exercises",
+			"description": "15 exercises on Greedy Algorithms: 10 questions that are checked for you and 5 written tasks. A greedy algorithm repeatedly makes a locally favorable choice without reconsidering earlier decisions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/caching-algorithms": {
+			"title": "Caching Algorithms: exercises",
+			"description": "15 exercises on Caching Algorithms: 10 questions that are checked for you and 5 written tasks. Caching trades storage and invalidation complexity for reduced recomputation or I/O.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/concurrency-algorithms": {
+			"title": "Concurrency Algorithms: exercises",
+			"description": "15 exercises on Concurrency Algorithms: 10 questions that are checked for you and 5 written tasks. Concurrency techniques coordinate operations that can overlap in time.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/cap-theorem": {
+			"title": "CAP Theorem: exercises",
+			"description": "15 exercises on CAP Theorem: 10 questions that are checked for you and 5 written tasks. CAP states that, when a network partition occurs, a distributed data system cannot guarantee both linearizable consistency and availability for every request.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/pacelc-theorem": {
+			"title": "PACELC Theorem: exercises",
+			"description": "15 exercises on PACELC Theorem: 10 questions that are checked for you and 5 written tasks. PACELC extends CAP: if partitioned, choose between availability and consistency; else, even in normal operation, choose between latency and consistency.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/acid-transactions": {
+			"title": "ACID Transactions: exercises",
+			"description": "15 exercises on ACID Transactions: 10 questions that are checked for you and 5 written tasks. ACID describes atomicity, consistency, isolation and durability of database transactions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/base-model": {
+			"title": "BASE Model: exercises",
+			"description": "15 exercises on BASE Model: 10 questions that are checked for you and 5 written tasks. BASE describes a family of distributed-system trade-offs often summarized as Basically Available, Soft state and Eventual consistency.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/eventual-consistency": {
+			"title": "Eventual Consistency: exercises",
+			"description": "15 exercises on Eventual Consistency: 10 questions that are checked for you and 5 written tasks. Eventual consistency means replicas converge to a compatible state if updates stop and communication proceeds, under the system's stated assumptions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/idempotency": {
+			"title": "Idempotency: exercises",
+			"description": "15 exercises on Idempotency: 10 questions that are checked for you and 5 written tasks. An operation is idempotent when applying it more than once has the same intended effect as applying it once.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/consensus-algorithms": {
+			"title": "Consensus Algorithms: exercises",
+			"description": "15 exercises on Consensus Algorithms: 10 questions that are checked for you and 5 written tasks. Consensus allows distributed participants to agree on a sequence of decisions despite certain failures.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/distributed-transactions-and-sagas": {
+			"title": "Distributed Transactions & Sagas: exercises",
+			"description": "15 exercises on Distributed Transactions & Sagas: 10 questions that are checked for you and 5 written tasks. Distributed business workflows often span independent services that cannot share one ACID transaction.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/circuit-breaker-pattern": {
+			"title": "Circuit Breaker Pattern: exercises",
+			"description": "15 exercises on Circuit Breaker Pattern: 10 questions that are checked for you and 5 written tasks. A circuit breaker prevents repeated calls to an unhealthy dependency from exhausting resources and cascading failures.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/retry-timeout-and-backoff-patterns": {
+			"title": "Retry, Timeout & Backoff Patterns: exercises",
+			"description": "15 exercises on Retry, Timeout & Backoff Patterns: 10 questions that are checked for you and 5 written tasks. Timeouts bound waiting, retries recover transient failures, and backoff spaces repeated attempts to avoid overload.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/database-normalization-1nf-5nf": {
+			"title": "Database Normalization (1NF–5NF): exercises",
+			"description": "15 exercises on Database Normalization (1NF–5NF): 10 questions that are checked for you and 5 written tasks. Normalization organizes relational tables to reduce unintended redundancy and modification anomalies.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/denormalization": {
+			"title": "Denormalization: exercises",
+			"description": "15 exercises on Denormalization: 10 questions that are checked for you and 5 written tasks. Denormalization deliberately duplicates or precomputes data to improve read performance, simplify queries or support specific access patterns.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/indexing-strategies": {
+			"title": "Indexing Strategies: exercises",
+			"description": "15 exercises on Indexing Strategies: 10 questions that are checked for you and 5 written tasks. Indexes accelerate targeted reads by maintaining auxiliary structures, often at the cost of extra storage and slower writes.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/query-optimization": {
+			"title": "Query Optimization: exercises",
+			"description": "15 exercises on Query Optimization: 10 questions that are checked for you and 5 written tasks. Query optimization reduces database resource use and latency while preserving semantics.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/transaction-isolation-levels": {
+			"title": "Transaction Isolation Levels: exercises",
+			"description": "15 exercises on Transaction Isolation Levels: 10 questions that are checked for you and 5 written tasks. Transaction isolation defines which effects of concurrent transactions can become visible and which anomalies are permitted.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/optimistic-vs-pessimistic-locking": {
+			"title": "Optimistic vs Pessimistic Locking: exercises",
+			"description": "15 exercises on Optimistic vs Pessimistic Locking: 10 questions that are checked for you and 5 written tasks. Optimistic concurrency checks whether data changed before committing; pessimistic locking reserves exclusive access earlier.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/sharding-and-partitioning": {
+			"title": "Sharding & Partitioning: exercises",
+			"description": "15 exercises on Sharding & Partitioning: 10 questions that are checked for you and 5 written tasks. Partitioning splits a dataset into manageable segments; sharding distributes segments across nodes.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/replication-strategies": {
+			"title": "Replication Strategies: exercises",
+			"description": "15 exercises on Replication Strategies: 10 questions that are checked for you and 5 written tasks. Replication maintains multiple copies of data for availability, read scale or geographic proximity.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/sql-vs-nosql-trade-offs": {
+			"title": "SQL vs NoSQL Trade-offs: exercises",
+			"description": "15 exercises on SQL vs NoSQL Trade-offs: 10 questions that are checked for you and 5 written tasks. SQL and NoSQL describe broad families of data models and interfaces, not simple 'consistent versus scalable' opposites.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/schema-evolution-and-migrations": {
+			"title": "Schema Evolution & Migrations: exercises",
+			"description": "15 exercises on Schema Evolution & Migrations: 10 questions that are checked for you and 5 written tasks. Schema evolution changes stored structure while preserving existing data and service compatibility.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/rest-principles": {
+			"title": "REST Principles: exercises",
+			"description": "15 exercises on REST Principles: 10 questions that are checked for you and 5 written tasks. REST is an architectural style for networked systems emphasizing resources, uniform interfaces, stateless interactions, layered components and representations.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/graphql-architecture": {
+			"title": "GraphQL Architecture: exercises",
+			"description": "15 exercises on GraphQL Architecture: 10 questions that are checked for you and 5 written tasks. GraphQL lets clients request typed fields through a schema and supports queries, mutations and subscriptions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/rpc-and-grpc": {
+			"title": "RPC & gRPC: exercises",
+			"description": "15 exercises on RPC & gRPC: 10 questions that are checked for you and 5 written tasks. Remote Procedure Call presents network operations as service methods; gRPC commonly uses Protocol Buffers, HTTP/2 and generated contracts.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/api-versioning": {
+			"title": "API Versioning: exercises",
+			"description": "15 exercises on API Versioning: 10 questions that are checked for you and 5 written tasks. API versioning manages incompatible contract changes without unexpectedly breaking clients.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/authentication-vs-authorization": {
+			"title": "Authentication vs Authorization: exercises",
+			"description": "15 exercises on Authentication vs Authorization: 10 questions that are checked for you and 5 written tasks. Authentication establishes who or what is making a request; authorization determines what that principal may do.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/oauth-2-0-and-openid-connect": {
+			"title": "OAuth 2.0 & OpenID Connect: exercises",
+			"description": "15 exercises on OAuth 2.0 & OpenID Connect: 10 questions that are checked for you and 5 written tasks. OAuth 2.0 is a framework for delegated authorization; OpenID Connect builds an authentication identity layer on top.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/rate-limiting-and-throttling": {
+			"title": "Rate Limiting & Throttling: exercises",
+			"description": "15 exercises on Rate Limiting & Throttling: 10 questions that are checked for you and 5 written tasks. Rate limiting constrains request frequency or cost; throttling delays or rejects traffic to protect capacity and fairness.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/pagination-and-filtering": {
+			"title": "Pagination & Filtering: exercises",
+			"description": "15 exercises on Pagination & Filtering: 10 questions that are checked for you and 5 written tasks. Pagination bounds response size and enables scalable navigation; filtering selects records according to an explicit query contract.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/webhooks-and-message-queues": {
+			"title": "Webhooks & Message Queues: exercises",
+			"description": "15 exercises on Webhooks & Message Queues: 10 questions that are checked for you and 5 written tasks. Webhooks deliver events via outbound HTTP calls; message queues broker asynchronous delivery between producers and consumers.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/backward-compatibility": {
+			"title": "Backward Compatibility: exercises",
+			"description": "15 exercises on Backward Compatibility: 10 questions that are checked for you and 5 written tasks. Backward compatibility lets newer systems continue serving existing clients and stored data.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/cia-triad": {
+			"title": "CIA Triad: exercises",
+			"description": "15 exercises on CIA Triad: 10 questions that are checked for you and 5 written tasks. The CIA triad identifies three fundamental security properties: Confidentiality, Integrity and Availability.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/principle-of-least-privilege": {
+			"title": "Principle of Least Privilege: exercises",
+			"description": "15 exercises on Principle of Least Privilege: 10 questions that are checked for you and 5 written tasks. Least privilege gives identities and processes only the permissions necessary for their assigned tasks, ideally for the shortest required period.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/zero-trust-architecture": {
+			"title": "Zero Trust Architecture: exercises",
+			"description": "15 exercises on Zero Trust Architecture: 10 questions that are checked for you and 5 written tasks. Zero Trust treats network location as insufficient proof of trust and requires explicit identity, device/workload context and policy for access decisions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/defense-in-depth": {
+			"title": "Defense in Depth: exercises",
+			"description": "15 exercises on Defense in Depth: 10 questions that are checked for you and 5 written tasks. Defense in Depth uses multiple independent security controls so a single error or compromise does not expose the entire system.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/owasp-top-10": {
+			"title": "OWASP Top 10: exercises",
+			"description": "15 exercises on OWASP Top 10: 10 questions that are checked for you and 5 written tasks. The OWASP Top 10 is an awareness list of major web-application risk categories, not a full security checklist.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/threat-modeling-stride": {
+			"title": "Threat Modeling (STRIDE): exercises",
+			"description": "15 exercises on Threat Modeling (STRIDE): 10 questions that are checked for you and 5 written tasks. STRIDE is a threat-identification framework: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service and Elevation of privilege.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/secure-software-development-lifecycle": {
+			"title": "Secure Software Development Lifecycle: exercises",
+			"description": "15 exercises on Secure Software Development Lifecycle: 10 questions that are checked for you and 5 written tasks. A Secure SDLC integrates security decisions and verification throughout planning, design, implementation, delivery and operations.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/cryptography-fundamentals": {
+			"title": "Cryptography Fundamentals: exercises",
+			"description": "15 exercises on Cryptography Fundamentals: 10 questions that are checked for you and 5 written tasks. Cryptography protects information and proves authenticity using well-studied primitives: symmetric encryption, public-key cryptography, cryptographic hashes, MACs and digital signatures.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/secrets-management": {
+			"title": "Secrets Management: exercises",
+			"description": "15 exercises on Secrets Management: 10 questions that are checked for you and 5 written tasks. Secrets management controls creation, distribution, use, rotation and revocation of credentials such as API keys, database passwords and signing keys.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/software-supply-chain-security": {
+			"title": "Software Supply Chain Security: exercises",
+			"description": "15 exercises on Software Supply Chain Security: 10 questions that are checked for you and 5 written tasks. Supply chain security protects dependencies, build systems, artifacts and publishing workflows from malicious or compromised components.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/testing-pyramid": {
+			"title": "Testing Pyramid: exercises",
+			"description": "15 exercises on Testing Pyramid: 10 questions that are checked for you and 5 written tasks. The testing pyramid recommends many fast, focused tests and fewer expensive full-system tests.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/test-driven-development-tdd": {
+			"title": "Test-Driven Development (TDD): exercises",
+			"description": "15 exercises on Test-Driven Development (TDD): 10 questions that are checked for you and 5 written tasks. TDD follows a short red-green-refactor loop: write a failing test, implement the minimal behavior, then improve design without changing behavior.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/behavior-driven-development-bdd": {
+			"title": "Behavior-Driven Development (BDD): exercises",
+			"description": "15 exercises on Behavior-Driven Development (BDD): 10 questions that are checked for you and 5 written tasks. BDD connects business examples to executable specifications through collaboration among developers, testers and domain stakeholders.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/unit-integration-and-end-to-end-testing": {
+			"title": "Unit, Integration & End-to-End Testing: exercises",
+			"description": "15 exercises on Unit, Integration & End-to-End Testing: 10 questions that are checked for you and 5 written tasks. These testing levels differ in boundary and realism: unit tests isolate a small behavior; integration tests exercise interacting components; E2E tests validate a full user or system journey.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/property-based-testing": {
+			"title": "Property-Based Testing: exercises",
+			"description": "15 exercises on Property-Based Testing: 10 questions that are checked for you and 5 written tasks. Property-based testing checks general invariants over many generated inputs rather than only hand-picked examples.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/contract-testing": {
+			"title": "Contract Testing: exercises",
+			"description": "15 exercises on Contract Testing: 10 questions that are checked for you and 5 written tasks. Contract testing verifies assumptions between service providers and consumers, such as request shapes, response semantics and event schemas.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/mutation-testing": {
+			"title": "Mutation Testing: exercises",
+			"description": "15 exercises on Mutation Testing: 10 questions that are checked for you and 5 written tasks. Mutation testing changes code in small controlled ways and checks whether the test suite detects those changes.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/static-analysis": {
+			"title": "Static Analysis: exercises",
+			"description": "15 exercises on Static Analysis: 10 questions that are checked for you and 5 written tasks. Static analysis inspects source or compiled representations without executing full application behavior.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/code-smells-and-refactoring": {
+			"title": "Code Smells & Refactoring: exercises",
+			"description": "15 exercises on Code Smells & Refactoring: 10 questions that are checked for you and 5 written tasks. Code smells are symptoms of possible design problems, not automatic proof that code is wrong.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/technical-debt-management": {
+			"title": "Technical Debt Management: exercises",
+			"description": "15 exercises on Technical Debt Management: 10 questions that are checked for you and 5 written tasks. Technical debt describes future engineering cost caused by design and implementation shortcuts or changing needs.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/ci-cd-principles": {
+			"title": "CI/CD Principles: exercises",
+			"description": "15 exercises on CI/CD Principles: 10 questions that are checked for you and 5 written tasks. Continuous Integration merges and validates changes frequently; Continuous Delivery keeps releases deployable; Continuous Deployment automatically releases changes passing defined gates.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/infrastructure-as-code-iac": {
+			"title": "Infrastructure as Code (IaC): exercises",
+			"description": "15 exercises on Infrastructure as Code (IaC): 10 questions that are checked for you and 5 written tasks. IaC defines infrastructure resources in version-controlled declarations or programs.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/immutable-infrastructure": {
+			"title": "Immutable Infrastructure: exercises",
+			"description": "15 exercises on Immutable Infrastructure: 10 questions that are checked for you and 5 written tasks. Immutable infrastructure replaces running instances with newly built images rather than patching them in place.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/blue-green-and-canary-deployment": {
+			"title": "Blue-Green & Canary Deployment: exercises",
+			"description": "15 exercises on Blue-Green & Canary Deployment: 10 questions that are checked for you and 5 written tasks. Blue-green deployment switches traffic between two complete environments; canary deployment gradually exposes a subset of traffic to a new version.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/observability-logs-metrics-and-traces": {
+			"title": "Observability: Logs, Metrics & Traces: exercises",
+			"description": "15 exercises on Observability: Logs, Metrics & Traces: 10 questions that are checked for you and 5 written tasks. Observability allows engineers to infer a system's internal state from emitted evidence.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/sli-slo-and-sla": {
+			"title": "SLI, SLO & SLA: exercises",
+			"description": "15 exercises on SLI, SLO & SLA: 10 questions that are checked for you and 5 written tasks. An SLI is a quantitative service reliability indicator; an SLO is a target for that indicator; an SLA is a contractual commitment, often with consequences.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/fault-tolerance": {
+			"title": "Fault Tolerance: exercises",
+			"description": "15 exercises on Fault Tolerance: 10 questions that are checked for you and 5 written tasks. Fault tolerance lets a system continue delivering acceptable behavior when components fail.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/scalability-vs-elasticity": {
+			"title": "Scalability vs Elasticity: exercises",
+			"description": "15 exercises on Scalability vs Elasticity: 10 questions that are checked for you and 5 written tasks. Scalability is the ability to handle more load by adding resources or optimizing design.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/load-balancing": {
+			"title": "Load Balancing: exercises",
+			"description": "15 exercises on Load Balancing: 10 questions that are checked for you and 5 written tasks. Load balancing distributes requests or work across instances to improve utilization, capacity and availability.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/disaster-recovery-rpo-and-rto": {
+			"title": "Disaster Recovery: RPO & RTO: exercises",
+			"description": "15 exercises on Disaster Recovery: RPO & RTO: 10 questions that are checked for you and 5 written tasks. Recovery Point Objective (RPO) is the maximum acceptable data-loss window; Recovery Time Objective (RTO) is the target time to restore service after a disruption.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/system-design-trade-offs": {
+			"title": "System Design Trade-offs: exercises",
+			"description": "15 exercises on System Design Trade-offs: 10 questions that are checked for you and 5 written tasks. System design is the deliberate choice among imperfect alternatives under explicit requirements.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/cost-benefit-analysis": {
+			"title": "Cost–Benefit Analysis: exercises",
+			"description": "15 exercises on Cost–Benefit Analysis: 10 questions that are checked for you and 5 written tasks. Cost–benefit analysis estimates whether expected business value justifies implementation, maintenance and risk.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/build-vs-buy": {
+			"title": "Build vs Buy: exercises",
+			"description": "15 exercises on Build vs Buy: 10 questions that are checked for you and 5 written tasks. Build-versus-buy asks whether a capability should be developed in-house, purchased as software or outsourced.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/conway-s-law": {
+			"title": "Conway's Law: exercises",
+			"description": "15 exercises on Conway's Law: 10 questions that are checked for you and 5 written tasks. Conway's Law observes that system designs tend to reflect the communication structures of the organizations creating them.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/brooks-s-law": {
+			"title": "Brooks's Law: exercises",
+			"description": "15 exercises on Brooks's Law: 10 questions that are checked for you and 5 written tasks. Brooks's Law warns that adding people to a late software project may make it later because onboarding and communication cost time.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/amdahl-s-law": {
+			"title": "Amdahl's Law: exercises",
+			"description": "15 exercises on Amdahl's Law: 10 questions that are checked for you and 5 written tasks. Amdahl's Law bounds the speedup of a workload when only part can be parallelized.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/little-s-law": {
+			"title": "Little's Law: exercises",
+			"description": "15 exercises on Little's Law: 10 questions that are checked for you and 5 written tasks. Little's Law relates long-run average number of items in a stable system, arrival/completion rate and average time in system: L equals lambda multiplied by W.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/pareto-principle": {
+			"title": "Pareto Principle: exercises",
+			"description": "15 exercises on Pareto Principle: 10 questions that are checked for you and 5 written tasks. The Pareto principle is a heuristic that a minority of causes often account for a majority of outcomes.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/theory-of-constraints": {
+			"title": "Theory of Constraints: exercises",
+			"description": "15 exercises on Theory of Constraints: 10 questions that are checked for you and 5 written tasks. The Theory of Constraints holds that overall throughput is limited by a small number of bottlenecks.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/architecture-decision-records-adr": {
+			"title": "Architecture Decision Records (ADR): exercises",
+			"description": "15 exercises on Architecture Decision Records (ADR): 10 questions that are checked for you and 5 written tasks. An ADR records an architectural choice, the context that motivated it, alternatives, consequences and status.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/specification-driven-development": {
+			"title": "Specification-Driven Development: exercises",
+			"description": "15 exercises on Specification-Driven Development: 10 questions that are checked for you and 5 written tasks. Specification-driven development starts with an explicit, testable description of required behavior before implementation.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/context-engineering": {
+			"title": "Context Engineering: exercises",
+			"description": "15 exercises on Context Engineering: 10 questions that are checked for you and 5 written tasks. Context engineering curates the information, tools and constraints available to an AI model for a task.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/prompt-engineering": {
+			"title": "Prompt Engineering: exercises",
+			"description": "15 exercises on Prompt Engineering: 10 questions that are checked for you and 5 written tasks. Prompt engineering structures instructions and examples to make model output more relevant, constrained and verifiable.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/agentic-workflows": {
+			"title": "Agentic Workflows: exercises",
+			"description": "15 exercises on Agentic Workflows: 10 questions that are checked for you and 5 written tasks. Agentic workflows let AI systems plan, call tools, modify artifacts and iterate toward a goal.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/human-in-the-loop-hitl": {
+			"title": "Human-in-the-Loop (HITL): exercises",
+			"description": "15 exercises on Human-in-the-Loop (HITL): 10 questions that are checked for you and 5 written tasks. Human-in-the-loop design requires a person to review or approve important AI decisions and actions.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/ai-code-review": {
+			"title": "AI Code Review: exercises",
+			"description": "15 exercises on AI Code Review: 10 questions that are checked for you and 5 written tasks. AI-generated code needs the same or stronger review as human-written code.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/ai-assisted-testing": {
+			"title": "AI-Assisted Testing: exercises",
+			"description": "15 exercises on AI-Assisted Testing: 10 questions that are checked for you and 5 written tasks. AI can accelerate test-case discovery, fixture creation and failure analysis, but generated tests still need an independent behavioral oracle.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/model-evaluation-and-benchmarking": {
+			"title": "Model Evaluation & Benchmarking: exercises",
+			"description": "15 exercises on Model Evaluation & Benchmarking: 10 questions that are checked for you and 5 written tasks. Model evaluation measures whether an AI system performs particular tasks reliably under relevant constraints.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/ai-security-and-prompt-injection": {
+			"title": "AI Security & Prompt Injection: exercises",
+			"description": "15 exercises on AI Security & Prompt Injection: 10 questions that are checked for you and 5 written tasks. Prompt injection occurs when untrusted content tries to redirect an AI system's instructions or tool use.",
+			"image": "/seo/practice.jpg"
+		},
+		"/practice/ai-generated-code-governance": {
+			"title": "AI-Generated Code Governance: exercises",
+			"description": "15 exercises on AI-Generated Code Governance: 10 questions that are checked for you and 5 written tasks. AI-generated code governance establishes policies for provenance, accountability, quality, security and licensing across AI-assisted delivery.",
+			"image": "/seo/practice.jpg"
+		},
+		"/privacy": {
+			"title": "Privacy",
+			"description": "How Coder handles practice answers and browsing data. Learn software architecture without an account.",
+			"image": "/seo/privacy.jpg"
+		},
+		"/licenses": {
+			"title": "Licenses and credits",
+			"description": "Software licensing and credits for the Coder architecture learning platform.",
+			"image": "/seo/licenses.jpg"
+		},
+		"/glossary": {
+			"title": "Developer glossary: 354 terms",
+			"description": "354 software development terms in 15 categories, explained in everyday language in English and Ukrainian: code, web, data, Git, architecture, testing, security, cloud and AI-assisted development.",
+			"image": "/seo/theory.jpg"
+		}
+	},
+	"logo": "/logo.png"
+}

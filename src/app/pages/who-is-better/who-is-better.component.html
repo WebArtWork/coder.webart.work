@@ -1,0 +1,51 @@
+<app-practice-layout
+	title="Who is better?"
+	[loading]="flow.loading()"
+	[failed]="flow.failed()"
+	[empty]="flow.empty() || !flow.item()"
+	[reviewing]="flow.reviewing()"
+	[strip]="flow.strip()"
+	(reload)="flow.start()"
+>
+	@if (flow.item(); as item) {
+		<div panel class="flex flex-col gap-3" [attr.data-item]="item.id">
+			@if (flow.outcome(); as outcome) {
+				<app-practice-result [outcome]="outcome" [game]="item.game" [ply]="item.ply" [reviewing]="flow.reviewing()" (next)="next()" (retry)="retry()">
+					<p class="text-sm">
+						{{ verdict() | t }}: <span class="font-medium">{{ score() }}</span>
+						<span class="text-mute">({{ 'engine score, White’s point of view' | t }})</span>
+					</p>
+					@if (imbalances().length) {
+						<div class="text-sm">
+							<p class="font-medium">{{ 'Imbalances, the main one first:' | t }}</p>
+							<ul class="mt-1 list-disc pl-5">
+								@for (imbalance of imbalances(); track $index) {
+									<li>{{ imbalance.text }} — {{ imbalance.side }}</li>
+								}
+							</ul>
+						</div>
+					}
+					<p class="text-xs text-mute">{{ 'Rating {rating}' | t: { rating: item.rating } }} · {{ item.opening }}</p>
+				</app-practice-result>
+			} @else {
+				<section class="ds-card gap-3 p-4">
+					<div>
+						<p class="text-lg font-semibold">{{ 'Who is better here?' | t }}</p>
+						<p class="text-sm text-mute">
+							{{ (item.side === 'white' ? 'White to move.' : 'Black to move.') | t }}
+							{{ 'Count material, then look at pawns, pieces and kings.' | t }}
+						</p>
+					</div>
+					<div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
+						@for (choice of choices; track choice.value) {
+							<button class="ds-btn ds-btn-outline" type="button" (click)="choose(choice.value)">{{ choice.label | t }}</button>
+						}
+					</div>
+				</section>
+			}
+		</div>
+	}
+	@if (flow.item(); as item) {
+		<app-board board [fen]="item.fen" [orientation]="item.side" [interactive]="false" />
+	}
+</app-practice-layout>

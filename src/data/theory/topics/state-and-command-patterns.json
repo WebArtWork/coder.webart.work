@@ -1,0 +1,63 @@
+{
+	"slug": "state-and-command-patterns",
+	"en": {
+		"idea": [
+			"State delegates behavior according to an object's current lifecycle state; Command packages an action as an object or message. They are useful for explicit workflows and replayable or undoable intentions."
+		],
+		"how": [
+			"With State, define allowed transitions and behavior per state. With Command, specify inputs, execution boundaries, authorization and compensation. Commands are intentions and may fail; they are not evidence an event already happened."
+		],
+		"example": [
+			"A reservation can be Pending, Confirmed, CheckedIn, or Cancelled, each allowing different operations. A CancelReservation command records the requested action and triggers a transition only after validation."
+		],
+		"tradeoffs": [
+			"State classes are unnecessary for trivial two-state toggles; a transition table may suffice. Command queues need idempotency and audit; undo may require compensation rather than simple reversal."
+		],
+		"brief": "Have an agent model a reservation transition matrix and implement cancel and confirm commands. Reject invalid transitions, test concurrent commands, and describe any undo semantics.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"What prevents two valid-looking commands from producing an invalid combined state?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "Refactoring Guru — patterns",
+				"url": "https://refactoring.guru/design-patterns"
+			},
+			{
+				"title": "Patterns of Enterprise Application Architecture",
+				"url": "https://martinfowler.com/books/eaa.html"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"State делегує поведінку відповідно до стану життєвого циклу; Command пакує дію в об’єкт або повідомлення. Вони корисні для явних процесів, чергування та undo."
+		],
+		"how": [
+			"У State визначайте дозволені переходи й поведінку кожного стану. У Command — входи, межу виконання, авторизацію та компенсацію. Команда — намір, який може завершитися помилкою, а не факт події."
+		],
+		"example": [
+			"Бронювання може бути Pending, Confirmed, CheckedIn або Cancelled, і кожен стан дозволяє різні операції. Команда CancelReservation фіксує намір і змінює стан лише після перевірки."
+		],
+		"tradeoffs": [
+			"Класи State зайві для простого перемикача з двома станами; іноді достатньо таблиці переходів. Чергам команд потрібні ідемпотентність і аудит; undo часом означає компенсацію, а не зворотний виклик."
+		],
+		"brief": "Попросіть агента побудувати матрицю переходів бронювання та команди cancel і confirm. Забороніть недійсні переходи, перевірте конкуренцію й опишіть undo.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Що заважає двом окремо коректним командам разом створити некоректний стан?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

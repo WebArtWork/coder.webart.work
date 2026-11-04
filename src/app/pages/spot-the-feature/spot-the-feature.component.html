@@ -1,0 +1,39 @@
+<app-practice-layout
+	title="Spot the feature"
+	[loading]="flow.loading()"
+	[failed]="flow.failed()"
+	[empty]="flow.empty() || !flow.item()"
+	[reviewing]="flow.reviewing()"
+	[strip]="flow.strip()"
+	(reload)="flow.start()"
+>
+	@if (flow.item(); as item) {
+		<div panel class="flex flex-col gap-3" [attr.data-item]="item.id">
+			@if (flow.outcome(); as outcome) {
+				<app-practice-result [outcome]="outcome" [game]="item.game" [ply]="item.ply" [reviewing]="flow.reviewing()" (next)="flow.next()" (retry)="flow.retry()">
+					<p class="text-sm">{{ 'Answer:' | t }} <span class="font-medium">{{ answerText() }}</span></p>
+					<p class="text-sm text-mute">{{ rule() | t }}</p>
+					<p class="text-xs text-mute">{{ 'Rating {rating}' | t: { rating: item.rating } }} · {{ item.opening }}</p>
+				</app-practice-result>
+			} @else {
+				<section class="ds-card gap-3 p-4">
+					<div>
+						<p class="text-lg font-semibold">{{ task() }}</p>
+						<p class="text-sm text-mute">{{ 'To find: {count}. Tap again to undo.' | t: { count: item.answers.length } }}</p>
+					</div>
+					<details class="text-sm">
+						<summary class="cursor-pointer text-mute">{{ 'What counts?' | t }}</summary>
+						<p class="mt-1">{{ rule() | t }}</p>
+					</details>
+					<div class="flex flex-wrap gap-2">
+						<button class="ds-btn ds-btn-primary" type="button" [disabled]="!picks().length" (click)="check()">{{ 'Check' | t }}</button>
+						<button class="ds-btn ds-btn-ghost" type="button" [disabled]="!picks().length" (click)="picks.set([])">{{ 'Clear' | t }}</button>
+					</div>
+				</section>
+			}
+		</div>
+	}
+	@if (flow.item(); as item) {
+		<app-board board [fen]="item.fen" [orientation]="item.side" [interactive]="false" [tapMode]="!flow.outcome()" [marks]="marks()" (tapped)="tap($event)" />
+	}
+</app-practice-layout>

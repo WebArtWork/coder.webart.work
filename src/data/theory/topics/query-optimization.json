@@ -1,0 +1,63 @@
+{
+	"slug": "query-optimization",
+	"en": {
+		"idea": [
+			"Query optimization reduces database resource use and latency while preserving semantics. It requires understanding actual query plans, cardinality estimates and access patterns rather than relying only on prettier SQL."
+		],
+		"how": [
+			"Use EXPLAIN and measured traces; identify full scans, expensive sorts, N+1 ORM queries and unnecessary columns. Optimize the largest bottleneck first, then benchmark with realistic data volume and concurrency."
+		],
+		"example": [
+			"A guest list page issuing one query per booking can be changed to a batched join or prefetch. Verify that pagination and permissions still behave correctly after the change."
+		],
+		"tradeoffs": [
+			"Faster SQL can accidentally alter duplicates, ordering or transaction semantics. A cache may conceal bad plans; test at expected production scale rather than on ten rows."
+		],
+		"brief": "Have an agent benchmark a slow reservation report, submit before/after plans and row counts, and add tests protecting output semantics.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"What evidence proves the bottleneck is in the database rather than network or serialization?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "PostgreSQL documentation",
+				"url": "https://www.postgresql.org/docs/current/"
+			},
+			{
+				"title": "MongoDB documentation",
+				"url": "https://www.mongodb.com/docs/manual/"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"Оптимізація запитів зменшує ресурси й затримку БД, зберігаючи семантику. Потрібно розуміти реальні плани виконання, оцінки кардинальності й шаблони доступу, а не лише «красивий SQL»."
+		],
+		"how": [
+			"Використовуйте EXPLAIN та виміряні трасування; знаходьте full scan, дорогі sort, N+1 ORM-запити й зайві колонки. Спершу оптимізуйте головне вузьке місце, далі тестуйте на реальних обсягах і конкуренції."
+		],
+		"example": [
+			"Сторінка гостей із додатковим запитом на кожне бронювання може перейти на batch join або prefetch. Після зміни перевірте пагінацію та права доступу."
+		],
+		"tradeoffs": [
+			"Швидший SQL може випадково змінити дублікати, порядок або транзакційну семантику. Кеш приховує погані плани; тестуйте на обсягах production, а не на десяти рядках."
+		],
+		"brief": "Попросіть агента заміряти повільний звіт, показати плани до/після й кількості рядків та додати тести незмінності результату.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Які факти доводять, що вузьке місце в БД, а не в мережі чи серіалізації?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

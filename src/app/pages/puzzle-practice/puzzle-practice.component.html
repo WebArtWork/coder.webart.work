@@ -1,0 +1,106 @@
+<!--
+	Phones: the board is pinned above the footer and everything else scrolls above it.
+	Large screens: board on the left, puzzle panel on the right.
+-->
+<section
+	class="mx-auto flex h-full w-full max-w-[72rem] flex-col lg:grid lg:h-full lg:grid-cols-[minmax(0,34rem)_1fr] lg:grid-rows-[minmax(0,1fr)] lg:items-stretch lg:gap-8 lg:px-6 lg:pb-4 lg:pt-3"
+>
+	<h1 class="sr-only">{{ title | t }}</h1>
+
+	@if (loading() && !current()) {
+		<div class="mx-auto my-auto aspect-square w-[min(100%,46dvh)] animate-pulse bg-soft sm:rounded-xl lg:w-[min(100%,calc(100dvh-8.5rem))]" role="status" [attr.aria-label]="'Loading puzzle' | t"></div>
+	} @else if (failed() || !current()) {
+		<div class="ds-card m-4 items-start gap-3 p-5 lg:col-span-2 lg:m-0">
+			<p>{{ 'Could not load a puzzle. Check your connection and try again.' | t }}</p>
+			<button class="ds-btn ds-btn-primary" type="button" (click)="next()">{{ 'Try again' | t }}</button>
+		</div>
+	} @else {
+		@let shown = current()!;
+		@let attempt = run()!;
+		@let result = outcome();
+
+		<div class="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 pb-2 pt-[3px] lg:order-2 lg:overflow-y-auto lg:p-0">
+			<div class="flex flex-col gap-3" [attr.data-puzzle]="shown.id">
+				<!-- Rating, streak and this visit's results -->
+				<div class="flex items-center justify-between gap-3">
+					<p class="flex items-baseline gap-2">
+						<span class="text-sm text-mute">{{ 'Your rating' | t }}</span>
+						<span class="text-xl font-semibold tracking-tight">{{ player.progress().rating }}{{ player.provisional() ? '?' : '' }}</span>
+						@if (stats().streak > 1) {
+							<span class="text-sm text-mute">· {{ '{count} in a row' | t: { count: stats().streak } }}</span>
+						}
+					</p>
+					@if (strip().length) {
+						<ol class="flex gap-1" [attr.aria-label]="'Results this session' | t">
+							@for (solved of strip(); track $index) {
+								<li class="size-3 rounded-sm" [class]="solved ? 'bg-ok' : 'bg-danger'">
+									<span class="sr-only">{{ (solved ? 'Solved' : 'Missed') | t }}</span>
+								</li>
+							}
+						</ol>
+					}
+				</div>
+
+				@if (type() === 'endgame') {
+					<div class="flex flex-wrap gap-1.5" role="group" [attr.aria-label]="'Endgame type' | t">
+						@for (choice of endgameChoices; track choice.value) {
+							<button class="ds-chip" type="button" [attr.aria-pressed]="endgame() === choice.value" (click)="chooseEndgame(choice.value)">
+								{{ choice.label | t }}
+							</button>
+						}
+					</div>
+				}
+
+				@if (result) {
+					<section class="ds-card gap-3 p-4" aria-live="polite">
+						<div class="flex items-center justify-between gap-3">
+							<p class="text-lg font-semibold">{{ (result.solved ? 'Correct' : 'Incorrect') | t }}</p>
+							<span class="flex gap-1.5">
+								@if (result.pawns) {
+									<span class="ds-badge">+{{ result.pawns }} ♟</span>
+								}
+								@if (result.delta === null) {
+									<span class="ds-badge">{{ (result.retry ? 'Retry, not rated' : 'Played before, not rated') | t }}</span>
+								} @else {
+									<span class="ds-badge" [class]="result.delta >= 0 ? 'ds-badge-safe' : 'ds-badge-danger'">
+										{{ result.delta >= 0 ? '+' : '' }}{{ result.delta }}
+									</span>
+								}
+							</span>
+						</div>
+						@if (attempt.line?.alternative(); as alternative) {
+							<p class="text-sm">{{ '{move} works too. The line was: {line}' | t: { move: alternative, line: solution() } }}</p>
+						} @else {
+							<p class="text-sm">{{ 'Solution:' | t }} <span class="font-medium">{{ solution() }}</span></p>
+						}
+						<p class="text-xs text-mute">{{ 'Puzzle rating {rating}' | t: { rating: shown.puzzle.rating } }} · {{ details() }}</p>
+						<div class="flex flex-wrap gap-2">
+							<button #nextButton class="ds-btn ds-btn-primary" type="button" (click)="next()">{{ (reviewing() ? 'Next review' : 'Next puzzle') | t }}</button>
+							@if (!result.solved) {
+								<button class="ds-btn ds-btn-outline" type="button" (click)="retry()">{{ 'Retry' | t }}</button>
+							}
+						</div>
+					</section>
+				} @else {
+					<section class="ds-card gap-1 p-4">
+						<p class="text-lg font-semibold">{{ side() | t }}</p>
+						<p class="text-sm text-mute" role="status">{{ (progress() ?? task()) | t }}</p>
+					</section>
+				}
+			</div>
+		</div>
+
+		<div class="shrink-0 pb-2 lg:order-1 lg:self-start lg:pb-0">
+			<div class="mx-auto w-[min(100%,46dvh)] lg:mx-0 lg:w-[min(100%,calc(100dvh-8.5rem))]">
+				<app-board
+					[fen]="attempt.fen()"
+					[orientation]="shown.puzzle.side"
+					[interactive]="attempt.interactive() && !loading()"
+					[arrows]="attempt.arrows()"
+					[lastMove]="attempt.lastMove()"
+					(moved)="onMove($event)"
+				/>
+			</div>
+		</div>
+	}
+</section>

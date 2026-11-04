@@ -1,0 +1,64 @@
+<app-practice-layout
+	title="Sound sacrifice?"
+	[loading]="flow.loading()"
+	[failed]="flow.failed()"
+	[empty]="flow.empty() || !flow.item()"
+	[reviewing]="flow.reviewing()"
+	[strip]="flow.strip()"
+	(reload)="flow.start()"
+>
+	@if (flow.item(); as item) {
+		<div panel class="flex flex-col gap-3" [attr.data-item]="item.id">
+			@if (flow.outcome(); as outcome) {
+				<app-practice-result [outcome]="outcome" [game]="item.game" [ply]="item.ply" [reviewing]="flow.reviewing()" (next)="flow.next()" (retry)="flow.retry()">
+					<p class="text-sm">
+						<span class="font-medium">{{ '{move}: {verdict}.' | t: { move: item.san, verdict: (verdict()?.label ?? '' | t) } }}</span>
+						{{ verdict()?.detail ?? '' | t }}
+					</p>
+					<p class="text-sm text-mute">
+						{{ 'Engine score after {move}: {score}; with the best move, {best}: {bestScore}.' | t: { move: item.san, score: scores().move, best: item.best.san, bestScore: scores().best } }}
+					</p>
+					<p class="text-sm">
+						{{ (replied() ? 'Your reply was right.' : 'Your reply was not the critical one.') | t }}
+						{{ 'Best replies:' | t }} <span class="font-medium">{{ replySans() }}</span>
+					</p>
+					<p class="text-xs text-mute">{{ 'Rating {rating}' | t: { rating: item.rating } }} · {{ item.opening }}</p>
+				</app-practice-result>
+			} @else {
+				<section class="ds-card gap-3 p-4">
+					@switch (step()) {
+						@case ('judge') {
+							<div>
+								<p class="text-lg font-semibold">{{ '{move} gives up material. Is it sound?' | t: { move: item.san } }}</p>
+								<p class="text-sm text-mute">{{ 'Step 1 of 2. Judge it before you calculate the replies.' | t }}</p>
+							</div>
+							<div class="grid grid-cols-1 gap-2 sm:grid-cols-3">
+								@for (choice of verdicts; track choice.value) {
+									<button class="ds-btn ds-btn-outline" type="button" (click)="judge(choice.value)">{{ choice.label | t }}</button>
+								}
+							</div>
+						}
+						@case ('reply') {
+							<p class="text-lg font-semibold">{{ 'Step 2 of 2. Now answer it.' | t }}</p>
+							<p class="text-sm text-mute" role="status">{{ 'Play the best reply for the side that has to deal with the sacrifice.' | t }}</p>
+						}
+						@default {
+							<p class="text-sm text-mute" role="status">{{ 'Checking your move…' | t }}</p>
+						}
+					}
+				</section>
+			}
+		</div>
+	}
+	@if (flow.item(); as item) {
+		<app-board
+			board
+			[fen]="fen()"
+			[orientation]="item.side"
+			[interactive]="step() === 'reply'"
+			[arrows]="arrows()"
+			[lastMove]="last()"
+			(moved)="onMove($event)"
+		/>
+	}
+</app-practice-layout>

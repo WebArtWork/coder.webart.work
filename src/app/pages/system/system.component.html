@@ -1,0 +1,200 @@
+@if (system(); as item) {
+	<section class="py-6">
+		<div class="flex flex-wrap items-end justify-between gap-4">
+			<div class="min-w-0 flex-1">
+				<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand"><a class="no-underline" routerLink="/systems">{{ 'Systems' | t }}</a></p>
+				<label class="sr-only" for="system-title">{{ 'Name of the system' | t }}</label>
+				<input
+					id="system-title"
+					class="mt-2 w-full max-w-xl rounded-lg border border-transparent bg-transparent px-2 py-1 text-2xl font-semibold hover:border-line focus:border-brand"
+					type="text"
+					maxlength="80"
+					[value]="item.name"
+					(change)="rename($any($event.target).value)"
+				/>
+			</div>
+			<div class="flex flex-wrap items-center gap-2">
+				<p class="text-sm text-mute" role="status">{{ 'Components: {nodes}, connections: {links}' | t: { nodes: item.nodes.length, links: item.links.length } }}</p>
+				<button class="ds-btn ds-btn-outline" type="button" [disabled]="!hasSelection()" (click)="removeSelected()">{{ 'Remove selected' | t }}</button>
+				<button class="ds-btn ds-btn-outline" type="button" [disabled]="!item.nodes.length" (click)="fit()">{{ 'Fit to screen' | t }}</button>
+			</div>
+		</div>
+
+		@if (challenge(); as work) {
+			<details class="mt-4 rounded-xl border border-brand/25 bg-brand/5 p-5" open>
+				<summary id="challenge-title" class="cursor-pointer font-semibold text-brand">
+					{{ 'Challenge' | t }}: {{ pick(work.title, language()) }} · {{ typeLabels[work.type] | t }}
+				</summary>
+				<p class="mt-3 text-sm leading-relaxed text-fg">{{ pick(work.scenario, language()) }}</p>
+				<div class="mt-4 grid gap-6 text-sm md:grid-cols-2">
+					<div>
+						<h3 class="font-semibold">{{ 'Tasks' | t }}</h3>
+						<ol class="mt-2 flex list-decimal flex-col gap-1.5 pl-5 text-fg/80 marker:text-mute">
+							@for (task of work.tasks[code()]; track $index) {
+								<li>{{ task }}</li>
+							}
+						</ol>
+					</div>
+					<div>
+						<h3 class="font-semibold">{{ 'What to check in your answer' | t }}</h3>
+						<ul class="mt-2 flex flex-col gap-2">
+							@for (check of work.checks; track $index; let index = $index) {
+								<li>
+									<label class="flex cursor-pointer gap-2.5 leading-relaxed text-fg/80">
+										<input class="mt-1 shrink-0 accent-[var(--primary)]" type="checkbox" [checked]="checks().includes(index)" (change)="toggleCheck(index)" />
+										<span>{{ pick(check, language()) }}</span>
+									</label>
+								</li>
+							}
+						</ul>
+						<p class="mt-2 text-xs text-mute" role="status">{{ '{done} of {total} checked' | t: { done: checks().length, total: work.checks.length } }}</p>
+					</div>
+				</div>
+				<label class="mt-4 block text-sm font-semibold" for="system-adr">{{ 'Decision record (ADR): context, choice, alternatives, trade-offs' | t }}</label>
+				<textarea
+					id="system-adr"
+					class="mt-2 min-h-32 w-full rounded-lg border border-line bg-bg p-3 text-sm leading-relaxed placeholder:text-mute"
+					[placeholder]="'Write your decision record here' | t"
+					[value]="item.adr ?? ''"
+					(change)="saveAdr($any($event.target).value)"
+				></textarea>
+			</details>
+		}
+
+		@if (template(); as info) {
+			<details class="mt-4 rounded-xl border border-line bg-card px-4 py-3">
+				<summary class="cursor-pointer text-sm font-medium">{{ 'About this template' | t }}: {{ pick(info.name, language()) }}</summary>
+				<p class="mt-3 text-sm text-fg/80">{{ info.purpose }}</p>
+				<div class="mt-3 grid gap-4 text-sm md:grid-cols-2">
+					<div>
+						<h2 class="font-semibold">{{ 'Design decisions' | t }}</h2>
+						<ul class="mt-2 flex list-disc flex-col gap-1.5 pl-5 text-fg/80 marker:text-mute">
+							@for (decision of info.decisions; track $index) {
+								<li>{{ decision }}</li>
+							}
+						</ul>
+					</div>
+					<div>
+						<h2 class="font-semibold">{{ 'Questions to ask yourself' | t }}</h2>
+						<ul class="mt-2 flex list-disc flex-col gap-1.5 pl-5 text-fg/80 marker:text-mute">
+							@for (question of info.questions; track $index) {
+								<li>{{ question }}</li>
+							}
+						</ul>
+					</div>
+				</div>
+			</details>
+		}
+
+		<div class="mt-5 grid gap-4 lg:grid-cols-[18rem_minmax(0,1fr)]">
+			<aside class="flex max-h-[70vh] flex-col rounded-xl border border-line bg-card" [attr.aria-label]="'Lessons' | t">
+				<div class="border-b border-line p-3">
+					<p class="text-sm font-semibold">{{ 'Lessons' | t }}</p>
+					<p class="mt-1 text-xs text-mute">{{ 'Drag a lesson onto the canvas, or press +.' | t }}</p>
+					<label class="sr-only" for="system-search">{{ 'Search lessons' | t }}</label>
+					<input
+						id="system-search"
+						class="mt-3 w-full rounded-lg border border-line bg-bg px-3 py-2 text-sm placeholder:text-mute"
+						type="search"
+						autocomplete="off"
+						[placeholder]="'Search lessons' | t"
+						[value]="query()"
+						(input)="query.set($any($event.target).value)"
+					/>
+				</div>
+				<div class="overflow-y-auto p-2">
+					@for (module of modules(); track module.slug) {
+						<details class="mb-1" [open]="!!query()">
+							<summary class="cursor-pointer rounded-lg px-2 py-2 text-sm font-medium hover:bg-soft">{{ pick(module.title, language()) }}</summary>
+							<ul class="mb-2 mt-1 flex flex-col gap-1.5 pl-1">
+								@for (topic of module.topics; track topic.slug) {
+									<li class="flex items-stretch gap-1.5">
+										<div
+											class="min-w-0 flex-1 cursor-grab rounded-lg border border-line bg-bg px-3 py-2 text-sm leading-snug"
+											fExternalItem
+											[fExternalItemId]="topic.slug"
+											[fData]="topic.slug"
+											[fPreviewMatchSize]="false"
+										>
+											{{ pick(topic.title, language()) }}
+										</div>
+										<button
+											class="ds-btn ds-btn-outline w-9 shrink-0 !p-0"
+											type="button"
+											[attr.aria-label]="'Add {title}' | t: { title: pick(topic.title, language()) }"
+											(click)="add(topic.slug)"
+										>
+											+
+										</button>
+									</li>
+								}
+							</ul>
+						</details>
+					} @empty {
+						<p class="p-3 text-sm text-mute">{{ 'No lessons match your search.' | t }}</p>
+					}
+				</div>
+			</aside>
+
+			<div class="relative h-[70vh] min-h-96 overflow-hidden rounded-xl border border-line bg-card">
+				@if (!item.nodes.length) {
+					<p class="pointer-events-none absolute inset-0 z-10 flex items-center justify-center p-6 text-center text-mute">
+						{{ 'The canvas is empty. Drag a lesson here to start.' | t }}
+					</p>
+				}
+				<f-flow class="system-flow" fDraggable (fCreateNode)="onDrop($event)" (fMoveNodes)="move($event)" (fCreateConnection)="connect($event)" (fSelectionChange)="select($event)" (fFullRendered)="fit()">
+					<f-background>
+						<f-circle-pattern />
+					</f-background>
+					<f-canvas fZoom>
+						<f-connection-for-create />
+						<ng-container ngProjectAs="[fConnections]">
+							@for (link of item.links; track link.id) {
+								<f-connection [fConnectionId]="link.id" [fSourceId]="'out-' + link.from" [fTargetId]="'in-' + link.to" fType="bezier">
+									@if (link.label) {
+										<div class="system-link-label" fConnectionContent>{{ link.label }}</div>
+									}
+								</f-connection>
+							}
+						</ng-container>
+						<ng-container ngProjectAs="[fGroups]">
+							@for (group of groups(); track group.id) {
+								<div class="system-group" fGroup fDragHandle [fGroupId]="group.id" [fGroupPosition]="group.position" [fGroupSize]="group.size">
+									<p class="system-group-title">{{ group.label }}</p>
+								</div>
+							}
+						</ng-container>
+						<ng-container ngProjectAs="[fNodes]">
+							@for (node of nodes(); track node.id) {
+								<div
+									class="system-node"
+									[class.system-node-part]="!node.slug"
+									fNode
+									fDragHandle
+									[fNodeId]="node.id"
+									[fNodePosition]="node.position"
+									[fNodeParentId]="node.parentId"
+								>
+									<div fConnector fConnectorType="target" [fConnectorId]="'in-' + node.id" [fConnectorMultiple]="true" class="system-port system-port-in"></div>
+									<p class="text-xs uppercase tracking-wider text-mute">{{ node.module }}</p>
+									<p class="mt-1 font-semibold leading-snug">{{ node.title }}</p>
+									<div class="mt-2 flex flex-wrap items-center gap-1.5 text-sm">
+										@if (node.slug) {
+											<a class="text-brand" fDragBlocker [routerLink]="['/theory', node.slug]" target="_blank">{{ 'Open lesson' | t }}</a>
+										} @else {
+											@for (lesson of node.lessons; track lesson.slug) {
+												<a class="rounded-md border border-line px-1.5 text-xs text-brand" fDragBlocker [routerLink]="['/theory', lesson.slug]" target="_blank" [attr.title]="lesson.title">{{ lesson.number }}</a>
+											}
+										}
+										<button class="ml-auto text-mute hover:text-danger" type="button" fDragBlocker [attr.aria-label]="'Remove {title}' | t: { title: node.title }" (click)="removeNode(node.id)">×</button>
+									</div>
+									<div fConnector fConnectorType="source" [fConnectorId]="'out-' + node.id" [fConnectorMultiple]="true" class="system-port system-port-out"></div>
+								</div>
+							}
+						</ng-container>
+					</f-canvas>
+				</f-flow>
+			</div>
+		</div>
+	</section>
+}

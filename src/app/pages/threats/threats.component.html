@@ -1,0 +1,61 @@
+<app-practice-layout
+	title="What’s the threat?"
+	[loading]="flow.loading()"
+	[failed]="flow.failed()"
+	[empty]="flow.empty() || !flow.item()"
+	[reviewing]="flow.reviewing()"
+	[strip]="flow.strip()"
+	(reload)="flow.start()"
+>
+	@if (flow.item(); as item) {
+		<div panel class="flex flex-col gap-3" [attr.data-item]="item.id">
+			@if (flow.outcome(); as outcome) {
+				<app-practice-result
+					[outcome]="outcome"
+					[game]="item.game"
+					[ply]="item.ply"
+					[reviewing]="flow.reviewing()"
+					(next)="flow.next()"
+					(retry)="flow.retry()"
+				>
+					<p class="text-sm">
+						{{ (threatFound() ? 'You saw the threat.' : 'You missed the threat.') | t }}
+						{{ (answerGood() ? 'Your move deals with it.' : 'Your move does not deal with it.') | t }}
+					</p>
+					<p class="text-sm">{{ 'The threat:' | t }} <span class="font-medium">{{ threatLine() }}</span></p>
+					<p class="text-sm">{{ 'Good answers:' | t }} <span class="font-medium">{{ answerSans() }}</span></p>
+					<p class="text-xs text-mute">{{ 'Rating {rating}' | t: { rating: item.rating } }} · {{ item.opening }}</p>
+				</app-practice-result>
+			} @else {
+				<section class="ds-card gap-1 p-4">
+					<p class="text-lg font-semibold">{{ (item.side === 'white' ? 'White to move' : 'Black to move') | t }}</p>
+					<p class="text-sm text-mute" role="status">
+						@switch (step()) {
+							@case ('threat') {
+								{{ 'Step 1 of 2. If it were your opponent’s move again, what would they play? Play their threat on the board.' | t }}
+							}
+							@case ('answer') {
+								{{ (threatFound() ? 'Right, that is the threat ({move}).' : 'Not quite: the threat is {move}.') | t: { move: threatSan() } }}
+								{{ 'Step 2 of 2. Now play a move that deals with it.' | t }}
+							}
+							@default {
+								{{ 'Checking your move…' | t }}
+							}
+						}
+					</p>
+				</section>
+			}
+		</div>
+	}
+	@if (flow.item(); as item) {
+		<app-board
+			board
+			[fen]="fen()"
+			[orientation]="item.side"
+			[interactive]="step() === 'threat' || step() === 'answer'"
+			[arrows]="arrows()"
+			[lastMove]="last()"
+			(moved)="onMove($event)"
+		/>
+	}
+</app-practice-layout>

@@ -1,0 +1,53 @@
+<app-practice-layout
+	title="Chess basics"
+	[loading]="flow.loading()"
+	[failed]="flow.failed()"
+	[empty]="flow.empty() || !flow.item()"
+	[reviewing]="flow.reviewing()"
+	[strip]="flow.strip()"
+	(reload)="flow.start()"
+>
+	@if (flow.item(); as item) {
+		<div panel class="flex flex-col gap-3" [attr.data-item]="item.id">
+			@if (!flow.reviewing()) {
+				<div class="flex flex-wrap gap-1.5" role="group" [attr.aria-label]="'Topic' | t">
+					@for (choice of topics; track choice.value) {
+						<button class="ds-chip" type="button" [attr.aria-pressed]="topic() === choice.value" (click)="pickTopic(choice.value)">
+							{{ choice.label | t }}
+						</button>
+					}
+				</div>
+			}
+
+			@if (flow.outcome(); as outcome) {
+				<app-practice-result [outcome]="outcome" [reviewing]="flow.reviewing()" (next)="next()" (retry)="retry()">
+					<p class="text-sm">{{ question() }}</p>
+					@if (chosen() !== null && !outcome.solved) {
+						<p class="text-sm">{{ 'Your answer:' | t }} <span class="font-medium">{{ label(item, item.choices[chosen()!]) }}</span></p>
+					}
+					<p class="text-sm">{{ 'Answer:' | t }} <span class="font-medium">{{ answerText() }}</span></p>
+					<p class="text-sm text-mute">{{ item.explain | t }}</p>
+				</app-practice-result>
+			} @else {
+				<section class="ds-card gap-3 p-4">
+					<p class="text-lg font-semibold">{{ question() }}</p>
+					<div class="grid gap-2" [class]="item.literal ? 'grid-cols-2' : 'grid-cols-1'">
+						@for (choice of item.choices; track $index) {
+							<button
+								class="ds-btn ds-btn-outline h-auto whitespace-normal py-2.5"
+								[class]="item.literal ? 'font-mono text-base' : 'justify-start text-left'"
+								type="button"
+								(click)="choose($index)"
+							>
+								{{ label(item, choice) }}
+							</button>
+						}
+					</div>
+				</section>
+			}
+		</div>
+	}
+	@if (flow.item(); as item) {
+		<app-board board [fen]="item.fen" [orientation]="item.side" [interactive]="false" [marks]="marks()" [arrows]="arrows()" />
+	}
+</app-practice-layout>

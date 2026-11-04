@@ -1,0 +1,142 @@
+<section class="mx-auto flex w-full max-w-[72rem] flex-col gap-8 px-4 pb-8 pt-4 sm:px-6 lg:h-full lg:gap-2 lg:pb-4 lg:pt-2">
+	<div>
+		<h1 class="text-xl font-semibold tracking-tight">{{ 'Learn to architect better software' | t }}</h1>
+		<p class="mt-0.5 text-sm text-mute">{{ 'Understand project structure, module boundaries and the decisions behind better software.' | t }}</p>
+	</div>
+
+	<div class="grid gap-8 lg:min-h-0 lg:flex-1 lg:grid-cols-[1fr_1fr_1.4fr] lg:content-start lg:items-start lg:gap-x-6 lg:gap-y-4 lg:overflow-y-auto">
+		<div class="flex flex-col gap-8 lg:contents">
+			@if (todayPlan(); as plan) {
+				<section class="ds-card gap-4 p-5 lg:col-start-1 lg:row-start-1" aria-labelledby="today-title">
+					<div>
+						<h2 id="today-title" class="text-xl font-semibold tracking-tight">{{ 'Today: {title}' | t: { title: (plan.title | t) } }}</h2>
+						<p class="mt-1 text-mute">{{ plan.detail | t }}</p>
+					</div>
+
+					<ol class="flex flex-col gap-3">
+						<li class="flex items-center justify-between gap-3">
+							<span>
+								<span class="block font-medium">{{ 'Daily puzzle' | t }}</span>
+								<span class="text-sm text-mute">
+									@if (dailyResult(); as result) {
+										{{ result }}. {{ 'A new puzzle tomorrow.' | t }}
+									} @else {
+										{{ '{n} min' | t: { n: dailyMinutes } }}
+									}
+								</span>
+							</span>
+							@if (dailyDone()) {
+								<span class="ds-badge ds-badge-safe">
+									<app-icon name="check" />
+									{{ 'Done' | t }}
+								</span>
+							} @else {
+								<a class="ds-btn ds-btn-primary" routerLink="/practice/daily">{{ 'Play' | t }}</a>
+							}
+						</li>
+						<li class="flex items-center justify-between gap-3">
+							<span>
+								<span class="block font-medium">{{ plan.title | t }}</span>
+								<span class="text-sm text-mute">{{ '{n} min' | t: { n: plan.minutes } }}</span>
+							</span>
+							<a
+								class="ds-btn"
+								[class]="dailyDone() ? 'ds-btn-primary' : 'ds-btn-outline'"
+								[routerLink]="plan.path"
+								[queryParams]="plan.query"
+							>
+								{{ plan.action | t }}
+							</a>
+						</li>
+					</ol>
+				</section>
+			}
+
+			<section class="flex flex-col gap-4 lg:col-start-2 lg:row-span-2 lg:row-start-1" aria-labelledby="progress-title">
+				<div class="flex items-center gap-2">
+					<h2 id="progress-title" class="text-base font-semibold">{{ 'Last 7 days' | t }}</h2>
+					@if (isGuest()) {
+						<span class="ds-badge">{{ 'Sample data' | t }}</span>
+					}
+				</div>
+
+				@if (progress(); as p) {
+					<ol class="grid grid-cols-7 gap-2" [attr.aria-label]="'Daily results' | t">
+						@for (day of p.days; track day.date) {
+							<li class="flex flex-col items-center gap-1.5">
+								<span
+									class="size-9 rounded-lg"
+									[class]="
+										day.state === 'won'
+											? 'bg-ok'
+											: day.state === 'played'
+												? 'bg-brand'
+												: 'border border-dashed border-line'
+									"
+								></span>
+								<span class="sr-only">{{ day.weekday | t }}: {{ dayLabel(day.state) | t }}</span>
+								<span class="text-xs text-mute" aria-hidden="true">{{ day.weekday | t }}</span>
+							</li>
+						}
+					</ol>
+					<p class="text-xs text-mute">{{ 'Green: solved. Blue: played. Dashed: not played.' | t }}</p>
+
+					<dl class="ds-card grid! grid-cols-2 gap-px bg-line!">
+						<div class="bg-card p-4">
+							<dd class="text-2xl font-semibold tracking-tight">{{ p.playedStreak }}</dd>
+							<dt class="mt-1 text-sm text-mute">{{ 'Day streak' | t }}</dt>
+						</div>
+						<div class="bg-card p-4">
+							<dd class="text-2xl font-semibold tracking-tight">{{ p.found === null ? '–' : p.found + '%' }}</dd>
+							<dt class="mt-1 text-sm text-mute">{{ 'Moves found' | t }}</dt>
+						</div>
+					</dl>
+				} @else {
+					<div class="h-40 animate-pulse rounded-xl bg-soft" role="status" [attr.aria-label]="'Loading progress' | t"></div>
+				}
+			</section>
+		</div>
+
+		<section class="flex flex-col gap-3 lg:col-start-3 lg:row-span-2 lg:row-start-1" aria-labelledby="week-title">
+			<div>
+				<h2 id="week-title" class="text-base font-semibold">{{ 'This week' | t }}</h2>
+				<p class="text-sm text-mute">{{ 'Daily puzzle first, then the day’s focus.' | t }}</p>
+			</div>
+
+			<ol class="divide-y divide-line overflow-hidden rounded-xl border border-line bg-card">
+				@for (day of week; track day.day) {
+					<li>
+						<a
+							class="flex items-start gap-4 px-4 py-3 text-fg! no-underline lg:py-1.5"
+							[class.bg-soft]="day.day === weekday()"
+							[routerLink]="day.path"
+							[queryParams]="day.query"
+							[attr.aria-current]="day.day === weekday() ? 'date' : null"
+						>
+							<span class="w-9 shrink-0 pt-0.5 text-sm font-medium text-mute">{{ day.label | t }}</span>
+							<span class="min-w-0 flex-1">
+								<span class="block font-semibold leading-snug">{{ day.title | t }}</span>
+								<span class="block text-sm leading-snug text-mute [@media(max-height:760px)]:hidden">{{ day.detail | t }}</span>
+							</span>
+							<span class="shrink-0 pt-0.5 text-sm text-mute">{{ '{n} min' | t: { n: day.minutes } }}</span>
+						</a>
+					</li>
+				}
+			</ol>
+		</section>
+		@if (isGuest()) {
+			<section class="ds-card gap-3 p-5 lg:col-start-1 lg:row-start-2" aria-labelledby="signin-title">
+				<h2 id="signin-title" class="text-base font-semibold">{{ 'Get your own numbers' | t }}</h2>
+				<p class="text-mute">{{ 'The progress above is sample data. Sign in to see your own results.' | t }}</p>
+				<a class="ds-btn ds-btn-primary self-start" routerLink="/sign-in">{{ 'Sign in with Google' | t }}</a>
+			</section>
+		}
+	</div>
+
+	<nav class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-mute lg:shrink-0" [attr.aria-label]="'About' | t">
+		<a routerLink="/privacy">{{ 'Privacy policy' | t }}</a>
+		<a routerLink="/support">{{ 'Support' | t }}</a>
+		<a routerLink="/licenses">{{ 'Licenses and credits' | t }}</a>
+		<a [href]="sourceUrl" target="_blank" rel="noopener">{{ 'Source code' | t }}</a>
+	</nav>
+</section>

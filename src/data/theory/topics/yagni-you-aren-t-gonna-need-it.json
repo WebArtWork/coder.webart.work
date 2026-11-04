@@ -1,0 +1,63 @@
+{
+	"slug": "yagni-you-aren-t-gonna-need-it",
+	"en": {
+		"idea": [
+			"YAGNI discourages building features or abstractions for hypothetical future requirements. It is an investment principle: defer uncertain complexity until there is evidence of demand."
+		],
+		"how": [
+			"Separate requirements that are committed, plausible, and speculative. Invest early in hard-to-change foundations such as data integrity or security, but postpone optional plugins, multi-tenancy layers, and flexible rule engines until actual use cases appear."
+		],
+		"example": [
+			"A single-country booking app does not need a full international tax engine on day one. It should still store currency explicitly if changing that later would corrupt historical amounts."
+		],
+		"tradeoffs": [
+			"YAGNI must not excuse missing migrations, observability, backups, or compliance requirements. Avoid confusing 'not needed now' with 'cheap to add later'; reversibility matters."
+		],
+		"brief": "Review a proposed generic plugin system for an MVP. Remove requirements unsupported by current users, list deferred decisions and document which choices are costly to reverse.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"Which foundation is worth building early even when its related feature is not yet planned?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "Refactoring Guru — design principles",
+				"url": "https://refactoring.guru/design-patterns"
+			},
+			{
+				"title": "Martin Fowler — software design",
+				"url": "https://martinfowler.com/"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"YAGNI закликає не будувати функції та абстракції для вигаданих майбутніх вимог. Це принцип інвестицій: відкладіть сумнівну складність до появи доказів потреби."
+		],
+		"how": [
+			"Розділяйте підтверджені, ймовірні й суто гіпотетичні вимоги. У складні для зміни основи, наприклад цілісність даних і безпеку, інвестуйте завчасно; модулі плагінів і універсальні рушії правил відкладіть."
+		],
+		"example": [
+			"Сервіс бронювання для однієї країни не потребує глобального податкового рушія з першого дня. Але валюту варто зберігати явно, якщо інакше майбутні зміни пошкодять історичні суми."
+		],
+		"tradeoffs": [
+			"YAGNI не виправдовує відсутність міграцій, спостережуваності, резервних копій чи обов’язкової відповідності нормам. Не плутайте «не потрібно зараз» з «буде дешево додати потім»."
+		],
+		"brief": "Перегляньте пропозицію універсальної системи плагінів для MVP. Приберіть вимоги без реального попиту, перелічіть відкладені рішення та позначте дорогі для перегляду.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"У яку основу доцільно вкластися заздалегідь, навіть якщо відповідної фічі ще немає у плані?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

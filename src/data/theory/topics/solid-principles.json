@@ -1,0 +1,63 @@
+{
+	"slug": "solid-principles",
+	"en": {
+		"idea": [
+			"SOLID groups five object-oriented design heuristics: single responsibility, open/closed, Liskov substitution, interface segregation, and dependency inversion. Their purpose is to keep software changeable without making every class an abstraction."
+		],
+		"how": [
+			"SRP asks for one coherent reason to change; OCP prefers extension at stable variation points; LSP preserves behavioral contracts; ISP offers narrow consumer-oriented interfaces; DIP makes policy depend on abstractions rather than volatile implementations. Diagnose each separately."
+		],
+		"example": [
+			"A checkout service that calculates totals, charges cards, and sends emails has several change drivers. Separate pricing policy, payment gateway, and notification adapter; keep a small orchestration layer that coordinates a single order transaction."
+		],
+		"tradeoffs": [
+			"Excessive interfaces, inheritance hierarchies, and dependency-injection plumbing make simple code harder to read. LSP is about observable behavior, not merely matching method signatures. Apply each principle where change pressure exists."
+		],
+		"brief": "Refactor a checkout module with two payment providers. Preserve transaction behavior, add provider contract tests, explain which SOLID principles motivated each extraction, and avoid interfaces that have only one speculative use.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"How do you distinguish a genuine single responsibility from arbitrary splitting into many tiny classes?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "Refactoring Guru — design principles",
+				"url": "https://refactoring.guru/design-patterns"
+			},
+			{
+				"title": "Martin Fowler — software design",
+				"url": "https://martinfowler.com/"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"SOLID об’єднує п’ять принципів об’єктного проєктування: єдину відповідальність, відкритість/закритість, підстановку Лісков, розділення інтерфейсів та інверсію залежностей. Мета — полегшити зміни, а не перетворити кожен клас на абстракцію."
+		],
+		"how": [
+			"SRP вимагає однієї узгодженої причини змін; OCP дозволяє розширення в точках варіативності; LSP зберігає поведінкові контракти; ISP пропонує вузькі інтерфейси; DIP відділяє політику від мінливих реалізацій. Оцінюйте кожен принцип окремо."
+		],
+		"example": [
+			"Сервіс оформлення замовлення, який рахує суму, списує гроші й надсилає листи, має різні причини змін. Відокремте правила ціни, платіжний шлюз та адаптер сповіщень; залиште невеликий оркестратор."
+		],
+		"tradeoffs": [
+			"Надлишок інтерфейсів, ієрархій спадкування та DI-обв’язки ускладнює простий код. LSP стосується спостережуваної поведінки, а не лише сигнатур методів. Застосовуйте принципи там, де реально очікуються зміни."
+		],
+		"brief": "Відрефакторіть модуль оформлення з двома платіжними провайдерами. Збережіть поведінку транзакцій, додайте контрактні тести й поясніть кожне виділення через SOLID, не створюючи абстракцій для гіпотетичних сценаріїв.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Як відрізнити справжню єдину відповідальність від довільного поділу на десятки дрібних класів?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

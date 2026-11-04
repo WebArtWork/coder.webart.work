@@ -1,0 +1,67 @@
+{
+	"slug": "cryptography-fundamentals",
+	"en": {
+		"idea": [
+			"Cryptography protects information and proves authenticity using well-studied primitives: symmetric encryption, public-key cryptography, cryptographic hashes, MACs and digital signatures."
+		],
+		"how": [
+			"Choose primitives by goal: confidentiality, integrity, authenticity or password verification. Use vetted libraries and protocols such as TLS; use password hashing with salted slow KDFs, correct nonce handling and secure key lifecycle."
+		],
+		"example": [
+			"An API signs webhook messages with a keyed MAC so recipients detect tampering, while passwords are stored using Argon2id or another appropriate password hashing function, never reversible encryption."
+		],
+		"tradeoffs": [
+			"Hashing is not encryption; Base64 is not security. Never invent a custom cipher or reuse nonces in modes that forbid it; key compromise requires rotation and incident handling."
+		],
+		"brief": "Ask an agent to propose a webhook signature and password-storage design using standard libraries. Require a threat discussion, test vectors and key-rotation plan.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"Why can two cryptographically valid operations still form an insecure authentication flow?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "OWASP Top 10:2025",
+				"url": "https://top10.owasp.org/2025/"
+			},
+			{
+				"title": "OWASP Cheat Sheet Series",
+				"url": "https://cheatsheetseries.owasp.org/"
+			},
+			{
+				"title": "NIST Secure Software Development Framework",
+				"url": "https://csrc.nist.gov/Projects/ssdf"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"Криптографія захищає дані та підтверджує автентичність через вивчені примітиви: симетричне й асиметричне шифрування, хеші, MAC та цифрові підписи."
+		],
+		"how": [
+			"Обирайте примітив за метою: конфіденційність, цілісність, автентичність або перевірка пароля. Застосовуйте перевірені бібліотеки й TLS; для паролів — salted KDF, для шифрування — правильні nonce та життєвий цикл ключів."
+		],
+		"example": [
+			"API підписує webhook через keyed MAC для виявлення змін, а паролі зберігає через Argon2id чи інший придатний password hashing, а не зворотне шифрування."
+		],
+		"tradeoffs": [
+			"Хешування не є шифруванням, а Base64 — не захист. Не вигадуйте власний шифр і не повторюйте nonce там, де це заборонено; компрометація ключа вимагає ротації та реагування."
+		],
+		"brief": "Попросіть агента спроєктувати підпис webhook і зберігання паролів стандартними бібліотеками. Вимагайте аналіз загроз, тестові вектори та ротацію ключів.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Чому два криптографічно коректні кроки можуть разом утворювати небезпечний сценарій входу?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

@@ -1,0 +1,54 @@
+<section class="py-10" aria-labelledby="learn-title">
+	<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand">{{ 'Your learning path' | t }}</p>
+	<h1 id="learn-title" class="mt-3 text-3xl font-semibold">{{ 'Senior developer knowledge base' | t }}</h1>
+	<p class="mt-4 max-w-2xl leading-relaxed text-fg/80">
+		{{ '{lessons} lessons in {modules} modules, from programming principles to AI-driven engineering. Each lesson has the core idea, a worked example, the trade-offs, an exercise for working with an AI agent and questions to check yourself.' | t: { lessons: total, modules: modules().length }
+		}}
+	</p>
+
+	<ng-template #filters>
+		<div>
+			<input
+				[attr.aria-label]="'Search lessons' | t"
+				class="w-full max-w-md rounded-lg border border-line bg-card px-4 py-3 placeholder:text-mute"
+				type="search"
+				autocomplete="off"
+				[placeholder]="'Search lessons' | t"
+				[value]="query()"
+				(input)="query.set($any($event.target).value)"
+			/>
+			<p class="mt-2 text-sm text-mute" role="status">{{ '{count} lessons' | t: { count: shown() } }}</p>
+		</div>
+
+		<nav class="flex flex-wrap gap-2" [attr.aria-label]="'Modules' | t">
+			@for (module of modules(); track module.slug) {
+				<a class="rounded-full border border-line px-3 py-1 text-sm hover:border-brand hover:text-brand" [href]="'#' + module.slug" (click)="filtersService.close()">{{ pick(module.title, language()) }}</a>
+			}
+		</nav>
+	</ng-template>
+
+	<div class="mt-8 max-md:hidden md:flex md:flex-col md:gap-6">
+		<ng-container *ngTemplateOutlet="filters" />
+	</div>
+
+	@for (module of modules(); track module.slug; let index = $index) {
+		<section class="mt-12 scroll-mt-6" [id]="module.slug" [attr.aria-labelledby]="module.slug + '-title'">
+			<h2 [id]="module.slug + '-title'" class="text-2xl font-semibold">{{ pick(module.title, language()) }}</h2>
+			<p class="mt-2 max-w-2xl text-fg/80">{{ pick(module.summary, language()) }}</p>
+			<ol class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+				@for (topic of module.topics; track topic.slug) {
+					<li class="relative flex flex-col rounded-xl border border-line bg-card p-6 hover:border-brand">
+						<p class="text-xs uppercase tracking-widest text-brand">{{ topic.number }}</p>
+						<h3 class="mt-3 text-lg font-semibold">
+							<a class="hover:text-brand after:absolute after:inset-0 after:rounded-xl" [routerLink]="['/theory', topic.slug]">{{ pick(topic.title, language()) }}</a>
+						</h3>
+						<p class="mt-3 flex-1 text-sm leading-relaxed text-fg/80">{{ pick(topic.summary, language()) }}</p>
+						<p class="mt-5 text-xs text-mute">{{ '{n} min' | t: { n: topic.minutes } }}</p>
+					</li>
+				}
+			</ol>
+		</section>
+	} @empty {
+		<p class="mt-12 text-fg/80">{{ 'No lessons match your search.' | t }}</p>
+	}
+</section>

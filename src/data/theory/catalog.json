@@ -1,0 +1,1818 @@
+{
+	"modules": [
+		{
+			"slug": "01-programming-principles",
+			"title": {
+				"en": "Programming Principles",
+				"ua": "Принципи програмування"
+			},
+			"summary": {
+				"en": "Build understandable, change-friendly code with explicit boundaries.",
+				"ua": "Створюйте зрозумілий код зі стійкими межами та низькою вартістю змін."
+			}
+		},
+		{
+			"slug": "02-software-architecture",
+			"title": {
+				"en": "Software Architecture",
+				"ua": "Архітектура програмного забезпечення"
+			},
+			"summary": {
+				"en": "Choose component boundaries, communication styles and deployment shapes.",
+				"ua": "Визначайте межі компонентів, способи їх взаємодії та розгортання."
+			}
+		},
+		{
+			"slug": "03-design-patterns",
+			"title": {
+				"en": "Design Patterns",
+				"ua": "Патерни проєктування"
+			},
+			"summary": {
+				"en": "Recognize recurring structural problems and apply patterns selectively.",
+				"ua": "Розпізнавайте типові структурні проблеми й доречно застосовуйте патерни."
+			}
+		},
+		{
+			"slug": "04-algorithms-data-structures",
+			"title": {
+				"en": "Algorithms & Data Structures",
+				"ua": "Алгоритми та структури даних"
+			},
+			"summary": {
+				"en": "Reason about correctness, computational costs and data representation.",
+				"ua": "Аналізуйте коректність, обчислювальну складність та подання даних."
+			}
+		},
+		{
+			"slug": "05-distributed-systems",
+			"title": {
+				"en": "Distributed Systems",
+				"ua": "Розподілені системи"
+			},
+			"summary": {
+				"en": "Design for partial failure, delays, consistency and retries.",
+				"ua": "Проєктуйте системи з урахуванням часткових відмов, затримок, узгодженості та повторів."
+			}
+		},
+		{
+			"slug": "06-database-engineering",
+			"title": {
+				"en": "Database Engineering",
+				"ua": "Інженерія баз даних"
+			},
+			"summary": {
+				"en": "Model durable data and protect integrity under growth and concurrency.",
+				"ua": "Моделюйте дані та зберігайте їх цілісність за зростання й конкурентного доступу."
+			}
+		},
+		{
+			"slug": "07-api-integration",
+			"title": {
+				"en": "API & Integration Design",
+				"ua": "Проєктування API та інтеграцій"
+			},
+			"summary": {
+				"en": "Make contracts reliable, explicit, secure and evolvable.",
+				"ua": "Створюйте надійні, чіткі, безпечні контракти, які можна розвивати."
+			}
+		},
+		{
+			"slug": "08-security-engineering",
+			"title": {
+				"en": "Security Engineering",
+				"ua": "Інженерія безпеки"
+			},
+			"summary": {
+				"en": "Use risk analysis, layered controls and secure defaults.",
+				"ua": "Застосовуйте аналіз ризиків, багатошаровий захист і безпечні налаштування."
+			}
+		},
+		{
+			"slug": "09-testing-code-quality",
+			"title": {
+				"en": "Testing & Code Quality",
+				"ua": "Тестування та якість коду"
+			},
+			"summary": {
+				"en": "Establish evidence that changes are correct and regressions are caught.",
+				"ua": "Забезпечуйте докази коректності змін і виявлення регресій."
+			}
+		},
+		{
+			"slug": "10-devops-reliability",
+			"title": {
+				"en": "DevOps & Reliability",
+				"ua": "DevOps та надійність"
+			},
+			"summary": {
+				"en": "Deliver changes safely and operate observable, resilient services.",
+				"ua": "Безпечно доставляйте зміни й підтримуйте спостережувані та стійкі сервіси."
+			}
+		},
+		{
+			"slug": "11-engineering-decisions",
+			"title": {
+				"en": "Engineering Economics & Decision-Making",
+				"ua": "Інженерна економіка та ухвалення рішень"
+			},
+			"summary": {
+				"en": "Evaluate engineering choices against real constraints and organizational costs.",
+				"ua": "Оцінюйте технічні рішення з огляду на реальні обмеження та організаційні витрати."
+			}
+		},
+		{
+			"slug": "12-ai-driven-engineering",
+			"title": {
+				"en": "AI-Driven Software Engineering",
+				"ua": "Розробка програмного забезпечення з ШІ"
+			},
+			"summary": {
+				"en": "Specify, delegate, verify and govern AI-assisted development.",
+				"ua": "Формулюйте вимоги, делегуйте завдання, перевіряйте й контролюйте розробку з ШІ."
+			}
+		}
+	],
+	"topics": [
+		{
+			"number": 1,
+			"slug": "solid-principles",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "SOLID Principles",
+				"ua": "Принципи SOLID"
+			},
+			"summary": {
+				"en": "SOLID groups five object-oriented design heuristics: single responsibility, open/closed, Liskov substitution, interface segregation, and dependency inversion.",
+				"ua": "SOLID об’єднує п’ять принципів об’єктного проєктування: єдину відповідальність, відкритість/закритість, підстановку Лісков, розділення інтерфейсів та інверсію залежностей."
+			}
+		},
+		{
+			"number": 2,
+			"slug": "dry-don-t-repeat-yourself",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "DRY — Don't Repeat Yourself",
+				"ua": "DRY — не дублюй знання"
+			},
+			"summary": {
+				"en": "DRY means every piece of knowledge should have one authoritative representation.",
+				"ua": "DRY означає, що кожне правило або знання має одне авторитетне представлення."
+			}
+		},
+		{
+			"number": 3,
+			"slug": "kiss-keep-it-simple",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "KISS — Keep It Simple",
+				"ua": "KISS — зберігай простоту"
+			},
+			"summary": {
+				"en": "KISS favors the simplest design that satisfies known requirements and foreseeable risks.",
+				"ua": "KISS віддає перевагу найпростішому дизайну, який виконує відомі вимоги та враховує реальні ризики."
+			}
+		},
+		{
+			"number": 4,
+			"slug": "yagni-you-aren-t-gonna-need-it",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "YAGNI — You Aren't Gonna Need It",
+				"ua": "YAGNI — не реалізуй зайвого"
+			},
+			"summary": {
+				"en": "YAGNI discourages building features or abstractions for hypothetical future requirements.",
+				"ua": "YAGNI закликає не будувати функції та абстракції для вигаданих майбутніх вимог."
+			}
+		},
+		{
+			"number": 5,
+			"slug": "separation-of-concerns-soc",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "Separation of Concerns (SoC)",
+				"ua": "Розділення відповідальностей (SoC)"
+			},
+			"summary": {
+				"en": "Separation of Concerns decomposes a system into parts with distinct responsibilities, such as UI, application workflows, domain rules, and persistence.",
+				"ua": "Розділення відповідальностей поділяє систему на частини з різними задачами: інтерфейс, сценарії застосунку, доменні правила й збереження даних."
+			}
+		},
+		{
+			"number": 6,
+			"slug": "law-of-demeter-lod",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "Law of Demeter (LoD)",
+				"ua": "Закон Деметри"
+			},
+			"summary": {
+				"en": "The Law of Demeter limits an object's knowledge of distant collaborators. 'Talk to your immediate friends' is a heuristic for reducing fragile chains of navigation through internals.",
+				"ua": "Закон Деметри обмежує знання об’єкта про віддалених співучасників."
+			}
+		},
+		{
+			"number": 7,
+			"slug": "principle-of-least-astonishment-pola",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "Principle of Least Astonishment (POLA)",
+				"ua": "Принцип найменшого здивування (POLA)"
+			},
+			"summary": {
+				"en": "POLA says an interface should behave in ways its users reasonably expect.",
+				"ua": "POLA означає, що інтерфейс має поводитися так, як користувач обґрунтовано очікує."
+			}
+		},
+		{
+			"number": 8,
+			"slug": "composition-over-inheritance",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "Composition over Inheritance",
+				"ua": "Композиція замість спадкування"
+			},
+			"summary": {
+				"en": "Composition builds behavior by combining focused collaborators, rather than relying on deep inheritance trees.",
+				"ua": "Композиція формує поведінку з невеликих компонентів замість глибоких ієрархій спадкування."
+			}
+		},
+		{
+			"number": 9,
+			"slug": "high-cohesion-low-coupling",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "High Cohesion, Low Coupling",
+				"ua": "Висока згуртованість і низька зв’язність"
+			},
+			"summary": {
+				"en": "Cohesion measures how closely a module's responsibilities belong together; coupling reflects how much it knows about other modules.",
+				"ua": "Згуртованість показує, наскільки пов’язані задачі модуля; зв’язність — скільки він знає про інші модулі."
+			}
+		},
+		{
+			"number": 10,
+			"slug": "design-by-contract",
+			"module": "01-programming-principles",
+			"minutes": 3,
+			"title": {
+				"en": "Design by Contract",
+				"ua": "Проєктування за контрактом"
+			},
+			"summary": {
+				"en": "Design by Contract specifies preconditions, postconditions, and invariants for components.",
+				"ua": "Проєктування за контрактом визначає передумови, післяумови та інваріанти компонентів."
+			}
+		},
+		{
+			"number": 11,
+			"slug": "clean-architecture",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Clean Architecture",
+				"ua": "Чиста архітектура"
+			},
+			"summary": {
+				"en": "Clean Architecture organizes code around business policies that do not depend on frameworks, databases, or UI details.",
+				"ua": "Чиста архітектура організовує код навколо бізнес-правил, незалежних від фреймворків, баз даних та UI."
+			}
+		},
+		{
+			"number": 12,
+			"slug": "hexagonal-architecture-ports-and-adapters",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Hexagonal Architecture (Ports and Adapters)",
+				"ua": "Гексагональна архітектура (порти й адаптери)"
+			},
+			"summary": {
+				"en": "Hexagonal Architecture isolates the application core behind explicit ports.",
+				"ua": "Гексагональна архітектура ізолює ядро застосунку за явними портами."
+			}
+		},
+		{
+			"number": 13,
+			"slug": "onion-architecture",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Onion Architecture",
+				"ua": "Цибулева архітектура"
+			},
+			"summary": {
+				"en": "Onion Architecture places the domain model at the center and surrounding application, infrastructure, and delivery concerns in concentric layers.",
+				"ua": "Цибулева архітектура розташовує доменну модель у центрі та оточує її шарами сценаріїв, інфраструктури й доставки."
+			}
+		},
+		{
+			"number": 14,
+			"slug": "layered-architecture",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Layered Architecture",
+				"ua": "Шарова архітектура"
+			},
+			"summary": {
+				"en": "Layered Architecture divides an application into presentation, business/application logic, and data access responsibilities.",
+				"ua": "Шарова архітектура ділить застосунок на представлення, бізнес-логіку та доступ до даних."
+			}
+		},
+		{
+			"number": 15,
+			"slug": "microservices-architecture",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Microservices Architecture",
+				"ua": "Мікросервісна архітектура"
+			},
+			"summary": {
+				"en": "Microservices split a system into independently deployable services around bounded business capabilities.",
+				"ua": "Мікросервіси ділять систему на незалежно розгортані сервіси навколо обмежених бізнес-можливостей."
+			}
+		},
+		{
+			"number": 16,
+			"slug": "modular-monolith",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Modular Monolith",
+				"ua": "Модульний моноліт"
+			},
+			"summary": {
+				"en": "A modular monolith deploys as one application but enforces domain module boundaries internally.",
+				"ua": "Модульний моноліт розгортається як один застосунок, але має внутрішні межі доменних модулів."
+			}
+		},
+		{
+			"number": 17,
+			"slug": "event-driven-architecture",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Event-Driven Architecture",
+				"ua": "Подієво-орієнтована архітектура"
+			},
+			"summary": {
+				"en": "Event-Driven Architecture communicates facts about state changes through events.",
+				"ua": "Подієво-орієнтована архітектура передає факти про зміни стану через події."
+			}
+		},
+		{
+			"number": 18,
+			"slug": "cqrs-command-query-responsibility-segregation",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "CQRS — Command Query Responsibility Segregation",
+				"ua": "CQRS — розділення команд і запитів"
+			},
+			"summary": {
+				"en": "CQRS separates write-side commands that enforce business rules from read-side queries optimized for retrieving information.",
+				"ua": "CQRS відокремлює команди запису, які застосовують бізнес-правила, від запитів читання, оптимізованих для отримання даних."
+			}
+		},
+		{
+			"number": 19,
+			"slug": "event-sourcing",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Event Sourcing",
+				"ua": "Зберігання стану через події (Event Sourcing)"
+			},
+			"summary": {
+				"en": "Event Sourcing stores a sequence of domain events as the authoritative record and derives current state by replaying them.",
+				"ua": "Event Sourcing зберігає послідовність доменних подій як авторитетний запис і відтворює поточний стан їх програванням."
+			}
+		},
+		{
+			"number": 20,
+			"slug": "domain-driven-design-ddd",
+			"module": "02-software-architecture",
+			"minutes": 3,
+			"title": {
+				"en": "Domain-Driven Design (DDD)",
+				"ua": "Предметно-орієнтоване проєктування (DDD)"
+			},
+			"summary": {
+				"en": "Domain-Driven Design aligns software structure with business meaning through shared language, bounded contexts, entities, value objects, aggregates, and domain models.",
+				"ua": "DDD узгоджує структуру системи з бізнес-смислом через спільну мову, bounded contexts, сутності, об’єкти-значення, агрегати й доменні моделі."
+			}
+		},
+		{
+			"number": 21,
+			"slug": "gang-of-four-gof-design-patterns",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "Gang of Four (GoF) Design Patterns",
+				"ua": "Патерни проєктування Gang of Four"
+			},
+			"summary": {
+				"en": "The 23 GoF patterns describe recurring object collaboration and creation solutions.",
+				"ua": "23 патерни GoF описують типові рішення створення об’єктів та їх співпраці."
+			}
+		},
+		{
+			"number": 22,
+			"slug": "grasp-responsibility-assignment",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "GRASP — Responsibility Assignment",
+				"ua": "GRASP — принципи розподілу відповідальностей"
+			},
+			"summary": {
+				"en": "GRASP is a set of principles for deciding which object or component should own behavior.",
+				"ua": "GRASP — набір принципів визначення того, який об’єкт або компонент відповідає за певну поведінку."
+			}
+		},
+		{
+			"number": 23,
+			"slug": "dependency-injection",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "Dependency Injection",
+				"ua": "Впровадження залежностей (DI)"
+			},
+			"summary": {
+				"en": "Dependency Injection supplies collaborators from outside a component instead of constructing them internally.",
+				"ua": "DI передає компоненту залежності ззовні замість їх створення всередині."
+			}
+		},
+		{
+			"number": 24,
+			"slug": "repository-pattern",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "Repository Pattern",
+				"ua": "Патерн Repository"
+			},
+			"summary": {
+				"en": "A Repository presents a collection-like interface for domain objects and hides persistence operations.",
+				"ua": "Repository надає інтерфейс, схожий на колекцію доменних об’єктів, і приховує операції збереження."
+			}
+		},
+		{
+			"number": 25,
+			"slug": "unit-of-work",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "Unit of Work",
+				"ua": "Патерн Unit of Work"
+			},
+			"summary": {
+				"en": "Unit of Work tracks and coordinates changes that must be persisted together, usually under one transaction.",
+				"ua": "Unit of Work відстежує та координує зміни, які треба зберегти разом, зазвичай у межах однієї транзакції."
+			}
+		},
+		{
+			"number": 26,
+			"slug": "factory-method-and-abstract-factory",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "Factory Method & Abstract Factory",
+				"ua": "Factory Method та Abstract Factory"
+			},
+			"summary": {
+				"en": "Factory Method delegates creation of a product to subclasses or specialized creators; Abstract Factory creates related families of products through a common contract.",
+				"ua": "Factory Method делегує створення продукту спеціалізованому творцю або підкласу; Abstract Factory створює пов’язані сімейства продуктів через спільний контракт."
+			}
+		},
+		{
+			"number": 27,
+			"slug": "strategy-and-observer-patterns",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "Strategy & Observer Patterns",
+				"ua": "Патерни Strategy та Observer"
+			},
+			"summary": {
+				"en": "Strategy encapsulates interchangeable algorithms behind a common interface.",
+				"ua": "Strategy інкапсулює взаємозамінні алгоритми за спільним інтерфейсом."
+			}
+		},
+		{
+			"number": 28,
+			"slug": "adapter-and-facade-patterns",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "Adapter & Facade Patterns",
+				"ua": "Патерни Adapter та Facade"
+			},
+			"summary": {
+				"en": "Adapter translates one interface into another expected by a client.",
+				"ua": "Adapter перетворює один інтерфейс на інший, який очікує клієнт."
+			}
+		},
+		{
+			"number": 29,
+			"slug": "state-and-command-patterns",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "State & Command Patterns",
+				"ua": "Патерни State та Command"
+			},
+			"summary": {
+				"en": "State delegates behavior according to an object's current lifecycle state; Command packages an action as an object or message.",
+				"ua": "State делегує поведінку відповідно до стану життєвого циклу; Command пакує дію в об’єкт або повідомлення."
+			}
+		},
+		{
+			"number": 30,
+			"slug": "mvc-mvp-and-mvvm",
+			"module": "03-design-patterns",
+			"minutes": 3,
+			"title": {
+				"en": "MVC, MVP & MVVM",
+				"ua": "MVC, MVP та MVVM"
+			},
+			"summary": {
+				"en": "MVC, MVP and MVVM are presentation architecture patterns that separate visual behavior from domain logic in different ways.",
+				"ua": "MVC, MVP та MVVM — патерни архітектури представлення, які по-різному відділяють UI від бізнес-логіки."
+			}
+		},
+		{
+			"number": 31,
+			"slug": "big-o-notation",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Big O Notation",
+				"ua": "Нотація Big O"
+			},
+			"summary": {
+				"en": "Big O describes an asymptotic upper bound on how resource use grows with input size, often used for time or memory complexity.",
+				"ua": "Big O описує асимптотичну верхню межу зростання витрат часу чи пам’яті зі збільшенням входу."
+			}
+		},
+		{
+			"number": 32,
+			"slug": "time-and-space-complexity",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Time & Space Complexity",
+				"ua": "Часова та просторова складність"
+			},
+			"summary": {
+				"en": "Time complexity estimates work as input scales; space complexity estimates additional memory or total storage required.",
+				"ua": "Часова складність оцінює зростання обсягу роботи; просторова — додаткову або загальну пам’ять."
+			}
+		},
+		{
+			"number": 33,
+			"slug": "arrays-lists-stacks-and-queues",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Arrays, Lists, Stacks & Queues",
+				"ua": "Масиви, списки, стеки та черги"
+			},
+			"summary": {
+				"en": "These linear data structures trade indexing, insertion, removal and ordering guarantees.",
+				"ua": "Лінійні структури даних відрізняються ціною доступу за індексом, вставки, видалення та гарантіями порядку."
+			}
+		},
+		{
+			"number": 34,
+			"slug": "hash-tables-and-trees",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Hash Tables & Trees",
+				"ua": "Хеш-таблиці та дерева"
+			},
+			"summary": {
+				"en": "Hash tables optimize key-based lookup under suitable hashing assumptions; trees represent hierarchy or maintain ordered search.",
+				"ua": "Хеш-таблиці оптимізують пошук за ключем за відповідних припущень про хешування; дерева подають ієрархію або підтримують впорядкований пошук."
+			}
+		},
+		{
+			"number": 35,
+			"slug": "graphs-and-graph-algorithms",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Graphs & Graph Algorithms",
+				"ua": "Графи та алгоритми на графах"
+			},
+			"summary": {
+				"en": "Graphs model entities and relations as vertices and edges.",
+				"ua": "Графи моделюють сутності та зв’язки як вершини й ребра."
+			}
+		},
+		{
+			"number": 36,
+			"slug": "sorting-and-searching",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Sorting & Searching",
+				"ua": "Сортування та пошук"
+			},
+			"summary": {
+				"en": "Sorting establishes order so data can be presented or searched efficiently.",
+				"ua": "Сортування встановлює порядок для показу й ефективного пошуку."
+			}
+		},
+		{
+			"number": 37,
+			"slug": "recursion-and-dynamic-programming",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Recursion & Dynamic Programming",
+				"ua": "Рекурсія та динамічне програмування"
+			},
+			"summary": {
+				"en": "Recursion solves a problem by invoking the same operation on smaller instances.",
+				"ua": "Рекурсія вирішує задачу через виклики на менших підзадачах."
+			}
+		},
+		{
+			"number": 38,
+			"slug": "greedy-algorithms",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Greedy Algorithms",
+				"ua": "Жадібні алгоритми"
+			},
+			"summary": {
+				"en": "A greedy algorithm repeatedly makes a locally favorable choice without reconsidering earlier decisions.",
+				"ua": "Жадібний алгоритм на кожному кроці обирає локально найкраще рішення без перегляду попереднього."
+			}
+		},
+		{
+			"number": 39,
+			"slug": "caching-algorithms",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Caching Algorithms",
+				"ua": "Алгоритми кешування"
+			},
+			"summary": {
+				"en": "Caching trades storage and invalidation complexity for reduced recomputation or I/O.",
+				"ua": "Кешування обмінює пам’ять та складність інвалідації на менші витрати повторних обчислень і I/O."
+			}
+		},
+		{
+			"number": 40,
+			"slug": "concurrency-algorithms",
+			"module": "04-algorithms-data-structures",
+			"minutes": 3,
+			"title": {
+				"en": "Concurrency Algorithms",
+				"ua": "Алгоритми конкурентного виконання"
+			},
+			"summary": {
+				"en": "Concurrency techniques coordinate operations that can overlap in time.",
+				"ua": "Методи конкурентності координують операції, що можуть перекриватися в часі."
+			}
+		},
+		{
+			"number": 41,
+			"slug": "cap-theorem",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "CAP Theorem",
+				"ua": "Теорема CAP"
+			},
+			"summary": {
+				"en": "CAP states that, when a network partition occurs, a distributed data system cannot guarantee both linearizable consistency and availability for every request.",
+				"ua": "CAP стверджує, що за мережевого розділення розподілене сховище не може одночасно гарантувати лінеаризовану узгодженість та доступність кожного запиту."
+			}
+		},
+		{
+			"number": 42,
+			"slug": "pacelc-theorem",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "PACELC Theorem",
+				"ua": "Теорема PACELC"
+			},
+			"summary": {
+				"en": "PACELC extends CAP: if partitioned, choose between availability and consistency; else, even in normal operation, choose between latency and consistency.",
+				"ua": "PACELC розширює CAP: за partition постає вибір між доступністю й узгодженістю; в нормальному режимі — між затримкою й узгодженістю."
+			}
+		},
+		{
+			"number": 43,
+			"slug": "acid-transactions",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "ACID Transactions",
+				"ua": "Транзакції ACID"
+			},
+			"summary": {
+				"en": "ACID describes atomicity, consistency, isolation and durability of database transactions.",
+				"ua": "ACID описує атомарність, узгодженість, ізоляцію та довговічність транзакцій БД."
+			}
+		},
+		{
+			"number": 44,
+			"slug": "base-model",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "BASE Model",
+				"ua": "Модель BASE"
+			},
+			"summary": {
+				"en": "BASE describes a family of distributed-system trade-offs often summarized as Basically Available, Soft state and Eventual consistency.",
+				"ua": "BASE описує компроміси розподілених систем: Basically Available, Soft state та Eventual consistency."
+			}
+		},
+		{
+			"number": 45,
+			"slug": "eventual-consistency",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "Eventual Consistency",
+				"ua": "Кінцева узгодженість"
+			},
+			"summary": {
+				"en": "Eventual consistency means replicas converge to a compatible state if updates stop and communication proceeds, under the system's stated assumptions.",
+				"ua": "Кінцева узгодженість означає, що репліки зійдуться до сумісного стану, якщо оновлення припиняться й комунікація відновиться за визначених припущень."
+			}
+		},
+		{
+			"number": 46,
+			"slug": "idempotency",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "Idempotency",
+				"ua": "Ідемпотентність"
+			},
+			"summary": {
+				"en": "An operation is idempotent when applying it more than once has the same intended effect as applying it once.",
+				"ua": "Операція ідемпотентна, коли багаторазове виконання має той самий очікуваний ефект, що й одноразове."
+			}
+		},
+		{
+			"number": 47,
+			"slug": "consensus-algorithms",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "Consensus Algorithms",
+				"ua": "Алгоритми консенсусу"
+			},
+			"summary": {
+				"en": "Consensus allows distributed participants to agree on a sequence of decisions despite certain failures.",
+				"ua": "Консенсус дозволяє розподіленим учасникам узгодити послідовність рішень попри певні відмови."
+			}
+		},
+		{
+			"number": 48,
+			"slug": "distributed-transactions-and-sagas",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "Distributed Transactions & Sagas",
+				"ua": "Розподілені транзакції та саги"
+			},
+			"summary": {
+				"en": "Distributed business workflows often span independent services that cannot share one ACID transaction.",
+				"ua": "Розподілені бізнес-процеси часто охоплюють сервіси без спільної ACID-транзакції."
+			}
+		},
+		{
+			"number": 49,
+			"slug": "circuit-breaker-pattern",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "Circuit Breaker Pattern",
+				"ua": "Патерн Circuit Breaker"
+			},
+			"summary": {
+				"en": "A circuit breaker prevents repeated calls to an unhealthy dependency from exhausting resources and cascading failures.",
+				"ua": "Circuit Breaker припиняє повторні звернення до несправної залежності, щоб не виснажити ресурси й не запустити каскад відмов."
+			}
+		},
+		{
+			"number": 50,
+			"slug": "retry-timeout-and-backoff-patterns",
+			"module": "05-distributed-systems",
+			"minutes": 3,
+			"title": {
+				"en": "Retry, Timeout & Backoff Patterns",
+				"ua": "Повтори, тайм-аути та backoff"
+			},
+			"summary": {
+				"en": "Timeouts bound waiting, retries recover transient failures, and backoff spaces repeated attempts to avoid overload.",
+				"ua": "Timeout обмежує очікування, retry долає тимчасові збої, backoff розносить спроби в часі, щоб не перевантажувати систему."
+			}
+		},
+		{
+			"number": 51,
+			"slug": "database-normalization-1nf-5nf",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Database Normalization (1NF–5NF)",
+				"ua": "Нормалізація баз даних (1NF–5NF)"
+			},
+			"summary": {
+				"en": "Normalization organizes relational tables to reduce unintended redundancy and modification anomalies.",
+				"ua": "Нормалізація організовує реляційні таблиці для зменшення зайвого повторення та аномалій оновлення."
+			}
+		},
+		{
+			"number": 52,
+			"slug": "denormalization",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Denormalization",
+				"ua": "Денормалізація"
+			},
+			"summary": {
+				"en": "Denormalization deliberately duplicates or precomputes data to improve read performance, simplify queries or support specific access patterns.",
+				"ua": "Денормалізація свідомо дублює або попередньо обчислює дані заради швидкого читання, простіших запитів чи певних сценаріїв доступу."
+			}
+		},
+		{
+			"number": 53,
+			"slug": "indexing-strategies",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Indexing Strategies",
+				"ua": "Стратегії індексування"
+			},
+			"summary": {
+				"en": "Indexes accelerate targeted reads by maintaining auxiliary structures, often at the cost of extra storage and slower writes.",
+				"ua": "Індекси прискорюють вибіркове читання через допоміжні структури ціною додаткової пам’яті й витрат запису."
+			}
+		},
+		{
+			"number": 54,
+			"slug": "query-optimization",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Query Optimization",
+				"ua": "Оптимізація запитів"
+			},
+			"summary": {
+				"en": "Query optimization reduces database resource use and latency while preserving semantics.",
+				"ua": "Оптимізація запитів зменшує ресурси й затримку БД, зберігаючи семантику."
+			}
+		},
+		{
+			"number": 55,
+			"slug": "transaction-isolation-levels",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Transaction Isolation Levels",
+				"ua": "Рівні ізоляції транзакцій"
+			},
+			"summary": {
+				"en": "Transaction isolation defines which effects of concurrent transactions can become visible and which anomalies are permitted.",
+				"ua": "Ізоляція транзакцій визначає, які ефекти паралельних операцій видимі й які аномалії допустимі."
+			}
+		},
+		{
+			"number": 56,
+			"slug": "optimistic-vs-pessimistic-locking",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Optimistic vs Pessimistic Locking",
+				"ua": "Оптимістичне та песимістичне блокування"
+			},
+			"summary": {
+				"en": "Optimistic concurrency checks whether data changed before committing; pessimistic locking reserves exclusive access earlier.",
+				"ua": "Оптимістичний контроль перевіряє, чи змінилися дані перед фіксацією; песимістичне блокування завчасно резервує доступ."
+			}
+		},
+		{
+			"number": 57,
+			"slug": "sharding-and-partitioning",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Sharding & Partitioning",
+				"ua": "Шардінг і партиціювання"
+			},
+			"summary": {
+				"en": "Partitioning splits a dataset into manageable segments; sharding distributes segments across nodes.",
+				"ua": "Партиціювання ділить дані на керовані сегменти; шардінг розподіляє їх між вузлами."
+			}
+		},
+		{
+			"number": 58,
+			"slug": "replication-strategies",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Replication Strategies",
+				"ua": "Стратегії реплікації"
+			},
+			"summary": {
+				"en": "Replication maintains multiple copies of data for availability, read scale or geographic proximity.",
+				"ua": "Реплікація підтримує кілька копій даних заради доступності, масштабування читання або географічної близькості."
+			}
+		},
+		{
+			"number": 59,
+			"slug": "sql-vs-nosql-trade-offs",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "SQL vs NoSQL Trade-offs",
+				"ua": "Компроміси SQL та NoSQL"
+			},
+			"summary": {
+				"en": "SQL and NoSQL describe broad families of data models and interfaces, not simple 'consistent versus scalable' opposites.",
+				"ua": "SQL і NoSQL — широкі сімейства моделей та інтерфейсів, а не просте протиставлення «узгодженість проти масштабу»."
+			}
+		},
+		{
+			"number": 60,
+			"slug": "schema-evolution-and-migrations",
+			"module": "06-database-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Schema Evolution & Migrations",
+				"ua": "Еволюція схем і міграції"
+			},
+			"summary": {
+				"en": "Schema evolution changes stored structure while preserving existing data and service compatibility.",
+				"ua": "Еволюція схеми змінює структуру збереження, не втрачаючи даних і сумісності сервісів."
+			}
+		},
+		{
+			"number": 61,
+			"slug": "rest-principles",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "REST Principles",
+				"ua": "Принципи REST"
+			},
+			"summary": {
+				"en": "REST is an architectural style for networked systems emphasizing resources, uniform interfaces, stateless interactions, layered components and representations.",
+				"ua": "REST — архітектурний стиль мережевих систем, що наголошує на ресурсах, уніфікованому інтерфейсі, відсутності стану сесії на сервері, шарах і представленнях."
+			}
+		},
+		{
+			"number": 62,
+			"slug": "graphql-architecture",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "GraphQL Architecture",
+				"ua": "Архітектура GraphQL"
+			},
+			"summary": {
+				"en": "GraphQL lets clients request typed fields through a schema and supports queries, mutations and subscriptions.",
+				"ua": "GraphQL дозволяє клієнтам запитувати типізовані поля через схему та підтримує queries, mutations і subscriptions."
+			}
+		},
+		{
+			"number": 63,
+			"slug": "rpc-and-grpc",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "RPC & gRPC",
+				"ua": "RPC та gRPC"
+			},
+			"summary": {
+				"en": "Remote Procedure Call presents network operations as service methods; gRPC commonly uses Protocol Buffers, HTTP/2 and generated contracts.",
+				"ua": "RPC представляє мережеві операції як методи сервісу; gRPC часто використовує Protocol Buffers, HTTP/2 і згенеровані контракти."
+			}
+		},
+		{
+			"number": 64,
+			"slug": "api-versioning",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "API Versioning",
+				"ua": "Версіонування API"
+			},
+			"summary": {
+				"en": "API versioning manages incompatible contract changes without unexpectedly breaking clients.",
+				"ua": "Версіонування API керує несумісними змінами контракту, не ламаючи клієнтів без попередження."
+			}
+		},
+		{
+			"number": 65,
+			"slug": "authentication-vs-authorization",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "Authentication vs Authorization",
+				"ua": "Автентифікація та авторизація"
+			},
+			"summary": {
+				"en": "Authentication establishes who or what is making a request; authorization determines what that principal may do.",
+				"ua": "Автентифікація встановлює особу або сервіс, що робить запит; авторизація визначає дозволені дії."
+			}
+		},
+		{
+			"number": 66,
+			"slug": "oauth-2-0-and-openid-connect",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "OAuth 2.0 & OpenID Connect",
+				"ua": "OAuth 2.0 та OpenID Connect"
+			},
+			"summary": {
+				"en": "OAuth 2.0 is a framework for delegated authorization; OpenID Connect builds an authentication identity layer on top.",
+				"ua": "OAuth 2.0 — фреймворк делегованої авторизації; OpenID Connect додає шар автентифікації."
+			}
+		},
+		{
+			"number": 67,
+			"slug": "rate-limiting-and-throttling",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "Rate Limiting & Throttling",
+				"ua": "Обмеження частоти та регулювання навантаження"
+			},
+			"summary": {
+				"en": "Rate limiting constrains request frequency or cost; throttling delays or rejects traffic to protect capacity and fairness.",
+				"ua": "Rate limiting обмежує частоту або вартість запитів; throttling затримує чи відхиляє трафік, щоб захистити ресурси та справедливість."
+			}
+		},
+		{
+			"number": 68,
+			"slug": "pagination-and-filtering",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "Pagination & Filtering",
+				"ua": "Пагінація та фільтрація"
+			},
+			"summary": {
+				"en": "Pagination bounds response size and enables scalable navigation; filtering selects records according to an explicit query contract.",
+				"ua": "Пагінація обмежує розмір відповіді й забезпечує навігацію; фільтрація відбирає записи за явним контрактом запиту."
+			}
+		},
+		{
+			"number": 69,
+			"slug": "webhooks-and-message-queues",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "Webhooks & Message Queues",
+				"ua": "Вебхуки та черги повідомлень"
+			},
+			"summary": {
+				"en": "Webhooks deliver events via outbound HTTP calls; message queues broker asynchronous delivery between producers and consumers.",
+				"ua": "Webhook передає події вихідним HTTP-запитом; черга повідомлень доставляє асинхронні задачі між виробником і споживачем."
+			}
+		},
+		{
+			"number": 70,
+			"slug": "backward-compatibility",
+			"module": "07-api-integration",
+			"minutes": 3,
+			"title": {
+				"en": "Backward Compatibility",
+				"ua": "Зворотна сумісність"
+			},
+			"summary": {
+				"en": "Backward compatibility lets newer systems continue serving existing clients and stored data.",
+				"ua": "Зворотна сумісність дозволяє новій системі підтримувати старих клієнтів і дані."
+			}
+		},
+		{
+			"number": 71,
+			"slug": "cia-triad",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "CIA Triad",
+				"ua": "Тріада CIA"
+			},
+			"summary": {
+				"en": "The CIA triad identifies three fundamental security properties: Confidentiality, Integrity and Availability.",
+				"ua": "Тріада CIA охоплює три базові властивості безпеки: конфіденційність, цілісність і доступність."
+			}
+		},
+		{
+			"number": 72,
+			"slug": "principle-of-least-privilege",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Principle of Least Privilege",
+				"ua": "Принцип найменших привілеїв"
+			},
+			"summary": {
+				"en": "Least privilege gives identities and processes only the permissions necessary for their assigned tasks, ideally for the shortest required period.",
+				"ua": "Принцип найменших привілеїв надає особам і процесам тільки необхідні права та, бажано, на мінімально потрібний час."
+			}
+		},
+		{
+			"number": 73,
+			"slug": "zero-trust-architecture",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Zero Trust Architecture",
+				"ua": "Архітектура Zero Trust"
+			},
+			"summary": {
+				"en": "Zero Trust treats network location as insufficient proof of trust and requires explicit identity, device/workload context and policy for access decisions.",
+				"ua": "Zero Trust не вважає розташування в мережі достатнім доказом довіри й вимагає ідентичності, контексту пристрою/навантаження та політики доступу."
+			}
+		},
+		{
+			"number": 74,
+			"slug": "defense-in-depth",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Defense in Depth",
+				"ua": "Багаторівневий захист"
+			},
+			"summary": {
+				"en": "Defense in Depth uses multiple independent security controls so a single error or compromise does not expose the entire system.",
+				"ua": "Багаторівневий захист застосовує кілька незалежних контролів, щоб одна помилка чи злам не відкривали всю систему."
+			}
+		},
+		{
+			"number": 75,
+			"slug": "owasp-top-10",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "OWASP Top 10",
+				"ua": "OWASP Top 10"
+			},
+			"summary": {
+				"en": "The OWASP Top 10 is an awareness list of major web-application risk categories, not a full security checklist.",
+				"ua": "OWASP Top 10 — огляд основних категорій ризиків вебзастосунків, а не повний контрольний список безпеки."
+			}
+		},
+		{
+			"number": 76,
+			"slug": "threat-modeling-stride",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Threat Modeling (STRIDE)",
+				"ua": "Моделювання загроз (STRIDE)"
+			},
+			"summary": {
+				"en": "STRIDE is a threat-identification framework: Spoofing, Tampering, Repudiation, Information disclosure, Denial of service and Elevation of privilege.",
+				"ua": "STRIDE — схема пошуку загроз: підміна особи, зміна даних, заперечення дій, розкриття інформації, відмова в обслуговуванні та підвищення привілеїв."
+			}
+		},
+		{
+			"number": 77,
+			"slug": "secure-software-development-lifecycle",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Secure Software Development Lifecycle",
+				"ua": "Безпечний життєвий цикл розробки (SSDLC)"
+			},
+			"summary": {
+				"en": "A Secure SDLC integrates security decisions and verification throughout planning, design, implementation, delivery and operations.",
+				"ua": "Secure SDLC інтегрує безпеку в планування, архітектуру, реалізацію, випуск та експлуатацію."
+			}
+		},
+		{
+			"number": 78,
+			"slug": "cryptography-fundamentals",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Cryptography Fundamentals",
+				"ua": "Основи криптографії"
+			},
+			"summary": {
+				"en": "Cryptography protects information and proves authenticity using well-studied primitives: symmetric encryption, public-key cryptography, cryptographic hashes, MACs and digital signatures.",
+				"ua": "Криптографія захищає дані та підтверджує автентичність через вивчені примітиви: симетричне й асиметричне шифрування, хеші, MAC та цифрові підписи."
+			}
+		},
+		{
+			"number": 79,
+			"slug": "secrets-management",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Secrets Management",
+				"ua": "Управління секретами"
+			},
+			"summary": {
+				"en": "Secrets management controls creation, distribution, use, rotation and revocation of credentials such as API keys, database passwords and signing keys.",
+				"ua": "Управління секретами охоплює створення, передавання, використання, ротацію та відкликання ключів API, паролів БД і ключів підписання."
+			}
+		},
+		{
+			"number": 80,
+			"slug": "software-supply-chain-security",
+			"module": "08-security-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Software Supply Chain Security",
+				"ua": "Безпека ланцюга постачання ПЗ"
+			},
+			"summary": {
+				"en": "Supply chain security protects dependencies, build systems, artifacts and publishing workflows from malicious or compromised components.",
+				"ua": "Безпека supply chain захищає залежності, систему збірки, артефакти й публікацію від шкідливих компонентів."
+			}
+		},
+		{
+			"number": 81,
+			"slug": "testing-pyramid",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Testing Pyramid",
+				"ua": "Піраміда тестування"
+			},
+			"summary": {
+				"en": "The testing pyramid recommends many fast, focused tests and fewer expensive full-system tests.",
+				"ua": "Піраміда тестування радить мати багато швидких точкових тестів і менше дорогих наскрізних."
+			}
+		},
+		{
+			"number": 82,
+			"slug": "test-driven-development-tdd",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Test-Driven Development (TDD)",
+				"ua": "Розробка через тести (TDD)"
+			},
+			"summary": {
+				"en": "TDD follows a short red-green-refactor loop: write a failing test, implement the minimal behavior, then improve design without changing behavior.",
+				"ua": "TDD працює коротким циклом red-green-refactor: спершу тест, який падає, далі мінімальна реалізація, потім покращення дизайну без зміни поведінки."
+			}
+		},
+		{
+			"number": 83,
+			"slug": "behavior-driven-development-bdd",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Behavior-Driven Development (BDD)",
+				"ua": "Розробка через поведінку (BDD)"
+			},
+			"summary": {
+				"en": "BDD connects business examples to executable specifications through collaboration among developers, testers and domain stakeholders.",
+				"ua": "BDD поєднує бізнес-приклади з виконуваними специфікаціями через співпрацю розробників, тестувальників і предметних експертів."
+			}
+		},
+		{
+			"number": 84,
+			"slug": "unit-integration-and-end-to-end-testing",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Unit, Integration & End-to-End Testing",
+				"ua": "Unit-, інтеграційне та E2E-тестування"
+			},
+			"summary": {
+				"en": "These testing levels differ in boundary and realism: unit tests isolate a small behavior; integration tests exercise interacting components; E2E tests validate a full user or system journey.",
+				"ua": "Рівні тестування відрізняються межами й реалістичністю: unit перевіряє невелику поведінку, інтеграційний — взаємодію компонентів, E2E — повний користувацький або системний сценарій."
+			}
+		},
+		{
+			"number": 85,
+			"slug": "property-based-testing",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Property-Based Testing",
+				"ua": "Тестування на основі властивостей"
+			},
+			"summary": {
+				"en": "Property-based testing checks general invariants over many generated inputs rather than only hand-picked examples.",
+				"ua": "Property-based testing перевіряє загальні інваріанти на багатьох згенерованих входах, а не лише вручну обраних прикладах."
+			}
+		},
+		{
+			"number": 86,
+			"slug": "contract-testing",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Contract Testing",
+				"ua": "Контрактне тестування"
+			},
+			"summary": {
+				"en": "Contract testing verifies assumptions between service providers and consumers, such as request shapes, response semantics and event schemas.",
+				"ua": "Контрактне тестування перевіряє домовленості між провайдером і споживачем: форми запитів, семантику відповідей і схеми подій."
+			}
+		},
+		{
+			"number": 87,
+			"slug": "mutation-testing",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Mutation Testing",
+				"ua": "Мутаційне тестування"
+			},
+			"summary": {
+				"en": "Mutation testing changes code in small controlled ways and checks whether the test suite detects those changes.",
+				"ua": "Мутаційне тестування вносить невеликі контрольовані зміни до коду й перевіряє, чи виявляють їх тести."
+			}
+		},
+		{
+			"number": 88,
+			"slug": "static-analysis",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Static Analysis",
+				"ua": "Статичний аналіз"
+			},
+			"summary": {
+				"en": "Static analysis inspects source or compiled representations without executing full application behavior.",
+				"ua": "Статичний аналіз перевіряє код або проміжне представлення без повного виконання застосунку."
+			}
+		},
+		{
+			"number": 89,
+			"slug": "code-smells-and-refactoring",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Code Smells & Refactoring",
+				"ua": "Запахи коду та рефакторинг"
+			},
+			"summary": {
+				"en": "Code smells are symptoms of possible design problems, not automatic proof that code is wrong.",
+				"ua": "Code smells — сигнали можливих проблем дизайну, а не доказ помилки."
+			}
+		},
+		{
+			"number": 90,
+			"slug": "technical-debt-management",
+			"module": "09-testing-code-quality",
+			"minutes": 3,
+			"title": {
+				"en": "Technical Debt Management",
+				"ua": "Управління технічним боргом"
+			},
+			"summary": {
+				"en": "Technical debt describes future engineering cost caused by design and implementation shortcuts or changing needs.",
+				"ua": "Технічний борг — майбутні інженерні витрати через скорочені рішення або зміну потреб."
+			}
+		},
+		{
+			"number": 91,
+			"slug": "ci-cd-principles",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "CI/CD Principles",
+				"ua": "Принципи CI/CD"
+			},
+			"summary": {
+				"en": "Continuous Integration merges and validates changes frequently; Continuous Delivery keeps releases deployable; Continuous Deployment automatically releases changes passing defined gates.",
+				"ua": "Continuous Integration часто об’єднує та перевіряє зміни; Continuous Delivery підтримує готовність до релізу; Continuous Deployment автоматично випускає зміни після перевірок."
+			}
+		},
+		{
+			"number": 92,
+			"slug": "infrastructure-as-code-iac",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "Infrastructure as Code (IaC)",
+				"ua": "Інфраструктура як код (IaC)"
+			},
+			"summary": {
+				"en": "IaC defines infrastructure resources in version-controlled declarations or programs.",
+				"ua": "IaC визначає інфраструктуру через версіоновані декларації чи програми."
+			}
+		},
+		{
+			"number": 93,
+			"slug": "immutable-infrastructure",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "Immutable Infrastructure",
+				"ua": "Незмінна інфраструктура"
+			},
+			"summary": {
+				"en": "Immutable infrastructure replaces running instances with newly built images rather than patching them in place.",
+				"ua": "Незмінна інфраструктура замінює запущені інстанси новими зібраними образами замість ручного патчингу."
+			}
+		},
+		{
+			"number": 94,
+			"slug": "blue-green-and-canary-deployment",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "Blue-Green & Canary Deployment",
+				"ua": "Blue-Green та Canary Deployment"
+			},
+			"summary": {
+				"en": "Blue-green deployment switches traffic between two complete environments; canary deployment gradually exposes a subset of traffic to a new version.",
+				"ua": "Blue-green перемикає трафік між двома середовищами; canary поступово спрямовує частину трафіку на нову версію."
+			}
+		},
+		{
+			"number": 95,
+			"slug": "observability-logs-metrics-and-traces",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "Observability: Logs, Metrics & Traces",
+				"ua": "Спостережуваність: логи, метрики та трейси"
+			},
+			"summary": {
+				"en": "Observability allows engineers to infer a system's internal state from emitted evidence.",
+				"ua": "Спостережуваність дозволяє визначати внутрішній стан системи за її сигналами."
+			}
+		},
+		{
+			"number": 96,
+			"slug": "sli-slo-and-sla",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "SLI, SLO & SLA",
+				"ua": "SLI, SLO та SLA"
+			},
+			"summary": {
+				"en": "An SLI is a quantitative service reliability indicator; an SLO is a target for that indicator; an SLA is a contractual commitment, often with consequences.",
+				"ua": "SLI — кількісний показник надійності; SLO — його цільове значення; SLA — договірне зобов’язання, часто із наслідками невиконання."
+			}
+		},
+		{
+			"number": 97,
+			"slug": "fault-tolerance",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "Fault Tolerance",
+				"ua": "Відмовостійкість"
+			},
+			"summary": {
+				"en": "Fault tolerance lets a system continue delivering acceptable behavior when components fail.",
+				"ua": "Відмовостійкість дозволяє системі продовжувати прийнятну роботу за відмови компонентів."
+			}
+		},
+		{
+			"number": 98,
+			"slug": "scalability-vs-elasticity",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "Scalability vs Elasticity",
+				"ua": "Масштабованість та еластичність"
+			},
+			"summary": {
+				"en": "Scalability is the ability to handle more load by adding resources or optimizing design.",
+				"ua": "Масштабованість — здатність обслуговувати більше навантаження за рахунок ресурсів або оптимізацій."
+			}
+		},
+		{
+			"number": 99,
+			"slug": "load-balancing",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "Load Balancing",
+				"ua": "Балансування навантаження"
+			},
+			"summary": {
+				"en": "Load balancing distributes requests or work across instances to improve utilization, capacity and availability.",
+				"ua": "Балансування розподіляє запити між інстансами задля кращого використання ресурсів, пропускної здатності та доступності."
+			}
+		},
+		{
+			"number": 100,
+			"slug": "disaster-recovery-rpo-and-rto",
+			"module": "10-devops-reliability",
+			"minutes": 3,
+			"title": {
+				"en": "Disaster Recovery: RPO & RTO",
+				"ua": "Аварійне відновлення: RPO та RTO"
+			},
+			"summary": {
+				"en": "Recovery Point Objective (RPO) is the maximum acceptable data-loss window; Recovery Time Objective (RTO) is the target time to restore service after a disruption.",
+				"ua": "RPO — максимально допустимий проміжок втрати даних; RTO — цільовий час повернення сервісу після аварії."
+			}
+		},
+		{
+			"number": 101,
+			"slug": "system-design-trade-offs",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "System Design Trade-offs",
+				"ua": "Компроміси системного проєктування"
+			},
+			"summary": {
+				"en": "System design is the deliberate choice among imperfect alternatives under explicit requirements.",
+				"ua": "Системне проєктування — свідомий вибір між недосконалими альтернативами за конкретних вимог."
+			}
+		},
+		{
+			"number": 102,
+			"slug": "cost-benefit-analysis",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Cost–Benefit Analysis",
+				"ua": "Аналіз витрат і вигод"
+			},
+			"summary": {
+				"en": "Cost–benefit analysis estimates whether expected business value justifies implementation, maintenance and risk.",
+				"ua": "Аналіз витрат і вигод оцінює, чи виправдовує очікувана користь реалізацію, підтримку й ризик."
+			}
+		},
+		{
+			"number": 103,
+			"slug": "build-vs-buy",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Build vs Buy",
+				"ua": "Розробляти чи купувати (Build vs Buy)"
+			},
+			"summary": {
+				"en": "Build-versus-buy asks whether a capability should be developed in-house, purchased as software or outsourced.",
+				"ua": "Build vs Buy визначає, чи розробляти можливість власноруч, купувати готове рішення чи віддавати підряднику."
+			}
+		},
+		{
+			"number": 104,
+			"slug": "conway-s-law",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Conway's Law",
+				"ua": "Закон Конвея"
+			},
+			"summary": {
+				"en": "Conway's Law observes that system designs tend to reflect the communication structures of the organizations creating them.",
+				"ua": "Закон Конвея описує тенденцію систем відображати комунікаційну структуру організацій, які їх створюють."
+			}
+		},
+		{
+			"number": 105,
+			"slug": "brooks-s-law",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Brooks's Law",
+				"ua": "Закон Брукса"
+			},
+			"summary": {
+				"en": "Brooks's Law warns that adding people to a late software project may make it later because onboarding and communication cost time.",
+				"ua": "Закон Брукса попереджає, що додавання людей до запізнілого проєкту може ще більше затримати його через навчання та комунікацію."
+			}
+		},
+		{
+			"number": 106,
+			"slug": "amdahl-s-law",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Amdahl's Law",
+				"ua": "Закон Амдала"
+			},
+			"summary": {
+				"en": "Amdahl's Law bounds the speedup of a workload when only part can be parallelized.",
+				"ua": "Закон Амдала обмежує прискорення програми, коли лише частину можна розпаралелити."
+			}
+		},
+		{
+			"number": 107,
+			"slug": "little-s-law",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Little's Law",
+				"ua": "Закон Літтла"
+			},
+			"summary": {
+				"en": "Little's Law relates long-run average number of items in a stable system, arrival/completion rate and average time in system: L equals lambda multiplied by W.",
+				"ua": "Закон Літтла пов’язує середню кількість елементів у стабільній системі, інтенсивність потоку та середній час перебування: L дорівнює lambda, помноженій на W."
+			}
+		},
+		{
+			"number": 108,
+			"slug": "pareto-principle",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Pareto Principle",
+				"ua": "Принцип Парето"
+			},
+			"summary": {
+				"en": "The Pareto principle is a heuristic that a minority of causes often account for a majority of outcomes.",
+				"ua": "Принцип Парето — евристика, за якою невелика частина причин часто створює більшість результатів."
+			}
+		},
+		{
+			"number": 109,
+			"slug": "theory-of-constraints",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Theory of Constraints",
+				"ua": "Теорія обмежень"
+			},
+			"summary": {
+				"en": "The Theory of Constraints holds that overall throughput is limited by a small number of bottlenecks.",
+				"ua": "Теорія обмежень стверджує, що загальну пропускну здатність обмежує невелика кількість вузьких місць."
+			}
+		},
+		{
+			"number": 110,
+			"slug": "architecture-decision-records-adr",
+			"module": "11-engineering-decisions",
+			"minutes": 3,
+			"title": {
+				"en": "Architecture Decision Records (ADR)",
+				"ua": "Записи архітектурних рішень (ADR)"
+			},
+			"summary": {
+				"en": "An ADR records an architectural choice, the context that motivated it, alternatives, consequences and status.",
+				"ua": "ADR фіксує архітектурний вибір, його контекст, альтернативи, наслідки та стан."
+			}
+		},
+		{
+			"number": 111,
+			"slug": "specification-driven-development",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Specification-Driven Development",
+				"ua": "Розробка на основі специфікацій"
+			},
+			"summary": {
+				"en": "Specification-driven development starts with an explicit, testable description of required behavior before implementation.",
+				"ua": "Розробка на основі специфікацій починається з чіткого, перевірюваного опису поведінки до реалізації."
+			}
+		},
+		{
+			"number": 112,
+			"slug": "context-engineering",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Context Engineering",
+				"ua": "Інженерія контексту"
+			},
+			"summary": {
+				"en": "Context engineering curates the information, tools and constraints available to an AI model for a task.",
+				"ua": "Інженерія контексту керує інформацією, інструментами та обмеженнями, доступними ШІ для задачі."
+			}
+		},
+		{
+			"number": 113,
+			"slug": "prompt-engineering",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Prompt Engineering",
+				"ua": "Інженерія промптів"
+			},
+			"summary": {
+				"en": "Prompt engineering structures instructions and examples to make model output more relevant, constrained and verifiable.",
+				"ua": "Інженерія промптів структурує інструкції та приклади для релевантного, обмеженого й перевірюваного результату ШІ."
+			}
+		},
+		{
+			"number": 114,
+			"slug": "agentic-workflows",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Agentic Workflows",
+				"ua": "Агентні робочі процеси"
+			},
+			"summary": {
+				"en": "Agentic workflows let AI systems plan, call tools, modify artifacts and iterate toward a goal.",
+				"ua": "Агентні процеси дозволяють ШІ планувати, викликати інструменти, змінювати артефакти й повторювати кроки до мети."
+			}
+		},
+		{
+			"number": 115,
+			"slug": "human-in-the-loop-hitl",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Human-in-the-Loop (HITL)",
+				"ua": "Людина в контурі керування (HITL)"
+			},
+			"summary": {
+				"en": "Human-in-the-loop design requires a person to review or approve important AI decisions and actions.",
+				"ua": "HITL означає, що людина перевіряє або затверджує важливі рішення й дії ШІ."
+			}
+		},
+		{
+			"number": 116,
+			"slug": "ai-code-review",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "AI Code Review",
+				"ua": "Рев’ю коду, створеного ШІ"
+			},
+			"summary": {
+				"en": "AI-generated code needs the same or stronger review as human-written code.",
+				"ua": "Код від ШІ потребує такого самого або суворішого review, як людський."
+			}
+		},
+		{
+			"number": 117,
+			"slug": "ai-assisted-testing",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "AI-Assisted Testing",
+				"ua": "Тестування за допомогою ШІ"
+			},
+			"summary": {
+				"en": "AI can accelerate test-case discovery, fixture creation and failure analysis, but generated tests still need an independent behavioral oracle.",
+				"ua": "ШІ пришвидшує пошук тестових випадків, створення фікстур та аналіз падінь, але згенерованим тестам усе одно потрібен незалежний еталон поведінки."
+			}
+		},
+		{
+			"number": 118,
+			"slug": "model-evaluation-and-benchmarking",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "Model Evaluation & Benchmarking",
+				"ua": "Оцінювання моделей та бенчмарки"
+			},
+			"summary": {
+				"en": "Model evaluation measures whether an AI system performs particular tasks reliably under relevant constraints.",
+				"ua": "Оцінювання моделей вимірює, наскільки надійно ШІ виконує конкретні задачі в потрібних умовах."
+			}
+		},
+		{
+			"number": 119,
+			"slug": "ai-security-and-prompt-injection",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "AI Security & Prompt Injection",
+				"ua": "Безпека ШІ та ін’єкції промптів"
+			},
+			"summary": {
+				"en": "Prompt injection occurs when untrusted content tries to redirect an AI system's instructions or tool use.",
+				"ua": "Prompt injection виникає, коли недовірений контент намагається змінити інструкції ШІ чи його використання інструментів."
+			}
+		},
+		{
+			"number": 120,
+			"slug": "ai-generated-code-governance",
+			"module": "12-ai-driven-engineering",
+			"minutes": 3,
+			"title": {
+				"en": "AI-Generated Code Governance",
+				"ua": "Управління кодом, згенерованим ШІ"
+			},
+			"summary": {
+				"en": "AI-generated code governance establishes policies for provenance, accountability, quality, security and licensing across AI-assisted delivery.",
+				"ua": "Управління AI-кодом встановлює правила походження, відповідальності, якості, безпеки та ліцензій у розробці з ШІ."
+			}
+		}
+	]
+}

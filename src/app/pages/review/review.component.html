@@ -1,0 +1,76 @@
+@if (own(); as current) {
+	<!-- One of your own mistakes: board on the left (large screens), panel on the right -->
+	<section
+		class="mx-auto flex h-full w-full max-w-[72rem] flex-col lg:grid lg:h-full lg:grid-cols-[minmax(0,34rem)_1fr] lg:grid-rows-[minmax(0,1fr)] lg:items-stretch lg:gap-8 lg:px-6 lg:pb-4 lg:pt-3"
+	>
+		<h1 class="sr-only">{{ 'Your mistakes' | t }}</h1>
+		<div class="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 pb-2 pt-[3px] lg:order-2 lg:p-0">
+			<div class="flex flex-col gap-3">
+				<section class="ds-card gap-2 p-4" aria-live="polite">
+					<p class="text-sm text-mute">{{ '{title}, move {number}' | t: { title: current.mistake.title || ('Saved game' | t), number: current.mistake.moveNumber } }}</p>
+					@if (solved() === null) {
+						<p class="text-lg font-semibold">{{ (current.mistake.fen.includes(' w ') ? 'White to move' : 'Black to move') | t }}</p>
+						<p class="text-sm" role="status">
+							{{ 'You played {move} here and gave away about {pawns} pawns. Find a better move.' | t: { move: current.mistake.playedSan, pawns: current.mistake.loss } }}
+						</p>
+						@if (run()?.outcome(); as message) {
+							<p class="text-sm">{{ message.text | t: message.vars }}</p>
+						}
+					} @else {
+						<p class="text-lg font-semibold">{{ (solved() ? 'Correct' : 'Incorrect') | t }}</p>
+						<p class="text-sm">{{ 'Best:' | t }} <span class="font-medium">{{ ownLine() }}</span></p>
+						<p class="text-sm text-mute">
+							{{ (solved() ? 'It comes back in a few days, to make it stick.' : 'It comes back tomorrow.') | t }}
+						</p>
+						<div class="flex flex-wrap gap-2">
+							<button class="ds-btn ds-btn-primary" type="button" (click)="nextOwn()">{{ 'Next review' | t }}</button>
+							<a class="ds-btn ds-btn-ghost" routerLink="/practice/review">{{ 'Back to the review' | t }}</a>
+						</div>
+					}
+				</section>
+			</div>
+		</div>
+		<div class="shrink-0 pb-2 lg:order-1 lg:self-start lg:pb-0">
+			<div class="mx-auto w-[min(100%,46dvh)] lg:mx-0 lg:w-[min(100%,calc(100dvh-8.5rem))]">
+				@if (run(); as attempt) {
+					<app-board
+						[fen]="attempt.fen()"
+						[orientation]="current.mistake.fen.includes(' w ') ? 'white' : 'black'"
+						[interactive]="attempt.interactive()"
+						[arrows]="attempt.arrows()"
+						[lastMove]="attempt.lastMove()"
+						(moved)="onMove($event)"
+					/>
+				}
+			</div>
+		</div>
+	</section>
+} @else {
+	<section class="mx-auto flex w-full max-w-2xl flex-col gap-4 px-4 pb-8 pt-4 sm:px-6">
+		<div>
+			<h1 class="text-xl font-semibold tracking-tight">{{ 'Review' | t }}</h1>
+			<p class="text-sm text-mute md:mt-0.5">{{ 'What you missed comes back after 1, 3 and 7 days, from every practice.' | t }}</p>
+		</div>
+
+		<section class="ds-card gap-3 p-4">
+			@if (review.due().length) {
+				<p class="text-lg font-semibold">{{ '{count} to review today|{count} to review today' | t: { count: review.due().length } }}</p>
+				<ul class="flex flex-col gap-1 text-sm">
+					@for (group of groups(); track group.kind) {
+						<li class="flex justify-between gap-3">
+							<span>{{ titles[group.kind] | t }}</span>
+							<span class="text-mute">{{ group.entries.length }}</span>
+						</li>
+					}
+				</ul>
+				<button class="ds-btn ds-btn-primary self-start" type="button" (click)="start()">{{ 'Start review' | t }}</button>
+			} @else {
+				<p class="text-lg font-semibold">{{ 'Nothing to review today.' | t }}</p>
+				<p class="text-sm text-mute">{{ 'Missed puzzles from any practice show up here when they are due.' | t }}</p>
+			}
+			@if (upcoming()) {
+				<p class="text-sm text-mute">{{ 'Coming up later: {count}' | t: { count: upcoming() } }}</p>
+			}
+		</section>
+	</section>
+}

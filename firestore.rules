@@ -1,0 +1,64 @@
+rules_version = '2';
+
+// Coder. Everything is denied unless a rule below allows it.
+// Deploy with: npm run rules
+service cloud.firestore {
+	match /databases/{database}/documents {
+		function isOwner(uid) {
+			return request.auth != null && request.auth.uid == uid;
+		}
+
+		function stringUpTo(value, max) {
+			return value is string && value.size() <= max;
+		}
+
+		// users/{uid}: the name, email and photo of a Google account. Mirrors src/app/feature/account.
+		function validProfile(data) {
+			return data.keys().hasOnly(['displayName', 'email', 'photoUrl', 'createdAt', 'updatedAt'])
+				&& stringUpTo(data.displayName, 200)
+				&& stringUpTo(data.email, 320)
+				&& stringUpTo(data.photoUrl, 2048)
+				&& data.createdAt is timestamp
+				&& data.updatedAt is timestamp;
+		}
+
+		// users/{uid}/progress/practice: the best result per lesson, { slug: { quiz, written } }.
+		// Mirrors src/app/feature/account/user-data.service.ts. At most 120 lessons.
+		function validPractice(data) {
+			return data.keys().hasOnly(['scores', 'updatedAt'])
+				&& data.scores is map
+				&& data.scores.size() <= 120
+				&& data.updatedAt is timestamp;
+		}
+
+		// users/{uid}/progress/systems: the systems built out of lessons. At most 50 systems.
+		function validSystems(data) {
+			return data.keys().hasOnly(['items', 'updatedAt'])
+				&& data.items is list
+				&& data.items.size() <= 50
+				&& data.updatedAt is timestamp;
+		}
+
+		// users/{uid}/progress/reading: the slugs of the lessons marked as read. At most 120.
+		function validReading(data) {
+			return data.keys().hasOnly(['read', 'updatedAt'])
+				&& data.read is list
+				&& data.read.size() <= 120
+				&& data.updatedAt is timestamp;
+		}
+
+		match /users/{uid} {
+			allow read: if isOwner(uid);
+			allow create, update: if isOwner(uid) && validProfile(request.resource.data);
+			allow delete: if isOwner(uid);
+
+			match /progress/{id} {
+				allow read, delete: if isOwner(uid);
+				allow create, update: if isOwner(uid)
+					&& ((id == 'practice' && validPractice(request.resource.data))
+						|| (id == 'systems' && validSystems(request.resource.data))
+						|| (id == 'reading' && validReading(request.resource.data)));
+			}
+		}
+	}
+}

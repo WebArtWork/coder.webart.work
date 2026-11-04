@@ -1,0 +1,116 @@
+@if (mode === 'home' && member()) {
+	<app-dashboard />
+}
+
+@if (mode === 'home' && !member()) {
+	<section class="grid items-center gap-10 py-12 md:grid-cols-2 md:py-24">
+		<div>
+			<p class="mb-5 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+				Think beyond the code
+			</p>
+			<h1 class="text-4xl font-semibold leading-[1.1] tracking-tight sm:text-6xl">
+				Build projects.<br />Understand<br /><span class="text-brand"
+					>the architecture.</span
+				>
+			</h1>
+			<p class="mt-6 max-w-lg text-lg leading-relaxed text-fg/80">
+				Learn how to structure the software you are building. Clear lessons, real project
+				decisions and focused practice for developers.
+			</p>
+			<div class="mt-8 flex flex-wrap gap-3">
+				<a
+					class="rounded-lg bg-brand px-5 py-3 font-semibold text-brand-fg"
+					routerLink="/theory"
+					>Start learning →</a
+				>
+				<a
+					class="rounded-lg border border-line px-5 py-3 font-medium"
+					routerLink="/practice"
+					>Practice the topics</a
+				>
+			</div>
+			<p class="mt-5 text-sm text-mute">
+				{{ topicCount }} lessons · {{ topicCount }} exercise sets · English and Ukrainian · No account required
+			</p>
+		</div>
+		<img
+			class="w-full rounded-2xl border border-line"
+			ngSrc="/architecture.jpg"
+			width="1200"
+			height="630"
+			priority
+			alt="Connected software modules showing clear boundaries and dependencies"
+		/>
+	</section>
+	<section class="border-t border-line py-10" aria-labelledby="approach">
+		<h2 id="approach" class="text-2xl font-semibold">
+			Make the next decision with confidence.
+		</h2>
+		<div class="mt-6 grid gap-6 md:grid-cols-3">
+			@for (
+				item of [
+					{
+						title: 'Understand the principle',
+						text: 'Learn the reasoning behind boundaries, dependencies and tradeoffs.',
+					},
+					{
+						title: 'Test your reasoning',
+						text: 'Answer questions and written tasks for every lesson, then compare with a sample answer.',
+					},
+					{
+						title: 'Apply it to your project',
+						text: 'Use the exercise in each lesson to improve the software you already build.',
+					},
+				];
+				track item.title
+			) {
+				<div class="rounded-xl border border-line bg-card p-6">
+					<h3 class="font-semibold">{{ item.title }}</h3>
+					<p class="mt-3 leading-relaxed text-fg/80">{{ item.text }}</p>
+				</div>
+			}
+		</div>
+	</section>
+}
+
+@if (mode === 'home' && !member()) {
+	<section class="py-10" aria-labelledby="catalog-title">
+		<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand">Your learning path</p>
+		<h2 id="catalog-title" class="mt-3 text-3xl font-semibold">
+			From programming principles to AI-driven engineering.
+		</h2>
+		<p class="mt-4 max-w-2xl leading-relaxed text-fg/80">
+			{{ topicCount }} lessons in {{ modules.length }} modules. Every lesson has a worked example,
+			the trade-offs, an exercise for working with an AI agent and a practice set of 15 exercises.
+		</p>
+		<ol class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			@for (module of modules; track module.slug; let index = $index) {
+				<li class="relative flex flex-col rounded-xl border border-line bg-card p-6 hover:border-brand">
+					<p class="text-xs uppercase tracking-widest text-brand">Module {{ index + 1 }}</p>
+					<h3 class="mt-4 text-xl font-semibold">
+						<a class="hover:text-brand after:absolute after:inset-0 after:rounded-xl" routerLink="/theory" [fragment]="module.slug">{{ module.title.en }}</a>
+					</h3>
+					<p class="mt-3 flex-1 text-sm leading-relaxed text-fg/80">{{ module.summary.en }}</p>
+				</li>
+			}
+		</ol>
+	</section>
+}
+
+@if (info; as page) {
+	<article class="mx-auto max-w-3xl py-16">
+		<h1 class="text-4xl font-semibold">{{ page.title }}</h1>
+		@for (paragraph of page.paragraphs; track paragraph) {
+			<p class="mt-6 leading-8 text-fg/80">{{ paragraph }}</p>
+		}
+		<a class="mt-8 inline-block text-brand" routerLink="/theory"
+			>Explore the learning path →</a
+		>
+		@if (mode === 'licenses') {
+			<a class="mt-5 block text-brand" href="/3rdpartylicenses.txt"
+				>Third-party license notices →</a
+			>
+			<a class="mt-3 block text-brand" href="/LICENSE.txt">Project license →</a>
+		}
+	</article>
+}

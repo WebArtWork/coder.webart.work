@@ -1,0 +1,93 @@
+<article class="mx-auto flex w-full max-w-2xl flex-col gap-8 px-4 pb-10 pt-4 sm:px-6">
+	<header>
+		<h1 class="m-0! text-2xl font-semibold leading-tight tracking-tight">{{ 'Privacy policy' | t }}</h1>
+		<p class="mt-1 text-sm text-mute">{{ 'Last updated {date}' | t: { date: (updated | t) } }}</p>
+	</header>
+
+	<p class="leading-relaxed">
+		{{
+			'Coder (coder.webart.work and its mobile apps) is a coding practice app. We collect as little as we can: every training mode works without an account, and we show no ads, use no analytics and sell no data.'
+				| t
+		}}
+	</p>
+
+	<section class="flex flex-col gap-3">
+		<h2 class="m-0! -mb-1! text-lg font-semibold tracking-tight">{{ 'Without an account' | t }}</h2>
+		<p class="leading-relaxed">
+			{{
+				'Your puzzle results, rating, pawns, daily streak, lesson progress and display settings are saved only on your device, in your browser or the app. They are never sent to us. Clearing the app’s data or your browser’s site data removes them.'
+					| t
+			}}
+		</p>
+	</section>
+
+	<section class="flex flex-col gap-3">
+		<h2 class="m-0! -mb-1! text-lg font-semibold tracking-tight">{{ 'With a Google account' | t }}</h2>
+		<p class="leading-relaxed">{{ 'Signing in is optional. If you sign in with Google, we store:' | t }}</p>
+		<ul class="flex list-disc flex-col gap-2 pl-5 leading-relaxed marker:text-mute">
+			<li>{{ 'your name, email address and profile photo link, copied from your Google account;' | t }}</li>
+			<li>{{ 'the games and positions you save from the analysis board;' | t }}</li>
+			<li>{{ 'your rating and pawns, with a record of each change, so they follow you to other devices.' | t }}</li>
+		</ul>
+		<p class="leading-relaxed">
+			{{
+				'We use this only to show your profile and keep your progress. Only you can read it: the database rules let each account reach its own data and nothing else. We share it with no one except the services below, which run the app for us.'
+					| t
+			}}
+		</p>
+	</section>
+
+	<section class="flex flex-col gap-3">
+		<h2 class="m-0! -mb-1! text-lg font-semibold tracking-tight">{{ 'Services we use' | t }}</h2>
+		<ul class="flex list-disc flex-col gap-2 pl-5 leading-relaxed marker:text-mute">
+			<li>
+				<strong>Google Firebase</strong> {{ '(Authentication and Cloud Firestore) handles sign-in and stores the account data above.' | t }}
+				<a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">{{ 'Firebase privacy' | t }}</a>
+			</li>
+			<li>
+				<strong>GitHub Pages</strong> {{ 'hosts the website and, like any web server, logs technical data such as your IP address.' | t }}
+				<a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">{{
+					'GitHub privacy statement' | t
+				}}</a>
+			</li>
+		</ul>
+		<p class="leading-relaxed">
+			{{ 'The puzzles come from games in the public Lichess database, which includes the Lichess usernames and ratings of the players.' | t }}
+			<a href="https://database.lichess.org" target="_blank" rel="noopener">{{ 'Lichess database' | t }}</a>
+		</p>
+	</section>
+
+	<section id="delete-account" class="flex flex-col gap-3">
+		<h2 class="m-0! -mb-1! text-lg font-semibold tracking-tight">{{ 'Delete your account' | t }}</h2>
+		<p class="leading-relaxed">
+			<a routerLink="/profile">{{ 'Open your profile' | t }}</a> {{ 'on the website or in the app and choose' | t }}
+			<strong>{{ 'Delete account' | t }}</strong>.
+			{{
+				'Google asks you to sign in once more, then your account and everything stored for it are deleted right away: profile, saved games, rating and pawns. Progress saved on that device is removed too.'
+					| t
+			}}
+		</p>
+		<p class="leading-relaxed">
+			{{ 'If you can no longer sign in, email' | t }} <a [href]="'mailto:' + email">{{ email }}</a> {{ 'and we will delete it for you.' | t }}
+		</p>
+	</section>
+
+	<section class="flex flex-col gap-3">
+		<h2 class="m-0! -mb-1! text-lg font-semibold tracking-tight">{{ 'Your rights' | t }}</h2>
+		<p class="leading-relaxed">
+			{{ 'You can ask to see, correct, export or delete the data we hold about you.' | t }}
+			{{ 'To do so, email' | t }} <a [href]="'mailto:' + email">{{ email }}</a> {{ 'and we will reply within 30 days.' | t }}
+			{{ 'We keep account data until you delete the account.' | t }}
+		</p>
+		<p class="leading-relaxed">
+			{{ 'The app is not aimed at children under 13. Signing in needs a Google account, which follows Google’s own age rules.' | t }}
+		</p>
+	</section>
+
+	<section class="flex flex-col gap-3">
+		<h2 class="m-0! -mb-1! text-lg font-semibold tracking-tight">{{ 'Changes' | t }}</h2>
+		<p class="leading-relaxed">
+			{{ 'If we change what we collect, we update this page and the date at the top before the change takes effect.' | t }}
+		</p>
+	</section>
+</article>

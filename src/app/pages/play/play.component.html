@@ -1,0 +1,77 @@
+<!--
+	Phones: the board is pinned above the footer and everything else scrolls above it.
+	Large screens: board on the left, content on the right.
+-->
+<section
+	class="mx-auto flex h-full w-full max-w-[72rem] flex-col lg:grid lg:h-full lg:grid-cols-[minmax(0,34rem)_1fr] lg:grid-rows-[minmax(0,1fr)] lg:items-stretch lg:gap-8 lg:px-6 lg:pb-4 lg:pt-3"
+>
+	<h1 class="sr-only">{{ (mode() === 'daily' ? 'Daily puzzle' : 'Random puzzle') | t }}</h1>
+
+	@if (loading()) {
+		<div class="mx-auto my-auto aspect-square w-[min(100%,46dvh)] animate-pulse bg-soft sm:rounded-xl lg:w-[min(100%,calc(100dvh-8.5rem))]" role="status" [attr.aria-label]="'Loading puzzle' | t"></div>
+	} @else if (failed() || !puzzle()) {
+		<div class="ds-card m-4 items-start gap-3 p-5 lg:col-span-2 lg:m-0">
+			<p>{{ (hasFilters() ? 'Could not load a puzzle with these filters.' : 'Could not load a puzzle.') | t }}</p>
+			<a class="ds-btn ds-btn-primary" routerLink="/practice/good-moves">{{ 'Try another puzzle' | t }}</a>
+		</div>
+	} @else {
+		@let current = puzzle()!;
+		@let game = current.game;
+
+		<div class="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 pb-2 pt-[3px] lg:order-2 lg:overflow-y-auto lg:p-0">
+			<div class="flex flex-col gap-[3px]">
+				<div class="text-sm">
+					<p class="font-medium">
+						{{ family(game.opening) | t }}
+						@if (variation(game.opening); as detail) {
+							<span class="font-normal text-mute">· {{ detail }}</span>
+						}
+					</p>
+					<p class="text-mute">
+						{{ game.white.name }} ({{ game.white.rating }}) {{ 'vs' | t }} {{ game.black.name }} ({{ game.black.rating }})
+					</p>
+				</div>
+
+				@if (record(); as played) {
+					<section class="flex flex-col gap-[3px]" [attr.aria-label]="'Today’s result' | t">
+						<p class="text-sm font-semibold">
+							{{ (played.won ? 'Solved' : 'Not solved') | t }} · {{ '{hits} of {count} found' | t: { hits: played.hits, count: played.target } }}
+						</p>
+						<ol class="grid gap-2" [style.grid-template-columns]="'repeat(' + played.answers.length + ', minmax(0, 1fr))'" [attr.aria-label]="'Solution' | t">
+							@for (move of played.answers; track $index; let i = $index) {
+								<li class="flex flex-col items-center rounded-xl border border-line bg-card px-1 py-2 text-center">
+									<span class="text-[0.6875rem] leading-none text-mute">{{ i + 1 }}</span>
+									<span class="mt-1 text-sm font-semibold leading-tight">{{ move.san }}</span>
+									<span class="mt-0.5 text-xs leading-tight text-mute">{{ format(move.rawEval) }}</span>
+								</li>
+							}
+						</ol>
+						<div class="flex flex-wrap gap-2">
+							<a class="ds-btn ds-btn-primary" routerLink="/practice/good-moves">{{ 'Practice good moves' | t }}</a>
+						</div>
+						<p class="text-sm text-mute">{{ 'A new daily puzzle tomorrow.' | t }}</p>
+					</section>
+				} @else if (run(); as attempt) {
+					<app-puzzle-panel [run]="attempt" [award]="award()">
+						<div class="flex flex-wrap gap-2" actions>
+							<a class="ds-btn ds-btn-primary" routerLink="/practice/good-moves" [queryParams]="nextParams()">{{ 'Next puzzle' | t }}</a>
+						</div>
+					</app-puzzle-panel>
+				}
+			</div>
+		</div>
+
+		<div class="shrink-0 pb-2 lg:order-1 lg:self-start lg:pb-0">
+			<div class="mx-auto w-[min(100%,46dvh)] lg:mx-0 lg:w-[min(100%,calc(100dvh-8.5rem))]">
+				<app-board
+					[fen]="run()?.fen() ?? current.puzzle.fen"
+					[orientation]="current.puzzle.side"
+					[interactive]="!!run()?.interactive()"
+					[arrows]="arrows()"
+					[lastMove]="run()?.lastMove() ?? null"
+					(moved)="onMove($event)"
+				/>
+			</div>
+		</div>
+	}
+</section>

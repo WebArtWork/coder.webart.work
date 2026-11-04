@@ -1,0 +1,63 @@
+{
+	"slug": "composition-over-inheritance",
+	"en": {
+		"idea": [
+			"Composition builds behavior by combining focused collaborators, rather than relying on deep inheritance trees. It typically makes variation explicit and reduces coupling between features."
+		],
+		"how": [
+			"Model capabilities as strategies or services passed into an object. Prefer inheritance when a real subtype relation satisfies Liskov substitution and shared behavior is stable; use interfaces to express capabilities, not incidental family trees."
+		],
+		"example": [
+			"A report exporter can compose a formatter, storage destination, and delivery channel rather than inherit from BaseExcelEmailS3Report. Testing each variant becomes straightforward."
+		],
+		"tradeoffs": [
+			"Composition can scatter behavior across too many objects, and indirection has a cost. Deep inheritance is not always wrong: framework extension points sometimes use it deliberately."
+		],
+		"brief": "Replace an exporter hierarchy with composed formatter and transport interfaces, while preserving public behavior. Compare change cost for adding one format and one destination.",
+		"criteria": [
+			"State the expected behavior and at least one failure or edge case before asking an agent to implement anything.",
+			"Inspect the boundary conditions and dependency direction, not only the happy-path result.",
+			"Demand observable evidence: tests, measured results, or a justified design decision."
+		],
+		"questions": [
+			"When is subtype polymorphism clearer than composing strategies?",
+			"What constraints or measurements would tell you to reconsider this design?",
+			"How would you test failure cases, scale, or evolving requirements rather than the happy path alone?"
+		],
+		"reading": [
+			{
+				"title": "Refactoring Guru — design principles",
+				"url": "https://refactoring.guru/design-patterns"
+			},
+			{
+				"title": "Martin Fowler — software design",
+				"url": "https://martinfowler.com/"
+			}
+		]
+	},
+	"ua": {
+		"idea": [
+			"Композиція формує поведінку з невеликих компонентів замість глибоких ієрархій спадкування. Вона робить варіативність явною та зменшує залежності між функціями."
+		],
+		"how": [
+			"Моделюйте можливості через стратегії або сервіси, передані об’єкту. Спадкування доречне за справжнього відношення підтипу й дотримання підстановки Лісков; інтерфейси мають описувати можливості, а не випадкові ієрархії."
+		],
+		"example": [
+			"Експортер звітів може поєднувати форматер, сховище й канал доставки замість спадкування від BaseExcelEmailS3Report. Тестувати кожен варіант тоді простіше."
+		],
+		"tradeoffs": [
+			"Композиція іноді розпорошує поведінку між надто багатьма об’єктами й додає непрямість. Спадкування не завжди помилка: фреймворки свідомо застосовують його для точок розширення."
+		],
+		"brief": "Замініть ієрархію експортерів композицією форматера й транспорту, зберігши контракт. Порівняйте вартість додавання нового формату та нового сховища.",
+		"criteria": [
+			"Перед реалізацією сформулюйте очікувану поведінку та принаймні один збій або граничний випадок.",
+			"Перевіряйте граничні умови та напрям залежностей, а не лише успішний сценарій.",
+			"Вимагайте перевірювані докази: тести, вимірювання або обґрунтування проєктного рішення."
+		],
+		"questions": [
+			"Коли поліморфізм підтипів зрозуміліший за композицію стратегій?",
+			"Які обмеження або вимірювання підкажуть, що це рішення варто змінити?",
+			"Як перевірити не лише успішний сценарій, а й помилку, навантаження або зміну вимог?"
+		]
+	}
+}

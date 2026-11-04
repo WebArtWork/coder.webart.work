@@ -1,0 +1,66 @@
+<app-practice-layout
+	title="Opening moves"
+	[loading]="flow.loading()"
+	[failed]="flow.failed()"
+	[empty]="flow.empty() || !flow.item()"
+	[reviewing]="flow.reviewing()"
+	[strip]="flow.strip()"
+	(reload)="flow.start()"
+>
+	@if (flow.item(); as item) {
+		<div panel class="flex flex-col gap-3" [attr.data-item]="item.id">
+			@if (flow.outcome(); as outcome) {
+				<app-practice-result [outcome]="outcome" [game]="item.game" [ply]="item.ply" [reviewing]="flow.reviewing()" (next)="flow.next()" (retry)="flow.retry()">
+					@if (played(); as move) {
+						<p class="text-sm">{{ 'You played {move}.' | t: { move } }}</p>
+					}
+					<p class="text-sm">
+						{{ 'In the game, {move} was played and gave away about {pawns} pawns.' | t: { move: item.played.san, pawns: (item.played.loss / 100).toFixed(1) } }}
+					</p>
+					<p class="text-sm">{{ 'Good moves:' | t }} <span class="font-medium">{{ goodSans() }}</span></p>
+					@if (principles().length) {
+						<p class="text-sm">
+							{{ 'The best move, {move}, follows:' | t: { move: item.lines[0].san } }}
+							{{ principles().join('; ') }}.
+						</p>
+					}
+					<p class="text-xs text-mute">{{ 'Rating {rating}' | t: { rating: item.rating } }} · {{ item.opening }}</p>
+				</app-practice-result>
+			} @else {
+				<section class="ds-card gap-3 p-4">
+					<div>
+						<p class="text-lg font-semibold">
+							{{ (item.side === 'white' ? 'White to move, move {number}' : 'Black to move, move {number}') | t: { number: moveNumber() } }}
+						</p>
+						<p class="text-sm text-mute" role="status">
+							@if (checking()) {
+								{{ 'Checking your move…' | t }}
+							} @else if (mode() === 'find') {
+								{{ 'In the game the player went wrong here. Find a good move: develop, castle, fight for the centre, and check what is loose.' | t }}
+							} @else {
+								{{ 'One of these moves is a mistake. Which one?' | t }}
+							}
+						</p>
+					</div>
+					@if (mode() === 'spot') {
+						<div class="grid grid-cols-2 gap-2">
+							@for (move of pair(); track move.uci) {
+								<button class="ds-btn ds-btn-outline" type="button" (click)="pick(move.uci)">{{ move.san }}</button>
+							}
+						</div>
+					}
+				</section>
+			}
+		</div>
+	}
+	@if (flow.item(); as item) {
+		<app-board
+			board
+			[fen]="fen()"
+			[orientation]="item.side"
+			[interactive]="mode() === 'find' && !checking() && !flow.outcome()"
+			[lastMove]="last()"
+			(moved)="onMove($event)"
+		/>
+	}
+</app-practice-layout>

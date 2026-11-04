@@ -1,0 +1,6 @@
+{
+	"name": "chess-import",
+	"private": true,
+	"type": "module",
+	"description": "Lichess archive → curated training games for src/data/game. Run through the npm scripts in the project root."
+}

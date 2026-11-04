@@ -1,0 +1,41 @@
+<article class="mx-auto flex w-full max-w-2xl flex-col gap-8 px-4 pb-10 pt-4 sm:px-6">
+	<header>
+		<h1 class="m-0! text-2xl font-semibold leading-tight tracking-tight">{{ 'Licenses and credits' | t }}</h1>
+	</header>
+
+	<section class="flex flex-col gap-3">
+		<h2 class="m-0! -mb-1! text-lg font-semibold tracking-tight">{{ 'This app' | t }}</h2>
+		<p class="leading-relaxed">
+			{{ 'Coder is free software, released under this license:' | t }}
+			<a href="/LICENSE.txt" target="_blank" rel="noopener">GNU General Public License, version 3</a>.
+			{{ 'You may use, study, share and change it under that license. It comes with no warranty.' | t }}
+		</p>
+		<p class="leading-relaxed">
+			{{ 'The full source code of the website and the apps:' | t }}
+			<a [href]="sourceUrl" target="_blank" rel="noopener">{{ sourceLabel }}</a>
+		</p>
+	</section>
+
+	<section class="flex flex-col gap-3" aria-labelledby="credits-title">
+		<h2 id="credits-title" class="m-0! text-lg font-semibold tracking-tight">{{ 'Built with' | t }}</h2>
+		<ul class="divide-y divide-line overflow-hidden rounded-xl border border-line bg-card">
+			@for (credit of credits; track credit.name) {
+				<li class="flex flex-col gap-1 px-4 py-3">
+					<span class="flex flex-wrap items-baseline justify-between gap-x-3">
+						<a class="font-semibold" [href]="credit.url" target="_blank" rel="noopener">{{ credit.name }}</a>
+						@if (credit.licenseUrl; as licenseUrl) {
+							<a class="text-sm" [href]="licenseUrl" target="_blank" rel="noopener">{{ credit.license }}</a>
+						} @else {
+							<span class="text-sm text-mute">{{ credit.license }}</span>
+						}
+					</span>
+					<span class="text-sm leading-snug text-mute">{{ credit.use | t }} {{ 'By {author}.' | t: { author: (credit.author | t) } }}</span>
+				</li>
+			}
+		</ul>
+		<p class="text-sm text-mute">
+			{{ 'Every package in the app, with its license text:' | t }}
+			<a href="/3rdpartylicenses.txt" target="_blank" rel="noopener">{{ 'third-party licenses' | t }}</a>.
+		</p>
+	</section>
+</article>
