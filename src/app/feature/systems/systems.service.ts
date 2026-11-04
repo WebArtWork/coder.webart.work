@@ -61,6 +61,16 @@ export class SystemsService {
 		this._update(id, (item) => ({ ...item, ...work }));
 	}
 
+	/** The notes about the system, and whether the shared page shows the template's notes. */
+	setAbout(id: string, about: { notes?: string; showTemplateInfo?: boolean }) {
+		this._update(id, (item) => ({ ...item, ...about }));
+	}
+
+	/** Remembers the id of the item's read-only copy, so sharing it again refreshes the same link. */
+	setShareId(id: string, shareId: string) {
+		this._update(id, (item) => ({ ...item, shareId }));
+	}
+
 	rename(id: string, name: string) {
 		this._update(id, (item) => ({ ...item, name: name.trim() || item.name }));
 	}

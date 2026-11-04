@@ -37,6 +37,10 @@ body {
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible,
 dialog:focus-visible {
 	outline: 2px solid var(--ring);
 	outline-offset: 2px;
@@ -92,15 +96,27 @@ cg-board square.mark-answer {
 
 /* a glossary term inside a lesson or an exercise: the text colour with a light blue tint, so it reads as text */
 .glossary-term {
+	font: inherit;
+	display: inline;
+	padding: 0;
+	border: 0;
+	background: none;
+	text-align: inherit;
 	color: color-mix(in oklab, currentColor 72%, oklch(0.62 0.16 250));
 	text-decoration: underline dotted color-mix(in oklab, oklch(0.62 0.16 250) 55%, transparent);
 	text-underline-offset: 3px;
 	cursor: pointer;
 }
-.glossary-term:hover,
 .glossary-term:focus-visible {
 	color: color-mix(in oklab, currentColor 45%, oklch(0.62 0.16 250));
 	text-decoration-style: solid;
+}
+
+@media (hover: hover) and (pointer: fine) {
+	.glossary-term:hover {
+		color: color-mix(in oklab, currentColor 45%, oklch(0.62 0.16 250));
+		text-decoration-style: solid;
+	}
 }
 
 /* the chosen one of a group of chips (theme, language, filters) */
@@ -109,4 +125,37 @@ cg-board square.mark-answer {
 	background: var(--primary);
 	border-color: var(--primary);
 	color: var(--primary-foreground);
+}
+
+/* Sections far below the fold are not laid out or painted until they scroll near the screen. */
+.lazy-section {
+	content-visibility: auto;
+	contain-intrinsic-size: auto 40rem;
+}
+
+/* A page that fits the screen (the system canvas) has nothing to scroll. */
+html:has(.fit-page),
+body:has(.fit-page) {
+	overflow: hidden;
+}
+
+
+/* The full-screen spinner (see SplashComponent). */
+.spinner {
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 9999px;
+	border: 3px solid var(--color-line, rgb(128 128 128 / 0.3));
+	border-top-color: var(--color-brand, #6d6fe8);
+	animation: spinner-turn 0.8s linear infinite;
+}
+@keyframes spinner-turn {
+	to {
+		transform: rotate(360deg);
+	}
+}
+@media (prefers-reduced-motion: reduce) {
+	.spinner {
+		animation-duration: 2.4s;
+	}
 }

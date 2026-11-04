@@ -80,7 +80,7 @@ export class PracticeFlow<T extends { id: string; rating: number }> {
 		if (this.reviewing()) {
 			const entry = this._review.next(this.item() ? { kind: this.kind, id: this.item()!.id } : undefined);
 			if (!entry) {
-				void this._router.navigate(['/practice/review']);
+				void this._router.navigate(['/practices/review']);
 				return;
 			}
 			const { path, query } = this._review.link(entry);

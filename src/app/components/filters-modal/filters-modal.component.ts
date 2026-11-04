@@ -15,7 +15,9 @@ import { TPipe } from '../../feature/i18n/t.pipe';
 			<div class="flex flex-col gap-5">
 				<ng-container *ngTemplateOutlet="template" />
 			</div>
-			<button class="ds-btn ds-btn-primary self-end" type="button" (click)="close()">{{ 'Done' | t }}</button>
+			<button class="ds-btn ds-btn-primary self-end" type="button" (click)="close()">
+				{{ 'Show results' | t }}
+			</button>
 		</div>
 	`,
 })

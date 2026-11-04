@@ -1,6 +1,6 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { Component, computed, inject, signal, TemplateRef, viewChild } from '@angular/core';
-import { ActivatedRoute, Router, RouterLink } from '@angular/router';
+import { RouterLink } from '@angular/router';
 import { CHALLENGE_TEMPLATES, CHALLENGE_TYPES, CHALLENGES } from '../../feature/challenges/challenges.data';
 import { registerPageFilters } from '../../feature/filters/filters.service';
 import { I18nService } from '../../feature/i18n/i18n.service';
@@ -10,11 +10,9 @@ import { TOTAL_POINTS } from '../../feature/practice/practice.data';
 import { SystemsService } from '../../feature/systems/systems.service';
 import { pick, THEORY_MODULES, THEORY_TOPICS } from '../../feature/theory/theory.data';
 
-type View = 'lessons' | 'systems';
-
 /**
- * The Practice page, in two views: the 15 exercises of every lesson with the best result so far, and the
- * system design challenges by template (the view is kept in the URL as ?view=systems).
+ * The Practice page: the 15 exercises of every lesson with the best result so far, then the system design
+ * challenges by template, in one searchable list.
  */
 @Component({
 	imports: [NgTemplateOutlet, RouterLink, TPipe],
@@ -24,20 +22,29 @@ export class PracticeComponent {
 	private readonly _language = inject(I18nService).language;
 	private readonly _progress = inject(PracticeProgressService);
 	private readonly _systems = inject(SystemsService);
-	private readonly _router = inject(Router);
 
-	protected readonly view = signal<View>(inject(ActivatedRoute).snapshot.queryParamMap.get('view') === 'systems' ? 'systems' : 'lessons');
+	/** The one lesson module or template whose practices are on screen; none at first, which keeps the page light. */
+	protected readonly openKey = signal<string | null>(null);
+
+	/** A search shows every match, so it opens all the groups that have one. */
+	protected isOpen(key: string): boolean {
+		return !!this.query().trim() || this.openKey() === key;
+	}
+
+	/** Opens the group, closing the one that was open; a click on the open group closes it. */
+	protected toggle(key: string) {
+		this.openKey.update((open) => (open === key ? null : key));
+	}
+
 	private readonly _filters = viewChild<TemplateRef<unknown>>('filters');
 	protected readonly query = signal('');
-	protected readonly total = THEORY_TOPICS.length;
+	/** Every lesson's exercises and every system design challenge, together. */
+	protected readonly total = THEORY_TOPICS.length + CHALLENGES.length;
 	protected readonly challengeCount = CHALLENGES.length;
 	protected readonly maxPoints = TOTAL_POINTS;
 	protected readonly pick = pick;
 	protected readonly language = this._language;
 	protected readonly typeLabels = CHALLENGE_TYPES;
-
-	/** How many lessons have a saved result. */
-	protected readonly done = computed(() => THEORY_TOPICS.filter((topic) => this._progress.scores()[topic.slug]).length);
 
 	protected readonly modules = computed(() => {
 		const language = this._language();
@@ -66,17 +73,13 @@ export class PracticeComponent {
 		})).filter((template) => template.challenges.length);
 	});
 
-	protected readonly startedCount = computed(() => new Set(this._systems.items().flatMap((item) => (item.challengeId ? [item.challengeId] : []))).size);
+	protected readonly shown = computed(
+		() => this.modules().reduce((sum, module) => sum + module.topics.length, 0) + this.templates().reduce((sum, template) => sum + template.challenges.length, 0),
+	);
 
 	constructor() {
 		// on a phone the search is in the top bar
 		registerPageFilters(this._filters, computed(() => !!this.query()));
-	}
-
-	protected setView(view: View) {
-		this.view.set(view);
-		this.query.set('');
-		void this._router.navigate([], { queryParams: { view: view === 'systems' ? 'systems' : null }, replaceUrl: true });
 	}
 
 	/** A Build challenge starts empty, so it belongs to the template whose number it carries: SYS-03-BUILD to the third. */

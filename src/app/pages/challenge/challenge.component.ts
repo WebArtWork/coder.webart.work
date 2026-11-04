@@ -54,7 +54,7 @@ export class ChallengeComponent {
 				id: this.challenge.id,
 				mutations: this.challenge.mutations,
 			});
-			await this._router.navigate(['/systems', system.id]);
+			await this._router.navigate(['/system', system.id]);
 		} finally {
 			this.starting.set(false);
 		}

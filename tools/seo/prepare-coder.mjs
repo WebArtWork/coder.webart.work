@@ -8,13 +8,13 @@ const challenges = (await readJson('src/data/challenges/index.json')).challenges
 const generation = await readJson('tools/seo/brand/generation-prompts.json');
 const pages = {
 	'/': { title: company.title, description: company.description, image: '/seo/dashboard.jpg' },
-	'/theory': {
+	'/theories': {
 		title: 'Senior developer knowledge base: 120 lessons',
 		description:
 			'120 engineering lessons in 12 modules, in English and Ukrainian: programming principles, architecture, design patterns, algorithms, distributed systems, databases, APIs, security, testing, DevOps, engineering decisions and AI-driven engineering.',
 		image: '/seo/theory.jpg',
 	},
-	'/practice': {
+	'/practices': {
 		title: 'Practice: 120 exercise sets for developers',
 		description:
 			'1,800 exercises in English and Ukrainian: for every lesson, 10 checked questions and 5 written tasks on principles, architecture, patterns, data, security, testing, reliability and AI-driven engineering.',
@@ -24,7 +24,7 @@ const pages = {
 // the lessons and their exercises share the cover of their hub page
 for (const challenge of challenges) {
 	const body = await readJson(`src/data/challenges/items/${challenge.slug}.json`);
-	pages[`/practice/challenge/${challenge.slug}`] = {
+	pages[`/practices/challenge/${challenge.slug}`] = {
 		title: `${challenge.title.en}: system design challenge`,
 		description: `${challenge.type[0].toUpperCase()}${challenge.type.slice(1)} challenge, ${challenge.level.en.toLowerCase()}, ${challenge.minutes} min. ${body.scenario.en.split(/(?<=[.!?])\s/)[0]}`,
 		image: '/seo/practice.jpg',
@@ -37,13 +37,13 @@ pages['/glossary'] = {
 	image: '/seo/theory.jpg',
 };
 for (const topic of theory.topics)
-	pages[`/theory/${topic.slug}`] = {
+	pages[`/theories/${topic.slug}`] = {
 		title: topic.title.en,
 		description: topic.summary.en,
 		image: '/seo/theory.jpg',
 	};
 for (const topic of theory.topics)
-	pages[`/practice/${topic.slug}`] = {
+	pages[`/practices/${topic.slug}`] = {
 		title: `${topic.title.en}: exercises`,
 		description: `15 exercises on ${topic.title.en}: 10 questions that are checked for you and 5 written tasks. ${topic.summary.en}`,
 		image: '/seo/practice.jpg',
@@ -78,6 +78,7 @@ const wrap = (title) => {
 };
 const entries = files.map((file, index) => {
 	const route = Object.keys(pages).find((key) => pages[key].image === `/seo/${file}`) ?? null;
+	const coverCopy = generation.seoCoverCopy?.[route];
 	const category = file.startsWith('theory')
 		? 'Lessons'
 		: file.startsWith('practice')
@@ -96,8 +97,8 @@ const entries = files.map((file, index) => {
 		lines: wrap(title),
 		edition: index + 1,
 		mode: 'built-in image_gen master artwork + deterministic typography',
-		source: 'tools/seo/brand/architecture-source.png',
-		prompt: generation.artwork,
+		source: generation.seoArtworkSource ?? 'tools/seo/brand/architecture-source.png',
+		prompt: generation.seoArtwork ?? generation.artwork,
 		composition:
 			'1200x630 JPEG, generated artwork, generated Coder mark, section label, title, tagline, domain and edition; Segoe UI typography. Retired filenames retain generic Coder branding and are absent from the route catalog.',
 	};

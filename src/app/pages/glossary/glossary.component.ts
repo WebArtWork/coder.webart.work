@@ -37,6 +37,8 @@ export class GlossaryComponent {
 	/** A term linked from a lesson arrives as ?term=, already in the search box. */
 	protected readonly query = signal(inject(ActivatedRoute).snapshot.queryParamMap.get('term') ?? '');
 	protected readonly section = signal<string | null>(null);
+	/** The one category whose terms are on screen; none at first, which keeps the page light. */
+	protected readonly openGroup = signal<string | null>(null);
 	protected readonly starterOnly = signal(false);
 
 	protected readonly sections = SECTIONS;
@@ -84,6 +86,16 @@ export class GlossaryComponent {
 
 	protected definition(term: GlossaryTerm): string {
 		return this.language() === 'ua' ? term.def.ua : term.def.en;
+	}
+
+	/** A search or a filter shows every match, so it opens all the categories that have one. */
+	protected isOpen(id: string): boolean {
+		return !!this.query().trim() || !!this.section() || this.starterOnly() || this.openGroup() === id;
+	}
+
+	/** Opens the category, closing the one that was open; a click on the open category closes it. */
+	protected toggle(id: string) {
+		this.openGroup.update((open) => (open === id ? null : id));
 	}
 
 	protected pickSection(id: string | null) {

@@ -20,12 +20,12 @@
 			<div class="mt-8 flex flex-wrap gap-3">
 				<a
 					class="rounded-lg bg-brand px-5 py-3 font-semibold text-brand-fg"
-					routerLink="/theory"
+					routerLink="/theories"
 					>Start learning →</a
 				>
 				<a
 					class="rounded-lg border border-line px-5 py-3 font-medium"
-					routerLink="/practice"
+					routerLink="/practices"
 					>Practice the topics</a
 				>
 			</div>
@@ -88,7 +88,7 @@
 				<li class="relative flex flex-col rounded-xl border border-line bg-card p-6 hover:border-brand">
 					<p class="text-xs uppercase tracking-widest text-brand">Module {{ index + 1 }}</p>
 					<h3 class="mt-4 text-xl font-semibold">
-						<a class="hover:text-brand after:absolute after:inset-0 after:rounded-xl" routerLink="/theory" [fragment]="module.slug">{{ module.title.en }}</a>
+						<a class="hover:text-brand after:absolute after:inset-0 after:rounded-xl" routerLink="/theories" [fragment]="module.slug">{{ module.title.en }}</a>
 					</h3>
 					<p class="mt-3 flex-1 text-sm leading-relaxed text-fg/80">{{ module.summary.en }}</p>
 				</li>
@@ -103,7 +103,7 @@
 		@for (paragraph of page.paragraphs; track paragraph) {
 			<p class="mt-6 leading-8 text-fg/80">{{ paragraph }}</p>
 		}
-		<a class="mt-8 inline-block text-brand" routerLink="/theory"
+		<a class="mt-8 inline-block text-brand" routerLink="/theories"
 			>Explore the learning path →</a
 		>
 		@if (mode === 'licenses') {

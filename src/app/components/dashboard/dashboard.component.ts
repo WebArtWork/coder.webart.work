@@ -88,7 +88,7 @@ export class DashboardComponent {
 		this.starting.set(true);
 		try {
 			const system = this._systems.create(pick(template.name, this._language()), template);
-			await this._router.navigate(['/systems', system.id]);
+			await this._router.navigate(['/system', system.id]);
 		} finally {
 			this.starting.set(false);
 		}

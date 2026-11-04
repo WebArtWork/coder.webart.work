@@ -8,16 +8,8 @@ import { I18nService } from '../../feature/i18n/i18n.service';
  */
 @Component({
 	selector: 'app-linked',
-	template: `@for (segment of segments(); track $index) {@if (segment.id; as id) {<span
-				class="glossary-term"
-				role="button"
-				tabindex="0"
-				aria-haspopup="dialog"
-				(click)="open(id)"
-				(keydown.enter)="open(id)"
-				(keydown.space)="open(id); $event.preventDefault()"
-				>{{ segment.text }}</span
-			>} @else {{{ segment.text }}}}`,
+	// prettier-ignore
+	template: `@for (segment of segments(); track $index) {@if (segment.id; as id) {<button class="glossary-term" type="button" aria-haspopup="dialog" (click)="open(id)">{{ segment.text }}</button>} @else {{{ segment.text }}}}`,
 })
 export class LinkedTextComponent {
 	private readonly _glossary = inject(GlossaryService);

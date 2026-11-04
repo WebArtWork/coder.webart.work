@@ -17,6 +17,9 @@ export class ShareService {
 	/** True for a moment after the link was copied, where no share sheet exists (most desktop browsers). */
 	readonly copied = signal(false);
 
+	/** A page that shares something other than its own address (a system's read-only link) sets this. */
+	readonly custom = signal<(() => void) | null>(null);
+
 	/** The public URL of the page on screen, query included (a shared position keeps its ?fen=). */
 	url(): string {
 		return companyProfile.siteUrl + this._router.url;
@@ -24,9 +27,19 @@ export class ShareService {
 
 	/** Call straight from the click: browsers allow sharing and copying only during the tap itself. */
 	share() {
+		const custom = this.custom();
+		if (custom) return custom();
+		this.shareLink(this.url(), this._document.title);
+	}
+
+	/** The public URL of a path of the site, such as `/shared/<id>`. */
+	urlOf(path: string): string {
+		return companyProfile.siteUrl + path;
+	}
+
+	/** Shares or copies any link, with the same fallbacks as `share()`. */
+	shareLink(url: string, title: string) {
 		if (!this._isBrowser) return;
-		const url = this.url();
-		const title = this._document.title;
 		if (_isNative()) {
 			// the native sheet needs no tap; loaded on use, to keep the plugin out of the first download
 			void import('@capacitor/share').then(({ Share }) => Share.share({ title, url, dialogTitle: title })).catch(() => {});

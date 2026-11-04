@@ -5,6 +5,26 @@
 .system-flow {
 	display: block;
 	height: 100%;
+	/* Foblex Flow has its own light tokens; these make the canvas follow the theme of the site */
+	--ff-flow-background-color: var(--card);
+	--ff-flow-text-color: var(--foreground);
+	--ff-canvas-background-color: var(--card);
+	--ff-background-dot-color: color-mix(in oklab, var(--foreground) 22%, transparent);
+	--ff-background-line-color: color-mix(in oklab, var(--foreground) 12%, transparent);
+	--ff-node-background-color: var(--background);
+	--ff-node-border-color: var(--border);
+	--ff-node-border-color-selected: var(--primary);
+	--ff-node-color: var(--foreground);
+	--ff-group-background-color: color-mix(in oklab, var(--muted) 55%, transparent);
+	--ff-group-border-color: var(--border);
+	--ff-group-color: var(--muted-foreground);
+	--ff-connector-background-color: var(--background);
+	--ff-connector-border-color: var(--primary);
+	--ff-connector-connected-color: var(--primary);
+	--ff-connector-node-ring-color: var(--background);
+	--ff-connection-color: var(--primary);
+	background: var(--card);
+	color: var(--foreground);
 }
 .system-node {
 	position: relative;
@@ -78,4 +98,11 @@
 	color: var(--muted-foreground);
 	font-size: 0.6875rem;
 	white-space: nowrap;
+}
+
+/* Touch users remove the selected item with the full-sized toolbar action. */
+@media (pointer: coarse) {
+	.system-node-remove {
+		display: none;
+	}
 }

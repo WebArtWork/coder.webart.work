@@ -54,6 +54,12 @@ export interface SystemItem {
 	checks?: number[];
 	/** The learner's decision record for the challenge. */
 	adr?: string;
+	/** The owner's text about the system, shown on the shared page. */
+	notes?: string;
+	/** Whether the shared page also shows the notes about the template; on unless turned off. */
+	showTemplateInfo?: boolean;
+	/** The long random id of the read-only copy at /shared/<shareId>; set the first time the system is shared. */
+	shareId?: string;
 	createdAt: number;
 	updatedAt: number;
 }

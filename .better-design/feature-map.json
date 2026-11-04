@@ -1,0 +1,2321 @@
+{
+  "version": 1,
+  "product": "Coder",
+  "features": [
+    {
+      "id": "architecture",
+      "name": "Public pages",
+      "flows": [
+        {
+          "id": "browse-1",
+          "name": "Browse Public pages 1",
+          "steps": [
+            {
+              "name": "Coder | Learn to architect better software",
+              "route": "/",
+              "screen": "src/app/pages/architecture/architecture.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Privacy",
+              "route": "/privacy",
+              "screen": "src/app/pages/architecture/architecture.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Licenses and credits",
+              "route": "/licenses",
+              "screen": "src/app/pages/architecture/architecture.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "theory",
+      "name": "Lessons",
+      "flows": [
+        {
+          "id": "browse-1",
+          "name": "Browse Lessons 1",
+          "steps": [
+            {
+              "name": "Senior developer knowledge base: 120 lessons",
+              "route": "/theories",
+              "screen": "src/app/pages/theory/theory.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "SOLID Principles",
+              "route": "/theories/solid-principles",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "DRY — Don't Repeat Yourself",
+              "route": "/theories/dry-don-t-repeat-yourself",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "KISS — Keep It Simple",
+              "route": "/theories/kiss-keep-it-simple",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "YAGNI — You Aren't Gonna Need It",
+              "route": "/theories/yagni-you-aren-t-gonna-need-it",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Separation of Concerns (SoC)",
+              "route": "/theories/separation-of-concerns-soc",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Law of Demeter (LoD)",
+              "route": "/theories/law-of-demeter-lod",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Principle of Least Astonishment (POLA)",
+              "route": "/theories/principle-of-least-astonishment-pola",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Composition over Inheritance",
+              "route": "/theories/composition-over-inheritance",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "High Cohesion, Low Coupling",
+              "route": "/theories/high-cohesion-low-coupling",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Design by Contract",
+              "route": "/theories/design-by-contract",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Clean Architecture",
+              "route": "/theories/clean-architecture",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Hexagonal Architecture (Ports and Adapters)",
+              "route": "/theories/hexagonal-architecture-ports-and-adapters",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Onion Architecture",
+              "route": "/theories/onion-architecture",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Layered Architecture",
+              "route": "/theories/layered-architecture",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Microservices Architecture",
+              "route": "/theories/microservices-architecture",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Modular Monolith",
+              "route": "/theories/modular-monolith",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Event-Driven Architecture",
+              "route": "/theories/event-driven-architecture",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "CQRS — Command Query Responsibility Segregation",
+              "route": "/theories/cqrs-command-query-responsibility-segregation",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Event Sourcing",
+              "route": "/theories/event-sourcing",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Domain-Driven Design (DDD)",
+              "route": "/theories/domain-driven-design-ddd",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Gang of Four (GoF) Design Patterns",
+              "route": "/theories/gang-of-four-gof-design-patterns",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "GRASP — Responsibility Assignment",
+              "route": "/theories/grasp-responsibility-assignment",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Dependency Injection",
+              "route": "/theories/dependency-injection",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Repository Pattern",
+              "route": "/theories/repository-pattern",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Unit of Work",
+              "route": "/theories/unit-of-work",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Factory Method & Abstract Factory",
+              "route": "/theories/factory-method-and-abstract-factory",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Strategy & Observer Patterns",
+              "route": "/theories/strategy-and-observer-patterns",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Adapter & Facade Patterns",
+              "route": "/theories/adapter-and-facade-patterns",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "State & Command Patterns",
+              "route": "/theories/state-and-command-patterns",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-2",
+          "name": "Browse Lessons 2",
+          "steps": [
+            {
+              "name": "MVC, MVP & MVVM",
+              "route": "/theories/mvc-mvp-and-mvvm",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Big O Notation",
+              "route": "/theories/big-o-notation",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Time & Space Complexity",
+              "route": "/theories/time-and-space-complexity",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Arrays, Lists, Stacks & Queues",
+              "route": "/theories/arrays-lists-stacks-and-queues",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Hash Tables & Trees",
+              "route": "/theories/hash-tables-and-trees",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Graphs & Graph Algorithms",
+              "route": "/theories/graphs-and-graph-algorithms",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Sorting & Searching",
+              "route": "/theories/sorting-and-searching",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Recursion & Dynamic Programming",
+              "route": "/theories/recursion-and-dynamic-programming",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Greedy Algorithms",
+              "route": "/theories/greedy-algorithms",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Caching Algorithms",
+              "route": "/theories/caching-algorithms",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Concurrency Algorithms",
+              "route": "/theories/concurrency-algorithms",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "CAP Theorem",
+              "route": "/theories/cap-theorem",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "PACELC Theorem",
+              "route": "/theories/pacelc-theorem",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "ACID Transactions",
+              "route": "/theories/acid-transactions",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "BASE Model",
+              "route": "/theories/base-model",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Eventual Consistency",
+              "route": "/theories/eventual-consistency",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Idempotency",
+              "route": "/theories/idempotency",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Consensus Algorithms",
+              "route": "/theories/consensus-algorithms",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Distributed Transactions & Sagas",
+              "route": "/theories/distributed-transactions-and-sagas",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Circuit Breaker Pattern",
+              "route": "/theories/circuit-breaker-pattern",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Retry, Timeout & Backoff Patterns",
+              "route": "/theories/retry-timeout-and-backoff-patterns",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Database Normalization (1NF–5NF)",
+              "route": "/theories/database-normalization-1nf-5nf",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Denormalization",
+              "route": "/theories/denormalization",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Indexing Strategies",
+              "route": "/theories/indexing-strategies",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Query Optimization",
+              "route": "/theories/query-optimization",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Transaction Isolation Levels",
+              "route": "/theories/transaction-isolation-levels",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Optimistic vs Pessimistic Locking",
+              "route": "/theories/optimistic-vs-pessimistic-locking",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Sharding & Partitioning",
+              "route": "/theories/sharding-and-partitioning",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Replication Strategies",
+              "route": "/theories/replication-strategies",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "SQL vs NoSQL Trade-offs",
+              "route": "/theories/sql-vs-nosql-trade-offs",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-3",
+          "name": "Browse Lessons 3",
+          "steps": [
+            {
+              "name": "Schema Evolution & Migrations",
+              "route": "/theories/schema-evolution-and-migrations",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "REST Principles",
+              "route": "/theories/rest-principles",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "GraphQL Architecture",
+              "route": "/theories/graphql-architecture",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "RPC & gRPC",
+              "route": "/theories/rpc-and-grpc",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "API Versioning",
+              "route": "/theories/api-versioning",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Authentication vs Authorization",
+              "route": "/theories/authentication-vs-authorization",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "OAuth 2.0 & OpenID Connect",
+              "route": "/theories/oauth-2-0-and-openid-connect",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Rate Limiting & Throttling",
+              "route": "/theories/rate-limiting-and-throttling",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Pagination & Filtering",
+              "route": "/theories/pagination-and-filtering",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Webhooks & Message Queues",
+              "route": "/theories/webhooks-and-message-queues",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Backward Compatibility",
+              "route": "/theories/backward-compatibility",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "CIA Triad",
+              "route": "/theories/cia-triad",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Principle of Least Privilege",
+              "route": "/theories/principle-of-least-privilege",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Zero Trust Architecture",
+              "route": "/theories/zero-trust-architecture",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Defense in Depth",
+              "route": "/theories/defense-in-depth",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "OWASP Top 10",
+              "route": "/theories/owasp-top-10",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Threat Modeling (STRIDE)",
+              "route": "/theories/threat-modeling-stride",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Secure Software Development Lifecycle",
+              "route": "/theories/secure-software-development-lifecycle",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Cryptography Fundamentals",
+              "route": "/theories/cryptography-fundamentals",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Secrets Management",
+              "route": "/theories/secrets-management",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Software Supply Chain Security",
+              "route": "/theories/software-supply-chain-security",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Testing Pyramid",
+              "route": "/theories/testing-pyramid",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Test-Driven Development (TDD)",
+              "route": "/theories/test-driven-development-tdd",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Behavior-Driven Development (BDD)",
+              "route": "/theories/behavior-driven-development-bdd",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Unit, Integration & End-to-End Testing",
+              "route": "/theories/unit-integration-and-end-to-end-testing",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Property-Based Testing",
+              "route": "/theories/property-based-testing",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Contract Testing",
+              "route": "/theories/contract-testing",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Mutation Testing",
+              "route": "/theories/mutation-testing",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Static Analysis",
+              "route": "/theories/static-analysis",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Code Smells & Refactoring",
+              "route": "/theories/code-smells-and-refactoring",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-4",
+          "name": "Browse Lessons 4",
+          "steps": [
+            {
+              "name": "Technical Debt Management",
+              "route": "/theories/technical-debt-management",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "CI/CD Principles",
+              "route": "/theories/ci-cd-principles",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Infrastructure as Code (IaC)",
+              "route": "/theories/infrastructure-as-code-iac",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Immutable Infrastructure",
+              "route": "/theories/immutable-infrastructure",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Blue-Green & Canary Deployment",
+              "route": "/theories/blue-green-and-canary-deployment",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Observability: Logs, Metrics & Traces",
+              "route": "/theories/observability-logs-metrics-and-traces",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "SLI, SLO & SLA",
+              "route": "/theories/sli-slo-and-sla",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Fault Tolerance",
+              "route": "/theories/fault-tolerance",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Scalability vs Elasticity",
+              "route": "/theories/scalability-vs-elasticity",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Load Balancing",
+              "route": "/theories/load-balancing",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Disaster Recovery: RPO & RTO",
+              "route": "/theories/disaster-recovery-rpo-and-rto",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "System Design Trade-offs",
+              "route": "/theories/system-design-trade-offs",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Cost–Benefit Analysis",
+              "route": "/theories/cost-benefit-analysis",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Build vs Buy",
+              "route": "/theories/build-vs-buy",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Conway's Law",
+              "route": "/theories/conway-s-law",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Brooks's Law",
+              "route": "/theories/brooks-s-law",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Amdahl's Law",
+              "route": "/theories/amdahl-s-law",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Little's Law",
+              "route": "/theories/little-s-law",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Pareto Principle",
+              "route": "/theories/pareto-principle",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Theory of Constraints",
+              "route": "/theories/theory-of-constraints",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Architecture Decision Records (ADR)",
+              "route": "/theories/architecture-decision-records-adr",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Specification-Driven Development",
+              "route": "/theories/specification-driven-development",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Context Engineering",
+              "route": "/theories/context-engineering",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Prompt Engineering",
+              "route": "/theories/prompt-engineering",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Agentic Workflows",
+              "route": "/theories/agentic-workflows",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Human-in-the-Loop (HITL)",
+              "route": "/theories/human-in-the-loop-hitl",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "AI Code Review",
+              "route": "/theories/ai-code-review",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "AI-Assisted Testing",
+              "route": "/theories/ai-assisted-testing",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Model Evaluation & Benchmarking",
+              "route": "/theories/model-evaluation-and-benchmarking",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "AI Security & Prompt Injection",
+              "route": "/theories/ai-security-and-prompt-injection",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-5",
+          "name": "Browse Lessons 5",
+          "steps": [
+            {
+              "name": "AI-Generated Code Governance",
+              "route": "/theories/ai-generated-code-governance",
+              "screen": "src/app/pages/theory-lesson/theory-lesson.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "practice",
+      "name": "Practice",
+      "flows": [
+        {
+          "id": "browse-1",
+          "name": "Browse Practice 1",
+          "steps": [
+            {
+              "name": "Practice: 120 exercise sets for developers",
+              "route": "/practices",
+              "screen": "src/app/pages/practice/practice.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Community event reservations: system design challenge",
+              "route": "/practices/challenge/sys-01-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Repair unsafe browser shortcuts: system design challenge",
+              "route": "/practices/challenge/sys-01-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Safe document uploads: system design challenge",
+              "route": "/practices/challenge/sys-01-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Ticket sale traffic spike: system design challenge",
+              "route": "/practices/challenge/sys-01-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Choose the first deployment model: system design challenge",
+              "route": "/practices/challenge/sys-01-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Training academy modules: system design challenge",
+              "route": "/practices/challenge/sys-02-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Restore business module ownership: system design challenge",
+              "route": "/practices/challenge/sys-02-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Promotions and partial refunds: system design challenge",
+              "route": "/practices/challenge/sys-02-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Reporting slows checkout: system design challenge",
+              "route": "/practices/challenge/sys-02-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Extract Billing or keep it?: system design challenge",
+              "route": "/practices/challenge/sys-02-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Food delivery service boundaries: system design challenge",
+              "route": "/practices/challenge/sys-03-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Repair payment ownership: system design challenge",
+              "route": "/practices/challenge/sys-03-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Loyalty points on completed orders: system design challenge",
+              "route": "/practices/challenge/sys-03-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Inventory reservation latency: system design challenge",
+              "route": "/practices/challenge/sys-03-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Independent services or distributed monolith?: system design challenge",
+              "route": "/practices/challenge/sys-03-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Multi-tenant team tracker: system design challenge",
+              "route": "/practices/challenge/sys-04-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Cross-tenant data leak: system design challenge",
+              "route": "/practices/challenge/sys-04-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Metered usage-based billing: system design challenge",
+              "route": "/practices/challenge/sys-04-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Noisy tenant overwhelms workers: system design challenge",
+              "route": "/practices/challenge/sys-04-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Shared database versus tenant isolation: system design challenge",
+              "route": "/practices/challenge/sys-04-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Small electronics shop: system design challenge",
+              "route": "/practices/challenge/sys-05-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Payment bypasses stock: system design challenge",
+              "route": "/practices/challenge/sys-05-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Returns and partial refunds: system design challenge",
+              "route": "/practices/challenge/sys-05-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Flash sale inventory contention: system design challenge",
+              "route": "/practices/challenge/sys-05-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Synchronous or asynchronous checkout?: system design challenge",
+              "route": "/practices/challenge/sys-05-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Service-company CRM: system design challenge",
+              "route": "/practices/challenge/sys-06-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Permissions and audit removed: system design challenge",
+              "route": "/practices/challenge/sys-06-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Purchase approval workflow: system design challenge",
+              "route": "/practices/challenge/sys-06-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Two-million-record reporting: system design challenge",
+              "route": "/practices/challenge/sys-06-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-2",
+          "name": "Browse Practice 2",
+          "steps": [
+            {
+              "name": "One ERP or independent departments?: system design challenge",
+              "route": "/practices/challenge/sys-06-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Local services booking marketplace: system design challenge",
+              "route": "/practices/challenge/sys-07-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Stop seller self-payout: system design challenge",
+              "route": "/practices/challenge/sys-07-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Disputes and partial refunds: system design challenge",
+              "route": "/practices/challenge/sys-07-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Search index lag: system design challenge",
+              "route": "/practices/challenge/sys-07-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Build settlement or buy a provider?: system design challenge",
+              "route": "/practices/challenge/sys-07-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Collaborative whiteboard: system design challenge",
+              "route": "/practices/challenge/sys-08-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Unauthorized message storage: system design challenge",
+              "route": "/practices/challenge/sys-08-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Offline edits with conflicts: system design challenge",
+              "route": "/practices/challenge/sys-08-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Ten thousand live viewers: system design challenge",
+              "route": "/practices/challenge/sys-08-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "WebSocket, SSE or polling?: system design challenge",
+              "route": "/practices/challenge/sys-08-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Offline field inspections: system design challenge",
+              "route": "/practices/challenge/sys-09-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Mobile security bypass: system design challenge",
+              "route": "/practices/challenge/sys-09-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Resumable photos and conflicts: system design challenge",
+              "route": "/practices/challenge/sys-09-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Battery-hungry background sync: system design challenge",
+              "route": "/practices/challenge/sys-09-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Local-first or online-first booking?: system design challenge",
+              "route": "/practices/challenge/sys-09-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Durable order event pipeline: system design challenge",
+              "route": "/practices/challenge/sys-10-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Lost outbox and poison events: system design challenge",
+              "route": "/practices/challenge/sys-10-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Version OrderCreated events: system design challenge",
+              "route": "/practices/challenge/sys-10-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Million-event backlog: system design challenge",
+              "route": "/practices/challenge/sys-10-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Event sourcing or state plus events?: system design challenge",
+              "route": "/practices/challenge/sys-10-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Internal company knowledge assistant: system design challenge",
+              "route": "/practices/challenge/sys-11-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Prompt-injection tool bypass: system design challenge",
+              "route": "/practices/challenge/sys-11-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "AI architecture code reviewer: system design challenge",
+              "route": "/practices/challenge/sys-11-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "RAG cost and latency reduction: system design challenge",
+              "route": "/practices/challenge/sys-11-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "AI agent autonomy policy: system design challenge",
+              "route": "/practices/challenge/sys-11-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Cold-chain temperature telemetry: system design challenge",
+              "route": "/practices/challenge/sys-12-build",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Unsafe direct device commands: system design challenge",
+              "route": "/practices/challenge/sys-12-fix",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Staged over-the-air firmware updates: system design challenge",
+              "route": "/practices/challenge/sys-12-extend",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Reconnect telemetry storm: system design challenge",
+              "route": "/practices/challenge/sys-12-optimize",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-3",
+          "name": "Browse Practice 3",
+          "steps": [
+            {
+              "name": "Cloud authority versus edge autonomy: system design challenge",
+              "route": "/practices/challenge/sys-12-review",
+              "screen": "src/app/pages/challenge/challenge.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "SOLID Principles: exercises",
+              "route": "/practices/solid-principles",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "DRY — Don't Repeat Yourself: exercises",
+              "route": "/practices/dry-don-t-repeat-yourself",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "KISS — Keep It Simple: exercises",
+              "route": "/practices/kiss-keep-it-simple",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "YAGNI — You Aren't Gonna Need It: exercises",
+              "route": "/practices/yagni-you-aren-t-gonna-need-it",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Separation of Concerns (SoC): exercises",
+              "route": "/practices/separation-of-concerns-soc",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Law of Demeter (LoD): exercises",
+              "route": "/practices/law-of-demeter-lod",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Principle of Least Astonishment (POLA): exercises",
+              "route": "/practices/principle-of-least-astonishment-pola",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Composition over Inheritance: exercises",
+              "route": "/practices/composition-over-inheritance",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "High Cohesion, Low Coupling: exercises",
+              "route": "/practices/high-cohesion-low-coupling",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Design by Contract: exercises",
+              "route": "/practices/design-by-contract",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Clean Architecture: exercises",
+              "route": "/practices/clean-architecture",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Hexagonal Architecture (Ports and Adapters): exercises",
+              "route": "/practices/hexagonal-architecture-ports-and-adapters",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Onion Architecture: exercises",
+              "route": "/practices/onion-architecture",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Layered Architecture: exercises",
+              "route": "/practices/layered-architecture",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Microservices Architecture: exercises",
+              "route": "/practices/microservices-architecture",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Modular Monolith: exercises",
+              "route": "/practices/modular-monolith",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Event-Driven Architecture: exercises",
+              "route": "/practices/event-driven-architecture",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "CQRS — Command Query Responsibility Segregation: exercises",
+              "route": "/practices/cqrs-command-query-responsibility-segregation",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Event Sourcing: exercises",
+              "route": "/practices/event-sourcing",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Domain-Driven Design (DDD): exercises",
+              "route": "/practices/domain-driven-design-ddd",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Gang of Four (GoF) Design Patterns: exercises",
+              "route": "/practices/gang-of-four-gof-design-patterns",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "GRASP — Responsibility Assignment: exercises",
+              "route": "/practices/grasp-responsibility-assignment",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Dependency Injection: exercises",
+              "route": "/practices/dependency-injection",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Repository Pattern: exercises",
+              "route": "/practices/repository-pattern",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Unit of Work: exercises",
+              "route": "/practices/unit-of-work",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Factory Method & Abstract Factory: exercises",
+              "route": "/practices/factory-method-and-abstract-factory",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Strategy & Observer Patterns: exercises",
+              "route": "/practices/strategy-and-observer-patterns",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Adapter & Facade Patterns: exercises",
+              "route": "/practices/adapter-and-facade-patterns",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "State & Command Patterns: exercises",
+              "route": "/practices/state-and-command-patterns",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-4",
+          "name": "Browse Practice 4",
+          "steps": [
+            {
+              "name": "MVC, MVP & MVVM: exercises",
+              "route": "/practices/mvc-mvp-and-mvvm",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Big O Notation: exercises",
+              "route": "/practices/big-o-notation",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Time & Space Complexity: exercises",
+              "route": "/practices/time-and-space-complexity",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Arrays, Lists, Stacks & Queues: exercises",
+              "route": "/practices/arrays-lists-stacks-and-queues",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Hash Tables & Trees: exercises",
+              "route": "/practices/hash-tables-and-trees",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Graphs & Graph Algorithms: exercises",
+              "route": "/practices/graphs-and-graph-algorithms",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Sorting & Searching: exercises",
+              "route": "/practices/sorting-and-searching",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Recursion & Dynamic Programming: exercises",
+              "route": "/practices/recursion-and-dynamic-programming",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Greedy Algorithms: exercises",
+              "route": "/practices/greedy-algorithms",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Caching Algorithms: exercises",
+              "route": "/practices/caching-algorithms",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Concurrency Algorithms: exercises",
+              "route": "/practices/concurrency-algorithms",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "CAP Theorem: exercises",
+              "route": "/practices/cap-theorem",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "PACELC Theorem: exercises",
+              "route": "/practices/pacelc-theorem",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "ACID Transactions: exercises",
+              "route": "/practices/acid-transactions",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "BASE Model: exercises",
+              "route": "/practices/base-model",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Eventual Consistency: exercises",
+              "route": "/practices/eventual-consistency",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Idempotency: exercises",
+              "route": "/practices/idempotency",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Consensus Algorithms: exercises",
+              "route": "/practices/consensus-algorithms",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Distributed Transactions & Sagas: exercises",
+              "route": "/practices/distributed-transactions-and-sagas",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Circuit Breaker Pattern: exercises",
+              "route": "/practices/circuit-breaker-pattern",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Retry, Timeout & Backoff Patterns: exercises",
+              "route": "/practices/retry-timeout-and-backoff-patterns",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Database Normalization (1NF–5NF): exercises",
+              "route": "/practices/database-normalization-1nf-5nf",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Denormalization: exercises",
+              "route": "/practices/denormalization",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Indexing Strategies: exercises",
+              "route": "/practices/indexing-strategies",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Query Optimization: exercises",
+              "route": "/practices/query-optimization",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Transaction Isolation Levels: exercises",
+              "route": "/practices/transaction-isolation-levels",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Optimistic vs Pessimistic Locking: exercises",
+              "route": "/practices/optimistic-vs-pessimistic-locking",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Sharding & Partitioning: exercises",
+              "route": "/practices/sharding-and-partitioning",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Replication Strategies: exercises",
+              "route": "/practices/replication-strategies",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "SQL vs NoSQL Trade-offs: exercises",
+              "route": "/practices/sql-vs-nosql-trade-offs",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-5",
+          "name": "Browse Practice 5",
+          "steps": [
+            {
+              "name": "Schema Evolution & Migrations: exercises",
+              "route": "/practices/schema-evolution-and-migrations",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "REST Principles: exercises",
+              "route": "/practices/rest-principles",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "GraphQL Architecture: exercises",
+              "route": "/practices/graphql-architecture",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "RPC & gRPC: exercises",
+              "route": "/practices/rpc-and-grpc",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "API Versioning: exercises",
+              "route": "/practices/api-versioning",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Authentication vs Authorization: exercises",
+              "route": "/practices/authentication-vs-authorization",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "OAuth 2.0 & OpenID Connect: exercises",
+              "route": "/practices/oauth-2-0-and-openid-connect",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Rate Limiting & Throttling: exercises",
+              "route": "/practices/rate-limiting-and-throttling",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Pagination & Filtering: exercises",
+              "route": "/practices/pagination-and-filtering",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Webhooks & Message Queues: exercises",
+              "route": "/practices/webhooks-and-message-queues",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Backward Compatibility: exercises",
+              "route": "/practices/backward-compatibility",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "CIA Triad: exercises",
+              "route": "/practices/cia-triad",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Principle of Least Privilege: exercises",
+              "route": "/practices/principle-of-least-privilege",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Zero Trust Architecture: exercises",
+              "route": "/practices/zero-trust-architecture",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Defense in Depth: exercises",
+              "route": "/practices/defense-in-depth",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "OWASP Top 10: exercises",
+              "route": "/practices/owasp-top-10",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Threat Modeling (STRIDE): exercises",
+              "route": "/practices/threat-modeling-stride",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Secure Software Development Lifecycle: exercises",
+              "route": "/practices/secure-software-development-lifecycle",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Cryptography Fundamentals: exercises",
+              "route": "/practices/cryptography-fundamentals",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Secrets Management: exercises",
+              "route": "/practices/secrets-management",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Software Supply Chain Security: exercises",
+              "route": "/practices/software-supply-chain-security",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Testing Pyramid: exercises",
+              "route": "/practices/testing-pyramid",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Test-Driven Development (TDD): exercises",
+              "route": "/practices/test-driven-development-tdd",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Behavior-Driven Development (BDD): exercises",
+              "route": "/practices/behavior-driven-development-bdd",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Unit, Integration & End-to-End Testing: exercises",
+              "route": "/practices/unit-integration-and-end-to-end-testing",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Property-Based Testing: exercises",
+              "route": "/practices/property-based-testing",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Contract Testing: exercises",
+              "route": "/practices/contract-testing",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Mutation Testing: exercises",
+              "route": "/practices/mutation-testing",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Static Analysis: exercises",
+              "route": "/practices/static-analysis",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Code Smells & Refactoring: exercises",
+              "route": "/practices/code-smells-and-refactoring",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-6",
+          "name": "Browse Practice 6",
+          "steps": [
+            {
+              "name": "Technical Debt Management: exercises",
+              "route": "/practices/technical-debt-management",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "CI/CD Principles: exercises",
+              "route": "/practices/ci-cd-principles",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Infrastructure as Code (IaC): exercises",
+              "route": "/practices/infrastructure-as-code-iac",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Immutable Infrastructure: exercises",
+              "route": "/practices/immutable-infrastructure",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Blue-Green & Canary Deployment: exercises",
+              "route": "/practices/blue-green-and-canary-deployment",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Observability: Logs, Metrics & Traces: exercises",
+              "route": "/practices/observability-logs-metrics-and-traces",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "SLI, SLO & SLA: exercises",
+              "route": "/practices/sli-slo-and-sla",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Fault Tolerance: exercises",
+              "route": "/practices/fault-tolerance",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Scalability vs Elasticity: exercises",
+              "route": "/practices/scalability-vs-elasticity",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Load Balancing: exercises",
+              "route": "/practices/load-balancing",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Disaster Recovery: RPO & RTO: exercises",
+              "route": "/practices/disaster-recovery-rpo-and-rto",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "System Design Trade-offs: exercises",
+              "route": "/practices/system-design-trade-offs",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Cost–Benefit Analysis: exercises",
+              "route": "/practices/cost-benefit-analysis",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Build vs Buy: exercises",
+              "route": "/practices/build-vs-buy",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Conway's Law: exercises",
+              "route": "/practices/conway-s-law",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Brooks's Law: exercises",
+              "route": "/practices/brooks-s-law",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Amdahl's Law: exercises",
+              "route": "/practices/amdahl-s-law",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Little's Law: exercises",
+              "route": "/practices/little-s-law",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Pareto Principle: exercises",
+              "route": "/practices/pareto-principle",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Theory of Constraints: exercises",
+              "route": "/practices/theory-of-constraints",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Architecture Decision Records (ADR): exercises",
+              "route": "/practices/architecture-decision-records-adr",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Specification-Driven Development: exercises",
+              "route": "/practices/specification-driven-development",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Context Engineering: exercises",
+              "route": "/practices/context-engineering",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Prompt Engineering: exercises",
+              "route": "/practices/prompt-engineering",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Agentic Workflows: exercises",
+              "route": "/practices/agentic-workflows",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Human-in-the-Loop (HITL): exercises",
+              "route": "/practices/human-in-the-loop-hitl",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "AI Code Review: exercises",
+              "route": "/practices/ai-code-review",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "AI-Assisted Testing: exercises",
+              "route": "/practices/ai-assisted-testing",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "Model Evaluation & Benchmarking: exercises",
+              "route": "/practices/model-evaluation-and-benchmarking",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "AI Security & Prompt Injection: exercises",
+              "route": "/practices/ai-security-and-prompt-injection",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        },
+        {
+          "id": "browse-7",
+          "name": "Browse Practice 7",
+          "steps": [
+            {
+              "name": "AI-Generated Code Governance: exercises",
+              "route": "/practices/ai-generated-code-governance",
+              "screen": "src/app/pages/exercise/exercise.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "glossary",
+      "name": "Glossary",
+      "flows": [
+        {
+          "id": "browse-1",
+          "name": "Browse Glossary 1",
+          "steps": [
+            {
+              "name": "Developer glossary: 354 terms",
+              "route": "/glossary",
+              "screen": "src/app/pages/glossary/glossary.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "systems",
+      "name": "Systems",
+      "flows": [
+        {
+          "id": "browse-1",
+          "name": "Browse Systems 1",
+          "steps": [
+            {
+              "name": "/systems",
+              "route": "/systems",
+              "screen": "src/app/pages/systems/systems.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "/system/:id",
+              "route": "/system/:id",
+              "screen": "src/app/pages/system/system.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "/shared/:id",
+              "route": "/shared/:id",
+              "screen": "src/app/pages/shared/shared.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        }
+      ],
+      "components": []
+    },
+    {
+      "id": "profile",
+      "name": "Account",
+      "flows": [
+        {
+          "id": "browse-1",
+          "name": "Browse Account 1",
+          "steps": [
+            {
+              "name": "/profile",
+              "route": "/profile",
+              "screen": "src/app/pages/profile/profile.component.ts",
+              "components": [],
+              "data": []
+            },
+            {
+              "name": "/sign-in",
+              "route": "/sign-in",
+              "screen": "src/app/pages/sign-in/sign-in.component.ts",
+              "components": [],
+              "data": []
+            }
+          ]
+        }
+      ],
+      "components": []
+    }
+  ]
+}

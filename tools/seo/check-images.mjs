@@ -4,18 +4,19 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
+const builtDir = process.env.SEO_BUILD_DIR || 'dist/app/browser';
 const read = (file) => readFile(path.join(root, file), 'utf8');
 const company = JSON.parse(await read('src/data/company/company.json'));
 const prompts = JSON.parse(await read('tools/seo/image-prompts.json'));
 const theory = JSON.parse(await read('src/data/theory/catalog.json'));
-const theoryRoutes = new Set(theory.topics.map((topic) => `/theory/${topic.slug}`));
-const practiceRoutes = new Set(theory.topics.map((topic) => `/practice/${topic.slug}`));
+const theoryRoutes = new Set(theory.topics.map((topic) => `/theories/${topic.slug}`));
+const practiceRoutes = new Set(theory.topics.map((topic) => `/practices/${topic.slug}`));
 const challenges = JSON.parse(await read('src/data/challenges/index.json')).challenges;
-for (const challenge of challenges) practiceRoutes.add(`/practice/challenge/${challenge.slug}`);
+for (const challenge of challenges) practiceRoutes.add(`/practices/challenge/${challenge.slug}`);
 const expectedRoutes = new Set([
 	'/',
-	'/theory',
-	'/practice',
+	'/theories',
+	'/practices',
 	'/glossary',
 	'/privacy',
 	'/licenses',
@@ -31,10 +32,19 @@ assert.ok(
 	!/chess|puzzle|tactics/i.test(JSON.stringify(company)),
 	'Company metadata must use Coder architecture branding',
 );
-assert.equal(new Set(theory.topics.map((topic) => topic.slug)).size, 120, 'Lesson slugs must be unique');
+assert.equal(
+	new Set(theory.topics.map((topic) => topic.slug)).size,
+	120,
+	'Lesson slugs must be unique',
+);
 for (const topic of theory.topics) {
 	for (const dir of ['topics', 'practice', 'practice/keys']) {
-		await stat(path.join(root, `src/data/theory/${dir === 'topics' ? 'topics' : '../' + dir}/${topic.slug}.json`));
+		await stat(
+			path.join(
+				root,
+				`src/data/theory/${dir === 'topics' ? 'topics' : '../' + dir}/${topic.slug}.json`,
+			),
+		);
 	}
 }
 const errors = [];
@@ -62,14 +72,28 @@ for (const route of expectedRoutes) {
 		);
 		const bytes = await readFile(path.join(root, file));
 		assert.ok(bytes.length > 1000, `${route}: empty or invalid image`);
+		assert.ok(bytes.length <= 300_000, `${route}: social image exceeds 300 kB`);
 		const [width, height] = jpegDimensions(bytes);
 		assert.equal(width, 1200, `${route}: image width`);
 		assert.equal(height, 630, `${route}: image height`);
 		images.add(file);
 		if (process.argv.includes('--built')) {
-			await stat(path.join(root, 'dist/app/browser', url.pathname));
+			await stat(path.join(root, builtDir, url.pathname));
 			if (!route.includes(':') && !seo.robots?.includes('noindex')) {
-				const html = await read(`dist/app/browser${route === '/' ? '' : route}/index.html`);
+				const html = await read(`${builtDir}${route === '/' ? '' : route}/index.html`);
+				assert.ok(
+					!/class="splash(?:\s|")/.test(html),
+					`${route}: prerendered loading overlay blocks static content`,
+				);
+				for (const key of ['og:image:alt', 'twitter:image:alt']) {
+					const tags = html.match(/<meta\b[^>]*>/g) ?? [];
+					assert.ok(
+						tags.some(
+							(tag) => tag.includes(`="${key}"`) && /content="[^"]+"/.test(tag),
+						),
+						`${route}: missing ${key}`,
+					);
+				}
 				for (const key of ['og:image', 'twitter:image']) {
 					const tags = html.match(/<meta\b[^>]*>/g) ?? [];
 					assert.ok(

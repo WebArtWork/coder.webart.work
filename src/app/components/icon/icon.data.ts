@@ -29,7 +29,8 @@ export type IconName =
 	| 'history'
 	| 'qr'
 	| 'glossary'
-	| 'systems';
+	| 'systems'
+	| 'center';
 
 interface IconPair {
 	/** Solar (linear) - light skin */
@@ -262,6 +263,14 @@ export const ICONS: Record<IconName, IconPair> = {
 		),
 		iconoir: iconoirGroup(
 			'<circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M8.5 6h7M7.3 8.2l3.4 7.6M16.7 8.2l-3.4 7.6"/>',
+		),
+	},
+	center: {
+		solar: solarGroup(
+			'<path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><circle cx="12" cy="12" r="3"/>',
+		),
+		iconoir: iconoirGroup(
+			'<path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3"/><circle cx="12" cy="12" r="3"/>',
 		),
 	},
 };

@@ -12,7 +12,7 @@ export type ChallengeType = 'build' | 'fix' | 'extend' | 'optimize' | 'review';
 /** A challenge in a list; the text is loaded with the challenge itself. */
 export interface ChallengeCard {
 	id: string;
-	/** The id in lower case: the route is /practice/challenge/<slug>. */
+	/** The id in lower case: the route is /practices/challenge/<slug>. */
 	slug: string;
 	/** The template the challenge starts from; none means an empty canvas. */
 	templateId: string | null;

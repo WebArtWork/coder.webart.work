@@ -121,3 +121,11 @@ export class AuthService {
 		await signInAnonymously(auth);
 	}
 }
+
+/**
+ * The picture of the user. Linking Google to a guest leaves `photoURL` empty on the user, while the Google
+ * profile (with the picture) sits in `providerData`, so look there too.
+ */
+export function userPhoto(user: User | null | undefined): string | null {
+	return user?.photoURL || user?.providerData.find((info) => info.photoURL)?.photoURL || null;
+}

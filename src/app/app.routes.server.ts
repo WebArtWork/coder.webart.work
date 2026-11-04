@@ -11,7 +11,35 @@ export const serverRoutes: ServerRoute[] = [
 		renderMode: RenderMode.Client,
 	},
 	{
+		path: 'system/:id',
+		renderMode: RenderMode.Client,
+	},
+	{
+		path: 'shared/:id',
+		renderMode: RenderMode.Client,
+	},
+	{
 		path: 'systems/:id',
+		renderMode: RenderMode.Client,
+	},
+	{
+		path: 'theory',
+		renderMode: RenderMode.Client,
+	},
+	{
+		path: 'theory/:slug',
+		renderMode: RenderMode.Client,
+	},
+	{
+		path: 'practice',
+		renderMode: RenderMode.Client,
+	},
+	{
+		path: 'practice/:slug',
+		renderMode: RenderMode.Client,
+	},
+	{
+		path: 'practice/challenge/:slug',
 		renderMode: RenderMode.Client,
 	},
 	{

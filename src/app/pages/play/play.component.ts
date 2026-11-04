@@ -43,7 +43,7 @@ export class PlayComponent {
 	protected readonly award = signal<Award | null>(null);
 	protected readonly loading = signal(true);
 	protected readonly failed = signal(false);
-	/** Random puzzles keep to these filters, e.g. /practice/good-moves?category=endgame. */
+	/** Random puzzles keep to these filters, e.g. /practices/good-moves?category=endgame. */
 	protected readonly filters = signal<PuzzleFilters>(readFilters(this._route.snapshot.queryParamMap));
 	protected readonly format = formatEval;
 	protected readonly family = openingFamily;
@@ -117,9 +117,9 @@ export class PlayComponent {
 			this._showFailed();
 			return;
 		}
-		// replaces /practice/good-moves with ?id=ID; the id is already shown, so the route change is a no-op
+		// replaces /practices/good-moves with ?id=ID; the id is already shown, so the route change is a no-op
 		this._shown = puzzle.id;
-		await this._router.navigate(['/practice/good-moves'], {
+		await this._router.navigate(['/practices/good-moves'], {
 			queryParams: { ...filterParams(this.filters()), id: puzzle.id },
 			replaceUrl: true,
 		});

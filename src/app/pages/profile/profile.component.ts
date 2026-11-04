@@ -1,7 +1,7 @@
 import { Component, computed, inject, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { PreferencesComponent } from '../../components/preferences/preferences.component';
-import { AuthService } from '../../feature/auth/auth.service';
+import { AuthService, userPhoto } from '../../feature/auth/auth.service';
 import { I18nService } from '../../feature/i18n/i18n.service';
 import { TPipe } from '../../feature/i18n/t.pipe';
 
@@ -18,6 +18,7 @@ export class ProfileComponent {
 	private readonly _i18n = inject(I18nService);
 
 	protected readonly user = this._auth.user;
+	protected readonly photo = computed(() => userPhoto(this.user()));
 	protected readonly isGuest = this._auth.isGuest;
 	protected readonly pending = signal(false);
 	protected readonly signingOut = signal(false);

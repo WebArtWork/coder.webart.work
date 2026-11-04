@@ -47,6 +47,28 @@ service cloud.firestore {
 				&& data.updatedAt is timestamp;
 		}
 
+		// shared/{shareId}: the read-only copy of a system, opened by its long random id. Anyone can read one
+		// by id (there is no listing); only the user who made it can write or remove it.
+		function validShared(data) {
+			return data.keys().hasOnly(['ownerUid', 'name', 'nodes', 'links', 'groups', 'templateId', 'notes', 'showTemplateInfo', 'updatedAt'])
+				&& data.ownerUid == request.auth.uid
+				&& stringUpTo(data.name, 200)
+				&& data.nodes is list && data.nodes.size() <= 300
+				&& data.links is list && data.links.size() <= 600
+				&& data.groups is list && data.groups.size() <= 60
+				&& stringUpTo(data.templateId, 100)
+				&& stringUpTo(data.notes, 5000)
+				&& data.showTemplateInfo is bool
+				&& data.updatedAt is timestamp;
+		}
+
+		match /shared/{shareId} {
+			allow get: if shareId.size() >= 40;
+			allow create: if request.auth != null && shareId.size() >= 40 && validShared(request.resource.data);
+			allow update: if request.auth != null && resource.data.ownerUid == request.auth.uid && validShared(request.resource.data);
+			allow delete: if request.auth != null && resource.data.ownerUid == request.auth.uid;
+		}
+
 		match /users/{uid} {
 			allow read: if isOwner(uid);
 			allow create, update: if isOwner(uid) && validProfile(request.resource.data);

@@ -19,12 +19,12 @@ export const PRACTICE_GROUPS: HubGroup[] = [
 			{
 				title: 'Daily puzzle',
 				detail: 'One puzzle a day, the same for everyone. Find every good move.',
-				path: '/practice/daily',
+				path: '/practices/daily',
 			},
 			{
 				title: 'Review',
 				detail: 'Missed puzzles come back after 1, 3 and 7 days, plus mistakes from your own games.',
-				path: '/practice/review',
+				path: '/practices/review',
 			},
 		],
 	},
@@ -35,12 +35,12 @@ export const PRACTICE_GROUPS: HubGroup[] = [
 			{
 				title: 'Chess basics',
 				detail: 'Multiple choice: how the pieces move, what they are worth and how moves are written.',
-				path: '/practice/chess-basics',
+				path: '/practices/chess-basics',
 			},
 			{
 				title: 'Learn the basics',
 				detail: 'The lesson first: the moves, the piece values and how a game is written down.',
-				path: '/theory/chess-basics',
+				path: '/theories/chess-basics',
 			},
 		],
 	},
@@ -51,22 +51,22 @@ export const PRACTICE_GROUPS: HubGroup[] = [
 			{
 				title: 'Mate in 1',
 				detail: 'Find the mating move. One try per puzzle.',
-				path: '/practice/mate-in-one',
+				path: '/practices/mate-in-one',
 			},
 			{
 				title: 'Mate in 3',
 				detail: 'Play the mating line, move by move.',
-				path: '/practice/mate-in-three',
+				path: '/practices/mate-in-three',
 			},
 			{
 				title: 'Tactics',
 				detail: 'Find the best move or play the winning line.',
-				path: '/practice/tactics',
+				path: '/practices/tactics',
 			},
 			{
 				title: 'Is it safe?',
 				detail: 'A tempting capture or check: play it or not? If not, show the refutation.',
-				path: '/practice/is-it-safe',
+				path: '/practices/is-it-safe',
 			},
 		],
 	},
@@ -77,17 +77,17 @@ export const PRACTICE_GROUPS: HubGroup[] = [
 			{
 				title: 'Good moves',
 				detail: 'Positions with several good moves. Find them all.',
-				path: '/practice/good-moves',
+				path: '/practices/good-moves',
 			},
 			{
 				title: 'Look Ahead',
 				detail: 'Calculate three moves deep and find every good line.',
-				path: '/practice/look-ahead',
+				path: '/practices/look-ahead',
 			},
 			{
 				title: 'See it in your head',
 				detail: 'A few moves as text while the board stays still, then a question about the new position.',
-				path: '/practice/see-it',
+				path: '/practices/see-it',
 			},
 		],
 	},
@@ -98,12 +98,12 @@ export const PRACTICE_GROUPS: HubGroup[] = [
 			{
 				title: 'What’s the threat?',
 				detail: 'Show what your opponent threatens, then find a move that stops it.',
-				path: '/practice/threats',
+				path: '/practices/threats',
 			},
 			{
 				title: 'Sound sacrifice?',
 				detail: 'A sacrifice from a real game: sound, unsound or unclear? Then play the critical reply.',
-				path: '/practice/sound-sacrifice',
+				path: '/practices/sound-sacrifice',
 			},
 		],
 	},
@@ -114,12 +114,12 @@ export const PRACTICE_GROUPS: HubGroup[] = [
 			{
 				title: 'Who is better?',
 				detail: 'Rate a quiet position, then see the score and the main imbalance.',
-				path: '/practice/who-is-better',
+				path: '/practices/who-is-better',
 			},
 			{
 				title: 'Spot the feature',
 				detail: 'Tap the isolated pawn, the outpost, the passed pawn or the open file.',
-				path: '/practice/spot-the-feature',
+				path: '/practices/spot-the-feature',
 			},
 		],
 	},
@@ -130,12 +130,12 @@ export const PRACTICE_GROUPS: HubGroup[] = [
 			{
 				title: 'Opening moves',
 				detail: 'Moves 4–12 from real games: find the move that follows the principles, or spot the mistake.',
-				path: '/practice/opening-moves',
+				path: '/practices/opening-moves',
 			},
 			{
 				title: 'Endgame technique',
 				detail: 'Endgame puzzles by type: pawn, rook, minor piece, queen, and stalemate traps.',
-				path: '/practice/endgames',
+				path: '/practices/endgames',
 			},
 		],
 	},

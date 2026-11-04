@@ -92,7 +92,7 @@ export class PuzzlePracticeComponent {
 	private readonly _route = inject(ActivatedRoute);
 	private readonly _next = viewChild<ElementRef<HTMLElement>>('nextButton');
 
-	/** Which puzzle set this route is, from its `practice` data (/practice/mate-in-one, …). */
+	/** Which puzzle set this route is, from its `practice` data (/practices/mate-in-one, …). */
 	protected readonly type = signal<PuzzleType>(readType(this._route.snapshot.data['practice']));
 	protected readonly title = PUZZLE_TITLES[this.type()];
 	protected readonly endgameChoices = ENDGAME_CHOICES;
@@ -179,7 +179,7 @@ export class PuzzlePracticeComponent {
 			const current = this.current();
 			const entry = this._review.next(current ? { kind: PUZZLE_KINDS[this.type()], id: current.id } : undefined);
 			if (!entry) {
-				void this._router.navigate(['/practice/review']);
+				void this._router.navigate(['/practices/review']);
 				return;
 			}
 			const { path, query } = this._review.link(entry);

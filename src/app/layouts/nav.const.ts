@@ -10,6 +10,6 @@ export interface NavLink {
 
 /** Each link opens a hub; every mode page sits under its hub's path, so the prefix match marks it. */
 export const NAV_LINKS: NavLink[] = [
-	{ label: 'Theory', path: '/theory', icon: 'study' },
-	{ label: 'Practice', path: '/practice', icon: 'play' },
+	{ label: 'Theory', path: '/theories', icon: 'study' },
+	{ label: 'Practice', path: '/practices', icon: 'play' },
 ];

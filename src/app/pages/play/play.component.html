@@ -12,7 +12,7 @@
 	} @else if (failed() || !puzzle()) {
 		<div class="ds-card m-4 items-start gap-3 p-5 lg:col-span-2 lg:m-0">
 			<p>{{ (hasFilters() ? 'Could not load a puzzle with these filters.' : 'Could not load a puzzle.') | t }}</p>
-			<a class="ds-btn ds-btn-primary" routerLink="/practice/good-moves">{{ 'Try another puzzle' | t }}</a>
+			<a class="ds-btn ds-btn-primary" routerLink="/practices/good-moves">{{ 'Try another puzzle' | t }}</a>
 		</div>
 	} @else {
 		@let current = puzzle()!;
@@ -47,14 +47,14 @@
 							}
 						</ol>
 						<div class="flex flex-wrap gap-2">
-							<a class="ds-btn ds-btn-primary" routerLink="/practice/good-moves">{{ 'Practice good moves' | t }}</a>
+							<a class="ds-btn ds-btn-primary" routerLink="/practices/good-moves">{{ 'Practice good moves' | t }}</a>
 						</div>
 						<p class="text-sm text-mute">{{ 'A new daily puzzle tomorrow.' | t }}</p>
 					</section>
 				} @else if (run(); as attempt) {
 					<app-puzzle-panel [run]="attempt" [award]="award()">
 						<div class="flex flex-wrap gap-2" actions>
-							<a class="ds-btn ds-btn-primary" routerLink="/practice/good-moves" [queryParams]="nextParams()">{{ 'Next puzzle' | t }}</a>
+							<a class="ds-btn ds-btn-primary" routerLink="/practices/good-moves" [queryParams]="nextParams()">{{ 'Next puzzle' | t }}</a>
 						</div>
 					</app-puzzle-panel>
 				}

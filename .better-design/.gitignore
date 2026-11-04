@@ -1,0 +1,13 @@
+*.png
+*.cjs
+spacing-*.json
+route-review-*.json
+live-checks.json
+image-inventory.json
+preview-build/
+final-build/
+verified-build/
+spacing-capture.js
+seo-before-regeneration.json
+new-seo-prompt.json
+seo-regeneration-verification.json

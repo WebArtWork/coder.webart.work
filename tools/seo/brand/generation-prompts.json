@@ -1,5 +1,29 @@
 {
-  "mode": "built-in image_gen",
-  "logo": "Use case: logo-brand. Asset type: production app icon and logo for Coder, a platform where developers learn to architect the projects they build. Generate one square 1024x1024 image. A bold minimalist geometric C formed from three connected architectural modules, visually suggesting code brackets and modular software. Single solid mint-green symbol (#75E8C8) centered on a perfectly flat very dark charcoal background (#10191E). The symbol occupies the central 60% of canvas so it is safe as a maskable app icon. Crisp straight edges, substantial strokes, flat vector-like design, exceptional readability at 16px. No text, no letters apart from the abstract C symbol, no gradients, no shadows, no mockup presentation, no border, no chess motifs.",
-  "artwork": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots."
+	"mode": "built-in image_gen",
+	"logo": "Use case: logo-brand. Asset type: production app icon and logo for Coder, a platform where developers learn to architect the projects they build. Generate one square 1024x1024 image. A bold minimalist geometric C formed from three connected architectural modules, visually suggesting code brackets and modular software. Single solid mint-green symbol (#75E8C8) centered on a perfectly flat very dark charcoal background (#10191E). The symbol occupies the central 60% of canvas so it is safe as a maskable app icon. Crisp straight edges, substantial strokes, flat vector-like design, exceptional readability at 16px. No text, no letters apart from the abstract C symbol, no gradients, no shadows, no mockup presentation, no border, no chess motifs.",
+	"artwork": "Use case: ads-marketing. Asset type: master social-share artwork for Coder, a platform teaching developers to properly architect their projects. Wide landscape 1200:630 composition. Premium editorial 3D illustration of modular software architecture: a precisely arranged structure of dark graphite blocks, translucent cobalt glass modules and luminous mint-green connection paths on a very dark charcoal studio backdrop (#10191E). Architectural axonometric projection, precise block geometry, thoughtful branching dependencies, beautiful subtle studio light. Composition: all sculptural modules clustered in the RIGHT 48 percent; LEFT 52 percent completely empty flat charcoal negative space for typography which will be added separately. Keep module cluster away from all canvas edges. Restrained modern engineering aesthetic. Absolutely NO text, NO letters, NO numbers, NO watermarks, NO chess pieces, NO chessboard, NO people, NO UI screenshots.",
+	"seoArtwork": "Use case: ads-marketing. Asset type: fresh master artwork for Coder's software engineering learning website Open Graph share covers. Generate a brand-new image, NOT a copy of the previous artwork. Wide landscape composition approximately 1200:630. Scene: perfectly flat very dark charcoal studio backdrop #10191E. Subject: a beautifully engineered modular software system visualized as a compact architectural exploded assembly, three organized tiers of graphite rectangular chassis, translucent cobalt-blue glass modules and precise thin mint-green #75E8C8 signal paths linking their ports. Clearly separated modules, carefully routed right-angle connections, a few small luminous connector nodes. Restrained premium editorial 3D product illustration, axonometric perspective, refined bevels, soft directional studio light, subtle realistic shadows, crisp silhouettes, no excessive glow. Composition: the ENTIRE sculptural assembly sits inside the RIGHT 44 percent of the canvas, between x=57% and x=94%, and between y=15% and y=83%. The LEFT 54 percent must remain completely empty, uniform flat charcoal negative space for large typography to be added by the project's existing renderer. Keep all modules clear of the canvas edges. Use fewer larger shapes rather than a busy network. The artwork should convey thoughtfully designed boundaries, composable systems, and reliable connections. No text, no letters, no numbers, no logos, no icons, no watermark, no screens, no people, no chess motifs. Opaque background.",
+	"seoArtworkSource": "tools/seo/brand/seo-artwork-2026-11-04.png",
+	"seoCoverCopy": {
+		"/": {
+			"category": "Developer learning",
+			"lines": ["Architect better", "software."]
+		},
+		"/licenses": {
+			"category": "Project information",
+			"lines": ["Licenses", "and credits"]
+		},
+		"/practices": {
+			"category": "Practice",
+			"lines": ["Software", "engineering", "practice"]
+		},
+		"/privacy": {
+			"category": "Privacy",
+			"lines": ["Your data.", "Your control."]
+		},
+		"/theories": {
+			"category": "Lessons",
+			"lines": ["Software", "engineering", "lessons"]
+		}
+	}
 }

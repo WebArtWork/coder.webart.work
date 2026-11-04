@@ -33,7 +33,7 @@ export class GameService {
 	/** Self-contained mate sets (mate in 1, mate in 3). */
 	practiceSets(): Promise<PracticeSets | null> {
 		if (!this._isBrowser) return Promise.resolve(null);
-		this._practiceSets ??= this._json<PracticeSets>(`${BASE}/practice.json`).then((sets) => {
+		this._practiceSets ??= this._json<PracticeSets>(`${BASE}/practices.json`).then((sets) => {
 			if (!sets) this._practiceSets = undefined;
 			return sets;
 		});

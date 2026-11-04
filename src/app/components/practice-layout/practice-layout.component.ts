@@ -32,7 +32,7 @@ import { ProgressService } from '../../feature/progress/progress.service';
 			} @else if (empty()) {
 				<div class="ds-card m-4 items-start gap-3 p-5 lg:col-span-2 lg:m-0">
 					<p>{{ 'No positions for this practice yet. Try another practice in the meantime.' | t }}</p>
-					<a class="ds-btn ds-btn-primary" routerLink="/practice">{{ 'Go to Practice' | t }}</a>
+					<a class="ds-btn ds-btn-primary" routerLink="/practices">{{ 'Go to Practice' | t }}</a>
 				</div>
 			} @else {
 				<div class="min-h-0 flex-1 overflow-y-auto overscroll-contain px-4 pb-2 pt-[3px] lg:order-2 lg:overflow-y-auto lg:p-0">

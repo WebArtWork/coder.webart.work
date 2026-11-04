@@ -77,7 +77,7 @@ export class ReviewComponent {
 			const { path, query } = this.review.link(entry);
 			void this._router.navigate([path], { queryParams: query });
 		} else {
-			void this._router.navigate(['/practice/review']);
+			void this._router.navigate(['/practices/review']);
 		}
 	}
 

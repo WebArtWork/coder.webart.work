@@ -35,38 +35,38 @@ export const routes: Routes = [
 		}),
 	},
 	{
-		path: 'theory',
+		path: 'theories',
 		loadComponent: () => import('./pages/theory/theory.component').then((m) => m.TheoryComponent),
-		data: page('/theory', 'theory'),
+		data: page('/theories', 'theory'),
 	},
 	...THEORY_TOPICS.map(
 		(topic): Routes[number] => ({
-			path: 'theory/' + topic.slug,
+			path: 'theories/' + topic.slug,
 			loadComponent: () =>
 				import('./pages/theory-lesson/theory-lesson.component').then((m) => m.TheoryLessonComponent),
 			resolve: { topic: () => loadTopic(topic.slug), glossary: () => inject(GlossaryService).load() },
-			data: page('/theory/' + topic.slug, 'lesson'),
+			data: page('/theories/' + topic.slug, 'lesson'),
 		}),
 	),
 	{
-		path: 'practice',
+		path: 'practices',
 		loadComponent: () => import('./pages/practice/practice.component').then((m) => m.PracticeComponent),
-		data: page('/practice', 'practice'),
+		data: page('/practices', 'practice'),
 	},
 	...THEORY_TOPICS.map(
 		(topic): Routes[number] => ({
-			path: 'practice/' + topic.slug,
+			path: 'practices/' + topic.slug,
 			loadComponent: () => import('./pages/exercise/exercise.component').then((m) => m.ExerciseComponent),
 			resolve: { set: () => loadQuestions(topic.slug), glossary: () => inject(GlossaryService).load() },
-			data: page('/practice/' + topic.slug, 'exercise'),
+			data: page('/practices/' + topic.slug, 'exercise'),
 		}),
 	),
 	...CHALLENGES.map(
 		(card): Routes[number] => ({
-			path: 'practice/challenge/' + card.slug,
+			path: 'practices/challenge/' + card.slug,
 			loadComponent: () => import('./pages/challenge/challenge.component').then((m) => m.ChallengeComponent),
 			resolve: { challenge: () => loadChallenge(card.slug), glossary: () => inject(GlossaryService).load() },
-			data: page('/practice/challenge/' + card.slug, 'challenge'),
+			data: page('/practices/challenge/' + card.slug, 'challenge'),
 		}),
 	),
 	{
@@ -88,10 +88,22 @@ export const routes: Routes = [
 		data: { meta: { title: 'Systems', robots: 'noindex, nofollow' } },
 	},
 	{
-		path: 'systems/:id',
+		path: 'system/:id',
 		loadComponent: () => import('./pages/system/system.component').then((m) => m.SystemComponent),
 		data: { meta: { title: 'System', robots: 'noindex, nofollow' } },
 	},
+	{
+		path: 'shared/:id',
+		loadComponent: () => import('./pages/shared/shared.component').then((m) => m.SharedComponent),
+		data: { meta: { title: 'Shared system', robots: 'noindex, nofollow' } },
+	},
+	// links from before the rename keep working
+	{ path: 'theory', redirectTo: 'theories', pathMatch: 'full' },
+	{ path: 'theory/:slug', redirectTo: 'theories/:slug' },
+	{ path: 'practice', redirectTo: 'practices', pathMatch: 'full' },
+	{ path: 'practice/challenge/:slug', redirectTo: 'practices/challenge/:slug' },
+	{ path: 'practice/:slug', redirectTo: 'practices/:slug' },
+	{ path: 'systems/:id', redirectTo: 'system/:id' },
 	{
 		path: 'sign-in',
 		canActivate: [guestGuard],

@@ -1,35 +1,20 @@
-<section class="py-10" aria-labelledby="practice-title">
-	<p class="text-xs font-semibold uppercase tracking-[0.2em] text-brand">{{ 'Test your understanding' | t }}</p>
-	<h1 id="practice-title" class="mt-3 text-3xl font-semibold">{{ 'Practice' | t }}</h1>
-
-	<div class="mt-6 flex flex-wrap gap-2" role="group" [attr.aria-label]="'Kind of practice' | t">
-		<button class="ds-chip" type="button" [attr.aria-pressed]="view() === 'lessons'" (click)="setView('lessons')">{{ 'Lessons' | t }}</button>
-		<button class="ds-chip" type="button" [attr.aria-pressed]="view() === 'systems'" (click)="setView('systems')">{{ 'System design' | t }}</button>
-	</div>
-
-	@if (view() === 'lessons') {
-		<p class="mt-6 max-w-2xl leading-relaxed text-fg/80">
-			{{ 'Every lesson has 15 exercises: 10 questions that are checked for you, then 5 written tasks that you compare with a sample answer. Together they are worth {points} points. Your best result is saved to your account.' | t: { points: maxPoints } }}
-		</p>
-		<p class="mt-3 text-sm text-mute" role="status">{{ '{done} of {total} lessons practiced' | t: { done: done(), total: total } }}</p>
-	} @else {
-		<p class="mt-6 max-w-2xl leading-relaxed text-fg/80">
-			{{ '{count} system design challenges, 5 for each of the 12 templates: build a system, fix a broken one, extend it, optimize it and review a decision. Each opens in the system editor.' | t: { count: challengeCount } }}
-		</p>
-		<p class="mt-3 text-sm text-mute" role="status">{{ '{done} of {total} challenges started' | t: { done: startedCount(), total: challengeCount } }}</p>
-	}
+<section class="pb-10 pt-10 max-md:pt-4" [attr.aria-label]="'Practice' | t">
+	<h1 class="sr-only">{{ 'Practice' | t }}</h1>
 
 	<ng-template #filters>
 		<div>
 			<input
-				[attr.aria-label]="(view() === 'lessons' ? 'Search lessons' : 'Search challenges') | t"
+				[attr.aria-label]="'Search practice' | t"
 				class="w-full max-w-md rounded-lg border border-line bg-card px-4 py-3 placeholder:text-mute"
 				type="search"
 				autocomplete="off"
-				[placeholder]="(view() === 'lessons' ? 'Search lessons' : 'Search challenges') | t"
+				[placeholder]="'Search practice' | t"
 				[value]="query()"
 				(input)="query.set($any($event.target).value)"
 			/>
+			<p class="mt-2 text-sm text-mute" role="status">
+				{{ '{count} of {total} practices' | t: { count: shown(), total: total } }}
+			</p>
 		</div>
 	</ng-template>
 
@@ -37,54 +22,147 @@
 		<ng-container *ngTemplateOutlet="filters" />
 	</div>
 
-	@if (view() === 'lessons') {
-		@for (module of modules(); track module.slug) {
-			<section class="mt-12" [attr.aria-labelledby]="module.slug + '-title'">
-				<h2 [id]="module.slug + '-title'" class="text-2xl font-semibold">{{ pick(module.title, language()) }}</h2>
-				<ol class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+	@for (module of modules(); track module.slug; let first = $first) {
+		<section
+			class="lazy-section mt-10 scroll-mt-6"
+			[class.max-md:mt-0]="first"
+			[attr.aria-labelledby]="module.slug + '-title'"
+		>
+			<h2 class="m-0!">
+				<button
+					class="flex w-full items-center justify-between gap-4 rounded-xl text-left"
+					type="button"
+					[attr.aria-expanded]="isOpen(module.slug)"
+					[attr.aria-controls]="module.slug + '-list'"
+					(click)="toggle(module.slug)"
+				>
+					<span [id]="module.slug + '-title'" class="min-w-0 text-2xl font-semibold">{{
+						pick(module.title, language())
+					}}</span>
+					<span
+						class="flex size-10 shrink-0 items-center justify-center rounded-full border border-line"
+					>
+						<svg
+							class="size-5 transition-transform"
+							[class.-rotate-90]="!isOpen(module.slug)"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="m6 9 6 6 6-6" />
+						</svg>
+					</span>
+				</button>
+			</h2>
+			@if (isOpen(module.slug)) {
+				<ol
+					[id]="module.slug + '-list'"
+					class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"
+				>
 					@for (topic of module.topics; track topic.slug) {
-						<li class="relative flex flex-col rounded-xl border border-line bg-card p-6 hover:border-brand">
-							<p class="text-xs uppercase tracking-widest text-brand">{{ topic.number }}</p>
-							<h3 class="mt-3 flex-1 text-lg font-semibold">
-								<a class="hover:text-brand after:absolute after:inset-0 after:rounded-xl" [routerLink]="['/practice', topic.slug]">{{ pick(topic.title, language()) }}</a>
-							</h3>
-							<p class="mt-5 text-xs text-mute">
+						<li
+							class="relative flex items-center gap-3 rounded-xl border border-line bg-card px-4 py-3 hover:border-brand"
+						>
+							<span class="w-6 shrink-0 text-xs tabular-nums text-brand">{{
+								topic.number
+							}}</span>
+							<a
+								class="min-w-0 flex-1 font-semibold hover:text-brand after:absolute after:inset-0 after:rounded-xl"
+								[routerLink]="['/practices', topic.slug]"
+								>{{ pick(topic.title, language()) }}</a
+							>
+							<span class="shrink-0 text-xs text-mute">
 								@if (topic.score; as score) {
-									<span class="font-semibold text-brand">{{ 'Best {score} of {max}' | t: { score: score.quiz + score.written, max: maxPoints } }}</span>
+									<span class="font-semibold text-brand"
+										>{{ score.quiz + score.written }}/{{ maxPoints }}</span
+									>
 								} @else {
 									{{ '15 exercises' | t }}
 								}
-							</p>
+							</span>
 						</li>
 					}
 				</ol>
-			</section>
-		} @empty {
-			<p class="mt-12 text-fg/80">{{ 'No lessons match your search.' | t }}</p>
-		}
-	} @else {
-		@for (template of templates(); track template.id) {
-			<section class="mt-12" [attr.aria-labelledby]="'template-' + template.id">
-				<h2 [id]="'template-' + template.id" class="text-2xl font-semibold">{{ pick(template.name, language()) }}</h2>
-				<ol class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-					@for (card of template.challenges; track card.id) {
-						<li class="relative flex flex-col rounded-xl border border-line bg-card p-6 hover:border-brand">
-							<p class="text-xs uppercase tracking-widest text-brand">{{ typeLabels[card.type] | t }} · {{ pick(card.level, language()) }}</p>
-							<h3 class="mt-3 flex-1 text-lg font-semibold">
-								<a class="hover:text-brand after:absolute after:inset-0 after:rounded-xl" [routerLink]="['/practice/challenge', card.slug]">{{ pick(card.title, language()) }}</a>
-							</h3>
-							<p class="mt-5 text-xs text-mute">
+			}
+		</section>
+	}
+
+	@for (template of templates(); track template.id) {
+		<section
+			class="lazy-section mt-10 scroll-mt-6"
+			[attr.aria-labelledby]="'template-' + template.id + '-title'"
+		>
+			<h2 class="m-0!">
+				<button
+					class="flex w-full items-center justify-between gap-4 rounded-xl text-left"
+					type="button"
+					[attr.aria-expanded]="isOpen('template-' + template.id)"
+					[attr.aria-controls]="'template-' + template.id + '-list'"
+					(click)="toggle('template-' + template.id)"
+				>
+					<span
+						[id]="'template-' + template.id + '-title'"
+						class="min-w-0 text-2xl font-semibold"
+						>{{ pick(template.name, language()) }}</span
+					>
+					<span
+						class="flex size-10 shrink-0 items-center justify-center rounded-full border border-line"
+					>
+						<svg
+							class="size-5 transition-transform"
+							[class.-rotate-90]="!isOpen('template-' + template.id)"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path d="m6 9 6 6 6-6" />
+						</svg>
+					</span>
+				</button>
+			</h2>
+			@if (isOpen('template-' + template.id)) {
+				<ol
+					[id]="'template-' + template.id + '-list'"
+					class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3"
+				>
+					@for (card of template.challenges; track card.id; let n = $index) {
+						<li
+							class="relative flex items-center gap-3 rounded-xl border border-line bg-card px-4 py-3 hover:border-brand"
+						>
+							<span class="w-6 shrink-0 text-xs tabular-nums text-brand">{{
+								n + 1
+							}}</span>
+							<a
+								class="min-w-0 flex-1 font-semibold hover:text-brand after:absolute after:inset-0 after:rounded-xl"
+								[routerLink]="['/practices/challenge', card.slug]"
+								>{{ pick(card.title, language()) }}</a
+							>
+							<span class="shrink-0 text-xs text-mute">
+								{{ typeLabels[card.type] | t }} ·
 								{{ '{n} min' | t: { n: card.minutes } }}
 								@if (card.started) {
-									· <span class="font-semibold text-brand">{{ 'Started' | t }}</span>
+									·
+									<span class="font-semibold text-brand">{{
+										'Started' | t
+									}}</span>
 								}
-							</p>
+							</span>
 						</li>
 					}
 				</ol>
-			</section>
-		} @empty {
-			<p class="mt-12 text-fg/80">{{ 'No challenges match your search.' | t }}</p>
-		}
+			}
+		</section>
+	}
+
+	@if (!shown()) {
+		<p class="mt-12 text-fg/80">{{ 'No practice matches your search.' | t }}</p>
 	}
 </section>

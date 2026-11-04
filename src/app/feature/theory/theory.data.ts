@@ -13,7 +13,7 @@ export interface TheoryModule {
 	summary: Localized;
 }
 
-/** A lesson's card on the Learn page and its route, /theory/<slug>. */
+/** A lesson's card on the Learn page and its route, /theories/<slug>. */
 export interface TheoryCard {
 	number: number;
 	slug: string;

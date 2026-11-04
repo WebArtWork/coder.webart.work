@@ -17,7 +17,7 @@
 	} @else if (empty() || !session()) {
 		<div class="ds-card m-4 items-start gap-3 p-5 lg:col-span-2 lg:m-0">
 			<p>{{ 'No Look Ahead positions yet. Try another practice in the meantime.' | t }}</p>
-			<a class="ds-btn ds-btn-primary" routerLink="/practice">{{ 'Go to Practice' | t }}</a>
+			<a class="ds-btn ds-btn-primary" routerLink="/practices">{{ 'Go to Practice' | t }}</a>
 		</div>
 	} @else {
 		@let run = session()!;
