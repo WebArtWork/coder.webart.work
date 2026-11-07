@@ -74,10 +74,16 @@ export const routes: Routes = [
 		loadComponent: () => import('./pages/glossary/glossary.component').then((m) => m.GlossaryComponent),
 		data: page('/glossary', 'glossary'),
 	},
-	infoPage('privacy', 'Privacy', [
-		'The lessons and exercises are available without an account. Coder signs you in as a guest so that your results can be saved. Your answers are checked in your browser; only your best result for each lesson is stored.',
-		'The hosting provider may process request information to deliver the site. Your best result for each lesson is stored in your browser and in Firebase (Google), under your guest or Google account. If you sign in with Google, Coder also stores the name, email and photo of that account. Your chosen language and theme stay in your browser. You can delete your data and your account on the profile page.',
-	]),
+	{
+		path: 'privacy',
+		loadComponent: () => import('./pages/privacy/privacy.component').then((m) => m.PrivacyComponent),
+		data: page('/privacy', 'privacy'),
+	},
+	{
+		path: 'support',
+		loadComponent: () => import('./pages/support/support.component').then((m) => m.SupportComponent),
+		data: page('/support', 'support'),
+	},
 	infoPage('licenses', 'Licenses and credits', [
 		'This project is licensed under GPL-3.0-or-later. Third-party software retains its own license terms. The distribution includes third-party license notices.',
 		'The Coder brand mark and modular architecture artwork were generated for this project using OpenAI image generation. The lessons and exercises are original learning material; the further reading links point to the sources of each topic.',
