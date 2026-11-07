@@ -1,0 +1,104 @@
+<article class="mx-auto flex w-full max-w-3xl flex-col gap-10 px-4 py-16 sm:px-6">
+	<header>
+		<h1 class="text-4xl font-semibold">{{ 'Support' | t }}</h1>
+		<p class="mt-3 leading-8 text-fg/80">
+			{{ 'Need help with Coder or have a question? Write to us and we will help.' | t }}
+		</p>
+	</header>
+
+	<section class="flex flex-col gap-3 rounded-xl border border-line bg-card p-6">
+		<h2 class="text-2xl font-semibold">{{ 'Contact us' | t }}</h2>
+		<p class="leading-8 text-fg/80">
+			{{ 'Email:' | t }} <a [href]="'mailto:' + email">{{ email }}</a>
+		</p>
+		<p class="leading-8 text-fg/80">
+			{{ 'We read every message and usually reply within a few business days.' | t }}
+		</p>
+	</section>
+
+	<section class="flex flex-col gap-3">
+		<h2 class="text-2xl font-semibold">{{ 'What to include in a bug report' | t }}</h2>
+		<ul class="flex list-disc flex-col gap-2 pl-5 leading-8 text-fg/80">
+			<li>{{ 'what you were doing and what went wrong;' | t }}</li>
+			<li>{{ 'the page or lesson where it happened;' | t }}</li>
+			<li>{{ 'your device, operating system and browser or app version;' | t }}</li>
+			<li>{{ 'a screenshot, if you can.' | t }}</li>
+		</ul>
+	</section>
+
+	<section class="flex flex-col gap-6">
+		<h2 class="text-2xl font-semibold">{{ 'Frequently asked questions' | t }}</h2>
+
+		<div class="flex flex-col gap-2">
+			<h3 class="text-lg font-semibold">{{ 'Do I need an account?' | t }}</h3>
+			<p class="leading-8 text-fg/80">
+				{{
+					'No. All lessons and exercises work without signing in. Signing in with Google is optional and only keeps your progress between devices.'
+						| t
+				}}
+			</p>
+		</div>
+
+		<div class="flex flex-col gap-2">
+			<h3 class="text-lg font-semibold">{{ 'Where is my progress saved?' | t }}</h3>
+			<p class="leading-8 text-fg/80">
+				{{
+					'Your best result for each lesson is stored under your guest or Google account. Your chosen language and theme stay on your device.'
+						| t
+				}}
+			</p>
+		</div>
+
+		<div class="flex flex-col gap-2">
+			<h3 class="text-lg font-semibold">{{ 'How do I change the language?' | t }}</h3>
+			<p class="leading-8 text-fg/80">
+				{{ 'Open the settings in the app and choose English or Ukrainian under Language.' | t }}
+			</p>
+		</div>
+
+		<div class="flex flex-col gap-2">
+			<h3 class="text-lg font-semibold">{{ 'I lost my progress or it is not syncing' | t }}</h3>
+			<p class="leading-8 text-fg/80">
+				{{
+					'Check that you are signed in with the same Google account on both devices and that you are online. Progress saved as a guest stays with that guest on that device. If it still does not help, email us.'
+						| t
+				}}
+			</p>
+		</div>
+
+		<div id="delete-account" class="flex flex-col gap-2">
+			<h3 class="text-lg font-semibold">{{ 'How do I delete my account and data?' | t }}</h3>
+			<p class="leading-8 text-fg/80">
+				<a routerLink="/profile">{{ 'Open your profile' | t }}</a>
+				{{ 'on the website or in the app and choose' | t }}
+				<strong>{{ 'Delete account' | t }}</strong>.
+				{{ 'Your account and everything stored for it are deleted right away.' | t }}
+			</p>
+			<p class="leading-8 text-fg/80">
+				{{ 'If you can no longer sign in, email' | t }} <a [href]="'mailto:' + email">{{ email }}</a>
+				{{ 'from the address of your account and we will delete the data for you.' | t }}
+			</p>
+		</div>
+
+		<div class="flex flex-col gap-2">
+			<h3 class="text-lg font-semibold">{{ 'A page does not load or shows an error' | t }}</h3>
+			<p class="leading-8 text-fg/80">
+				{{
+					'Check your internet connection, reload the page or restart the app, and make sure you use the latest version. If the problem remains, send us a bug report.'
+						| t
+				}}
+			</p>
+		</div>
+	</section>
+
+	<section class="flex flex-col gap-3">
+		<h2 class="text-2xl font-semibold">{{ 'More information' | t }}</h2>
+		<ul class="flex list-disc flex-col gap-2 pl-5 leading-8 text-fg/80">
+			<li><a routerLink="/privacy">{{ 'Privacy Policy' | t }}</a></li>
+			<li><a routerLink="/licenses">{{ 'Licenses and credits' | t }}</a></li>
+			<li>
+				<a [href]="sourceUrl" target="_blank" rel="noopener">{{ 'Source code on GitHub' | t }}</a>
+			</li>
+		</ul>
+	</section>
+</article>

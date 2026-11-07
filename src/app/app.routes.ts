@@ -79,6 +79,11 @@ export const routes: Routes = [
 		loadComponent: () => import('./pages/privacy/privacy.component').then((m) => m.PrivacyComponent),
 		data: page('/privacy', 'privacy'),
 	},
+	{
+		path: 'support',
+		loadComponent: () => import('./pages/support/support.component').then((m) => m.SupportComponent),
+		data: page('/support', 'support'),
+	},
 	infoPage('licenses', 'Licenses and credits', [
 		'This project is licensed under GPL-3.0-or-later. Third-party software retains its own license terms. The distribution includes third-party license notices.',
 		'The Coder brand mark and modular architecture artwork were generated for this project using OpenAI image generation. The lessons and exercises are original learning material; the further reading links point to the sources of each topic.',
