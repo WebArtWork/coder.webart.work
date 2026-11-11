@@ -28,10 +28,10 @@
 					| t
 			}}
 		</p>
-		<h3 class="text-lg font-semibold">{{ 'If you sign in with Google' | t }}</h3>
+		<h3 class="text-lg font-semibold">{{ 'If you sign in with Google or Apple' | t }}</h3>
 		<p class="leading-8 text-fg/80">{{ 'Signing in is optional. If you do, we store:' | t }}</p>
 		<ul class="flex list-disc flex-col gap-2 pl-5 leading-8 text-fg/80">
-			<li>{{ 'the name, email address and profile photo link of your Google account;' | t }}</li>
+			<li>{{ 'the name, email address and profile photo link of your Google account, or the name and email address Apple shares with us when you sign in with Apple (this may be a private relay address);' | t }}</li>
 			<li>{{ 'your best result for each lesson;' | t }}</li>
 			<li>{{ 'the systems you build from lessons, if you save them.' | t }}</li>
 		</ul>
@@ -79,6 +79,13 @@
 				{{ 'processes your Google account when you choose to sign in with it.' | t }}
 				<a href="https://policies.google.com/privacy" target="_blank" rel="noopener">{{
 					'Google Privacy Policy' | t
+				}}</a>
+			</li>
+			<li>
+				<strong>Sign in with Apple</strong>
+				{{ 'processes your Apple account when you choose to sign in with it.' | t }}
+				<a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">{{
+					'Apple Privacy Policy' | t
 				}}</a>
 			</li>
 			<li>
@@ -146,7 +153,7 @@
 		<h2 class="text-2xl font-semibold">{{ 'Children' | t }}</h2>
 		<p class="leading-8 text-fg/80">
 			{{
-				'Coder is not directed at children under 13 and we do not knowingly collect their personal data. Signing in with Google follows Google’s own age rules. If you believe a child has given us personal data, write to'
+				'Coder is not directed at children under 13 and we do not knowingly collect their personal data. Signing in with Google or Apple follows their own age rules. If you believe a child has given us personal data, write to'
 					| t
 			}}
 			<a [href]="'mailto:' + email">{{ email }}</a>
