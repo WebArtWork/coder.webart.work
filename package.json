@@ -27,6 +27,7 @@
 		"@angular/platform-server": "22.2.5",
 		"@angular/router": "22.2.5",
 		"@angular/ssr": "22.2.6",
+		"@capacitor-community/apple-sign-in": "^7.1.0",
 		"@capacitor/android": "^8.6.0",
 		"@capacitor/app": "^8.1.2",
 		"@capacitor/core": "^8.6.0",

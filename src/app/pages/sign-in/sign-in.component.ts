@@ -5,7 +5,8 @@ import { PreferencesComponent } from '../../components/preferences/preferences.c
 import { AuthService } from '../../feature/auth/auth.service';
 import { TPipe } from '../../feature/i18n/t.pipe';
 
-const SILENT_ERROR_CODES = new Set(['auth/popup-closed-by-user', 'auth/cancelled-popup-request']);
+/** `1001` is the Apple sheet closed by the user (ASAuthorizationError.canceled). */
+const SILENT_ERROR_CODES = new Set(['auth/popup-closed-by-user', 'auth/cancelled-popup-request', '1001']);
 
 @Component({
 	imports: [NgOptimizedImage, PreferencesComponent, TPipe],
@@ -18,12 +19,13 @@ export class SignInComponent {
 	protected readonly pending = signal(false);
 	protected readonly error = signal<string | null>(null);
 
-	protected async signIn() {
+	protected async signIn(provider: 'google' | 'apple') {
 		this.pending.set(true);
 		this.error.set(null);
 
 		try {
-			await this._auth.signInWithGoogle();
+			if (provider === 'apple') await this._auth.signInWithApple();
+			else await this._auth.signInWithGoogle();
 			await this._router.navigateByUrl('/profile');
 		} catch (error) {
 			const code = (error as { code?: string }).code ?? '';
@@ -47,7 +49,7 @@ function _errorMessage(code: string): string {
 		case 'auth/network-request-failed':
 			return 'No connection. Check your network and try again.';
 		case 'auth/credential-already-in-use':
-			return 'This Google account is already in use. Try again to sign in with it.';
+			return 'This account is already in use. Try again to sign in with it.';
 		case 'auth/unauthorized-domain':
 			return 'Sign-in is not enabled for this address yet.';
 		default:

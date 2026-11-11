@@ -5,7 +5,8 @@ import { AuthService, userPhoto } from '../../feature/auth/auth.service';
 import { I18nService } from '../../feature/i18n/i18n.service';
 import { TPipe } from '../../feature/i18n/t.pipe';
 
-const SILENT_ERROR_CODES = new Set(['auth/popup-closed-by-user', 'auth/cancelled-popup-request']);
+/** `1001` is the Apple sheet closed by the user (ASAuthorizationError.canceled). */
+const SILENT_ERROR_CODES = new Set(['auth/popup-closed-by-user', 'auth/cancelled-popup-request', '1001']);
 
 /** Who you are (a guest or a Google account), how far you got, the appearance and language, and the account. */
 @Component({
@@ -32,11 +33,12 @@ export class ProfileComponent {
 	});
 	protected readonly initial = computed(() => this.name().trim().charAt(0).toUpperCase());
 
-	protected async signIn() {
+	protected async signIn(provider: 'google' | 'apple') {
 		this.pending.set(true);
 		this.error.set(null);
 		try {
-			await this._auth.signInWithGoogle();
+			if (provider === 'apple') await this._auth.signInWithApple();
+			else await this._auth.signInWithGoogle();
 		} catch (error) {
 			const code = (error as { code?: string }).code ?? '';
 			if (!SILENT_ERROR_CODES.has(code)) {

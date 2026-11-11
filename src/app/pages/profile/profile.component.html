@@ -41,9 +41,18 @@
 				type="button"
 				[disabled]="pending()"
 				[attr.aria-busy]="pending()"
-				(click)="signIn()"
+				(click)="signIn('google')"
 			>
 				{{ (pending() ? 'Signing in…' : 'Continue with Google') | t }}
+			</button>
+			<button
+				class="ds-btn ds-btn-outline self-start"
+				type="button"
+				[disabled]="pending()"
+				[attr.aria-busy]="pending()"
+				(click)="signIn('apple')"
+			>
+				{{ (pending() ? 'Signing in…' : 'Continue with Apple') | t }}
 			</button>
 		</section>
 	}

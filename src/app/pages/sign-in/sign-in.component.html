@@ -12,7 +12,7 @@
 			type="button"
 			[disabled]="pending()"
 			[attr.aria-busy]="pending()"
-			(click)="signIn()"
+			(click)="signIn('google')"
 		>
 			<span class="flex size-6 items-center justify-center rounded-full bg-white">
 				<svg class="size-4" viewBox="0 0 48 48" aria-hidden="true">
@@ -35,6 +35,16 @@
 				</svg>
 			</span>
 			{{ (pending() ? 'Signing in…' : 'Continue with Google') | t }}
+		</button>
+
+		<button
+			class="ds-btn ds-btn-outline ds-btn-lg w-full"
+			type="button"
+			[disabled]="pending()"
+			[attr.aria-busy]="pending()"
+			(click)="signIn('apple')"
+		>
+			{{ (pending() ? 'Signing in…' : 'Continue with Apple') | t }}
 		</button>
 
 		@if (error(); as message) {
