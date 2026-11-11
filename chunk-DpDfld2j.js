@@ -1,0 +1,1 @@
+var e=null;function i(){return e??=import(`./chunk-BUB7mY76.js`).then(t=>t.default),e}export{i as t};

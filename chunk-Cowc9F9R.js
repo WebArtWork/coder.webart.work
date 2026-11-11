@@ -1,0 +1,1 @@
+import{t as D}from"./chunk-BqZLGxYY.js";var i=D(`SignInWithApple`,{web:()=>import(`./chunk-DJVBRKAe.js`).then(p=>new p.SignInWithAppleWeb)});export{i as SignInWithApple};
